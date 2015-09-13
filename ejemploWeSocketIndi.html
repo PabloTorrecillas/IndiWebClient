@@ -1,0 +1,77 @@
+ 
+<html>
+
+    <head>
+        <title>Prueba INDI WebSockets</title>
+        <script src="include/base64.js"></script>
+        <script src="include/util.js"></script>
+        <script src="include/websock.js"></script>
+    </head>
+
+    <body>
+
+        <input id='connectButton' type='button' value='Conectar' onclick="connect();">
+        
+        <input id='disconnectButton' type='button' value='Desconectar' onclick="disconnect();">
+
+        <br><br>
+
+        <script>
+            var ws;  
+            
+            function disconnect() {
+              if (ws != null) {
+                console.log("Desconectando");
+                ws.close();
+                ws = null;
+              }
+            }
+            
+            function connect() {
+               disconnect();
+               
+               ws = new Websock();
+               
+               ws.on('message', funcionLectura);
+               
+               ws.on('open', function(e) {
+                 console.log(">> WebSockets.onopen");
+
+                 ws.send_string("<getProperties version=\"1.7\"/>");
+                 
+                 console.log("<< WebSockets.onopen");
+               });
+               
+               ws.on('close', function(e) {
+                 console.log(">> WebSockets.onclose");
+
+                 console.log("<< WebSockets.onclose");
+               });
+               
+               ws.on('error', function(e) {
+                 console.log(">> WebSockets.onerror");
+
+                 console.log("<< WebSockets.onerror");
+               });
+               
+               console.log("Conectando...");
+               ws.open("ws://localhost:4000");
+            }
+            
+            function funcionLectura() {
+              var length = ws.rQlen();
+              var cadena = ws.rQshiftStr(length);
+              
+              console.log(cadena);
+
+              //Aquí en vez de mostrar la cadena por pantalla, lo que tendré que hacer es parsear todo lo que me llegue
+              //Una vez que esté parseado tendré que ir haciendo ventanas, modificando grupos, etc. 
+
+
+              
+            }
+        </script>
+
+    </body>
+
+</html>

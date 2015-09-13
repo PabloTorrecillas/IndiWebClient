@@ -1,0 +1,94 @@
+ 
+<html>
+
+    <head>
+        <title>Prueba INDI WebSockets</title>
+        <script src="include/base64.js"></script>
+        <script src="include/util.js"></script>
+        <script src="include/websock.js"></script>
+
+               <!-- CSS JQuery UI -->
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/flick/jquery-ui.css" type="text/css" />
+		
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+        <!-- Etiquetas -->
+        <meta charset="utf-8">
+
+        <!-- Bibliotecas JQuery -->
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+		
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    </head>
+
+    <body>
+
+        <input id='connectButton' type='button' value='Conectar' onclick="connect();">
+
+        <div class="ventana_anadir">
+			<form class="formulario_dispositivo">
+				<div class="form-group">
+					<label for="inputdefault">Nombre del Dispositivo</label>
+					<input class="form-control" id="nombre_dispositivo" type="text">
+				</div>
+				<div class="form-group">
+					<label for="inputsm">IP</label>
+					<input class="form-control input-sm" id="ip_dispositivo" type="text">
+				</div>
+				<div class="form-group">
+				    <label for="inputsm">Puerto</label>
+				    <input class="form-control input-sm" id="puerto_dispositivo" type="text">
+				</div>
+			</form>
+		</div>
+
+    </body>
+
+    <script>
+
+    	var xml = '<a><defTextVector device="TelescopeSimulator" name="DRIVER_INFO" label="Driver Info" group="Options" state="Idle" perm="ro" timeout="60" timestamp="2015-07-28T11:12:54"> <defText name="DRIVER_NAME" label="Name"> Telescope Simulator </defText> <defText name="DRIVER_EXEC" label="Exec"> indi_simulator_telescope </defText> <defText name="DRIVER_VERSION" label="Version"> 1.0 </defText> <defText name="DRIVER_INTERFACE" label="Interface"> 5 </defText> </defTextVector><defTextVector device="Camera" name="DRIVER_INFO" label="Driver Info" group="Options" state="Idle" perm="ro" timeout="60" timestamp="2015-07-28T11:12:54"> <defText name="DRIVER_NAME" label="Name"> Telescope Simulator </defText> <defText name="DRIVER_EXEC" label="Exec"> indi_simulator_telescope </defText> <defText name="DRIVER_VERSION" label="Version"> 1.0 </defText> <defText name="DRIVER_INTERFACE" label="Interface"> 5 </defText> </defTextVector></a>';
+
+		function connect() {
+
+			console.log(xml);
+
+			xmlDoc = $.parseXML( xml ),
+  			$xml = $( xmlDoc ),
+  			$device = $xml.find( "defTextVector" );
+
+  			$device.each(function(){
+  				console.log("Device: " + $(this).attr('device'));
+
+  				var div_content = $('.ventana_anadir').html();
+
+  				console.log(div_content);
+
+  				var div_id = 'd_' + $(this).attr('device');
+
+  				$('body').append('<div class="dialog_window" id="' + div_id + '">' + div_content + '</div>');
+ 
+				//initialize our new dialog
+				
+				var dialog = $('#' + div_id).dialog({
+				    width: 'auto',
+				    height: 'auto',
+				    title : $(this).attr('device'),
+				    autoOpen : true,
+				});
+
+				console.log("Nueva ventada creada: " + $(this).attr('device'));  
+  			})
+
+
+  			
+
+        	  	
+        }
+	
+
+    </script>
+
+</html>
