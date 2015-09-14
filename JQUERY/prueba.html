@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <style>
+    .dialogo{
+      visibility: hidden;
+    }
+  </style>
+
+  <title>Pruebas jQuery UI</title>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script>
+  $(function() {
+  	$( "#boton").click(function(){
+      $( "#dialog" ).dialog();
+      $("#dialog > *").css("visibility","visible");
+        $("#agregar").click(function(){
+          $("#dispositivosMultiples").append(
+            $('<option>', {
+              value: $("#entradaTexto").val(), 
+              text : $("#entradaTexto").val()
+            }));
+        });
+
+        $("#eliminar").click(function(){
+          $("#dispositivosMultiples").find(":selected").remove();
+        });
+    });
+  });
+
+  </script>
+</head>
+<body> 
+<input type="submit" value="Pinche aqui" id = "boton">
+
+
+<div id="dialog" title="Nuevo Dispositivo" class="dialogo">
+  <select id = "dispositivosMultiples" name = "dispositivos" multiple>
+    <option value = "192.168.1.1">192.168.1.1</option>
+    <option value = "192.168.1.1">192.168.1.2</option>
+    <option value = "192.168.1.1">192.168.1.3</option>
+    <option value = "192.168.1.1">192.168.1.4</option>
+    <option value = "192.168.1.1">192.168.1.5</option>
+  </select>
+
+  <form>
+    <input id = "entradaTexto" type="text"/>
+    <a href="#" id = "agregar">Agregar</a>
+    <a href="#" id = "eliminar">Eliminar</a>
+  </form>
+</div>
+
+
+</body>
+</html>
