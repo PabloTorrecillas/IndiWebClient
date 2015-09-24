@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Prueba INDI WebSockets</title>
+
+               <!-- CSS JQuery UI -->
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/flick/jquery-ui.css" type="text/css" />
+        
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+        <!-- Etiquetas -->
+        <meta charset="utf-8">
+
+        <!-- Bibliotecas JQuery -->
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+        
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    </head>
+
+    <body>
+
+		<input type="button" value="defTextVector" onclick="readBasicElements('defTextVector')"/>
+		<input type="button" value="defSwitchVector" onclick="readBasicElements('defSwitchVector')"/>
+        <input type="button" value="defNumberVector" onclick="readNumberElements('defNumberVector')"/>
+	
+        <script>
+
+        var xml = '<a><defTextVector device="CCD Simulator" name="DRIVER_INFO" label="Driver Info" group="Options" state="Idle" perm="ro" timeout="60" timestamp="2015-09-22T14:55:11"><defText name="DRIVER_NAME" label="Name">CCD Simulator</defText><defText name="DRIVER_EXEC" label="Exec">indi_simulator_ccd</defText><defText name="DRIVER_VERSION" label="Version">1.0</defText><defText name="DRIVER_INTERFACE" label="Interface">22</defText></defTextVector><defTextVector device="OtroSimulator" name="DRIVER_INFO" label="Driver Info" group="Options" state="Idle" perm="ro" timeout="60" timestamp="2015-09-22T14:55:11"><defText name="DRIVER_NAME" label="Name">CCD Simulator</defText><defText name="DRIVER_EXEC" label="Exec">indi_simulator_ccd</defText><defText name="DRIVER_VERSION" label="Version">1.0</defText><defText name="DRIVER_INTERFACE" label="Interface">22</defText></defTextVector><defSwitchVector device="Telescope Simulator" name="DEBUG" label="Debug" group="Options" state="Idle" perm="rw" rule="OneOfMany" timeout="0" timestamp="2015-09-24T10:07:49"><defSwitch name="ENABLE" label="Enable">Off</defSwitch><defSwitch name="DISABLE" label="Disable">On</defSwitch></defSwitchVector><defNumberVector device="Telescope Simulator" name="EQUATORIAL_EOD_COORD" label="Eq. Coordinates" group="Main Control" state="Idle" perm="rw" timeout="60" timestamp="2015-09-24T10:09:36"><defNumber name="RA" label="RA (hh:mm:ss)" format="%010.6m" min="0" max="24" step="0">0</defNumber><defNumber name="DEC" label="DEC (dd:mm:ss)" format="%010.6m" min="-90" max="90" step="0">0</defNumber></defNumberVector></a>';
+
+		function readBasicElements(vectorName){
+		
+			var parser = new DOMParser();
+			var indiXml = parser.parseFromString(xml,'text/xml');
+
+			var indiSectionArray = indiXml.getElementsByTagName(vectorName);
+
+			for (var i=0; i < indiSectionArray.length; i++) {
+				console.log(indiSectionArray[i].getAttribute("device"));
+				
+				var children = indiSectionArray[i].childNodes; 
+				
+				for(var j=0; j < children.length; j++) {
+					console.log(children[j].getAttribute("name"));
+					console.log(children[j].getAttribute("label"));
+					console.log("value: " + children[j].innerHTML);
+				}
+				
+				console.log("");
+			}
+		}
+
+        function readNumberElements(vectorName){
+        
+            var parser = new DOMParser();
+            var indiXml = parser.parseFromString(xml,'text/xml');
+
+            var indiSectionArray = indiXml.getElementsByTagName(vectorName);
+
+            for (var i=0; i < indiSectionArray.length; i++) {
+                console.log(indiSectionArray[i].getAttribute("device"));
+                
+                var children = indiSectionArray[i].childNodes; 
+                
+                for(var j=0; j < children.length; j++) {
+                    //console.log("name: " + children[j].getAttribute("name"));
+                    console.log(children[j].getAttribute("label"));
+                    console.log(children[j].getAttribute("format"));
+                    console.log(children[j].getAttribute("min"));
+                    console.log(children[j].getAttribute("max"));
+                    console.log(children[j].getAttribute("step"));
+                    console.log("value: " + children[j].innerHTML);
+                }
+                
+                console.log("");
+            }
+        }
+    </script>
+
+    </body>
+</html>
+
+
+
+
+
