@@ -1,10 +1,20 @@
 #deviceWindow{
 
-    width: 250px;
-    height: 200px;
+    width: 300px;
+    height: 100px;
 }
 
 .propertyBox{
     background-color: #fff000;
     border-color: #000fff;
+}
+
+#updateButton{
+	width: 25%;
+	font-size: 11px;
+	padding: 6px 6px;
+}
+
+.updateBox{
+	width: 45%;
 }
