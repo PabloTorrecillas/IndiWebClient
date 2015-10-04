@@ -18,3 +18,8 @@
 .updateBox{
 	width: 45%;
 }
+
+.labelName{
+	border: 1px solid black;
+	text-align: center;
+}
