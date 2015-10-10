@@ -107,7 +107,6 @@
         }
         function parserDefTextVector(node){
             var deviceName = node.getAttribute("device");
-            var propertyName = node.getAttribute("name");
             debug(deviceName);
             var windowID = getWindowID(deviceName);
             debug(windowID);
@@ -118,30 +117,52 @@
                 //Inicializacíon de la nueva ventana
                 var dialog = $('#' + windowID).dialog({
                     title : deviceName,
-                    width: '600px',
                 }); 
                 antiguaVentana = document.getElementById(windowID);
             }
             else{
                 debug("Ya existe");
             }
-
-                antiguaVentana.innerHTML += '<div class="propertyBox">'+
-                '<div id = "' + getPropertyId(deviceName,propertyName) + '_bombilla" style="float:left">' + 
-                getBombillita(node.getAttribute("state")) + '</div>'+
-                node.getAttribute("name") ; 
+            if(node.getAttribute("state") == 'Idle'){
+                antiguaVentana.innerHTML = antiguaVentana.innerHTML + '<div class="propertyBox" >'  + '<div><img src="images/grey_light.png">' + node.getAttribute("name") +  '</div>' + '</div>';
                 var nodes = node.childNodes;
                 for (var i=0; i < nodes.length; i++) {
-                    antiguaVentana.innerHTML += 
-                    '<div class = "elementBox">' + 
-                            '<div class = "elementName">' + nodes[i].getAttribute("label") + "->" + nodes[i].innerHTML + '</div>' +
-                            '<input type="text" placeholder="Modificar" class = "updateBox">';
- 
-                    '</div>';                   
+/*
+*
+*
+* Solamente aquí he usado el class labelName por si queda mejor pero no estoy seguro de tener que ponerlo. Revisarlo.
+*
+*
+*/
+
+                    antiguaVentana.innerHTML += '<div class = "labelName">' + nodes[i].getAttribute("label") + "->" + nodes[i].innerHTML + '<div>' +'<input type="text" placeholder="Modificar" class = "updateBox">'+ '</div>' + " " + '</div>';                   
                 }
-                antiguaVentana.innerHTML +=  '<button id="updateButton" class="btn btn-default" style="float:right">Actualizar</button>';
-            
-                antiguaVentana.innerHTML += '</div>';
+                antiguaVentana.innerHTML +=  '<button id="updateButton" class="btn btn-default">Actualizar</button>';
+            }
+            if(node.getAttribute("state") == 'Ok'){
+                antiguaVentana.innerHTML = antiguaVentana.innerHTML + '<div class="propertyBox" >'  + '<div><img src="images/green_light.png">' + node.getAttribute("name") +  '</div>' + '</div>';
+                var nodes = node.childNodes;
+                for (var i=0; i < nodes.length; i++) {
+                    antiguaVentana.innerHTML += '<div>' + nodes[i].getAttribute("label") + "->" + nodes[i].innerHTML + '<div>' +'<input type="text" placeholder="Modificar" class = "updateBox">'+ '</div>' + '</div>';                   
+                }
+                antiguaVentana.innerHTML +=  '<button id="updateButton" class="btn btn-default">Actualizar</button>';
+            }
+            if(node.getAttribute("state") == 'Busy'){
+                antiguaVentana.innerHTML = antiguaVentana.innerHTML + '<div class="propertyBox" >'  + '<div><img src="images/yellow_light.png">' + node.getAttribute("name") +  '</div>' + '</div>';
+                var nodes = node.childNodes;
+                for (var i=0; i < nodes.length; i++) {
+                    antiguaVentana.innerHTML += '<div>' + nodes[i].getAttribute("label") + "->" + nodes[i].innerHTML + '<div>' +'<input type="text" placeholder="Modificar" class = "updateBox">'+ '</div>' + " " + '</div>';                   
+                }
+                antiguaVentana.innerHTML +=  '<button id="updateButton" class="btn btn-default">Actualizar</button>';
+            }
+            if(node.getAttribute("state") == 'Alert'){
+                antiguaVentana.innerHTML = antiguaVentana.innerHTML + '<div class="propertyBox" >'  + '<div><img src="images/red_light.png">' + node.getAttribute("name") +  '</div>' + '</div>';
+                var nodes = node.childNodes;
+                for (var i=0; i < nodes.length; i++) {
+                    antiguaVentana.innerHTML += '<div>' + nodes[i].getAttribute("label") + "->" + nodes[i].innerHTML + '<div>' +'<input type="text" placeholder="Modificar" class = "updateBox">'+ '</div>' + " " + '</div>';                   
+                }
+                antiguaVentana.innerHTML +=  '<button id="updateButton" class="btn btn-default">Actualizar</button>';
+            }
             
             
         }
@@ -170,8 +191,7 @@
                 var nodes = node.childNodes;
 
                 for(var i = 0; i < nodes.length; i++){
-                    antiguaVentana.innerHTML += '<div>'+ nodes[i].getAttribute("label")  + '<input type="number" id="numerics" min=' +nodes[i].getAttribute("min") + ' max = '+ nodes[i].getAttribute("max") + ' title="Format: [format, min, max, step],[' + nodes[i].getAttribute("format") + ", "+ nodes[i].getAttribute("min") + ", " + nodes[i].getAttribute("max") + ", "  + nodes[i].getAttribute("step") +' ]">' + 
-                              '</div>';
+                    antiguaVentana.innerHTML += '<div>' + 'Label: ' + nodes[i].getAttribute("label") + '<div>' + 'format: ' + nodes[i].getAttribute("format") + '<div>' + 'min: ' +nodes[i].getAttribute("min") + '<div>' + 'max: ' +nodes[i].getAttribute("max") + '<div>' + 'step: ' +nodes[i].getAttribute("step") + '<div>' + 'Value: ' +nodes[i].innerHTML + '<div>' +'<input type="number" min="0" max = "nodes[i].getAttribute("max")">' + '</div>' + " " + '</div>' + '</div>' + '</div>' + '</div>' + '</div>';
                 }
 
                 antiguaVentana.innerHTML +=  '<button id="updateButton" class="btn btn-default">Actualizar</button>';
@@ -187,39 +207,10 @@
         function getWindowID(deviceName){
             return deviceName.replace(/[\W_]/g,"_");
         }
-
-        function getPropertyId(deviceName, propertyName){
-            var concat = deviceName + "_" + propertyName;
-
-            return concat.replace(/[\W_]/g,"_");
-        }
-
-        function getBombillita(state){
-            if(state == 'Idle'){
-                return '<img src="images/grey_light.png"/>';
-            }
-            else{ 
-                if(state == 'Ok'){
-                    return '<img src="images/green_light.png"/>';
-                }  
-                else{
-                    if(state == 'Alert'){
-                        return '<img src="images/red_light.png"/>';
-                    }
-                    else{
-                        if(state == 'Busy'){
-                            return '<img src="images/yellow_light.png"/>';
-                        }
-                    }
-                }
-            }
-        }
-
     </script>
 
     </body>
 </html>
-
 
 
 

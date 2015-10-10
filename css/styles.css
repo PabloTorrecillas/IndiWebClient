@@ -1,6 +1,6 @@
-#deviceWindow{
+.deviceWindow{
 
-    width: 300px;
+    width: 600px;
     height: 100px;
 }
 
@@ -19,7 +19,16 @@
 	width: 45%;
 }
 
-.labelName{
+.elementBox{
 	border: 1px solid black;
 	text-align: center;
+}
+
+.elementName{
+	margin-right: 2em;
+}
+
+#numerics{
+	margin-right: 3em;
+	width: 100px;
 }
