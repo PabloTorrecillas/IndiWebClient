@@ -7,12 +7,14 @@
 .propertyBox{
     background-color: #fff000;
     border-color: #000fff;
+   /* float: left;*/
 }
 
 #updateButton{
 	width: 25%;
 	font-size: 11px;
 	padding: 6px 6px;
+	/*float: right;*/
 }
 
 .updateBox{
@@ -22,13 +24,16 @@
 .elementBox{
 	border: 1px solid black;
 	text-align: center;
+	/*float: right;*/
 }
 
 .elementName{
 	margin-right: 2em;
+
 }
 
 #numerics{
 	margin-right: 3em;
 	width: 100px;
 }
+
