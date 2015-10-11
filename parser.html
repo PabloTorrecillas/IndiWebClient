@@ -147,10 +147,12 @@
         }
         function parserDefNumberVector(node){
             var deviceName = node.getAttribute("device");
+            var propertyName = node.getAttribute("name");
             debug(deviceName);
             var windowID = getWindowID(deviceName);
             debug(windowID);
             var antiguaVentana = document.getElementById(windowID);
+            
             if(antiguaVentana == null){
                 //Añadimos la nueva ventana al body
                 $('body').append('<div class="deviceWindow" id="' + windowID + '">' + '</div>');
@@ -163,15 +165,22 @@
             else{
                 debug("Ya existe");
             }
-            if(node.getAttribute("state") == 'Idle'){
-                antiguaVentana.innerHTML = antiguaVentana.innerHTML + '<div class="propertyBox" >' + '<div><img src="images/grey_light.png">' + node.getAttribute("name") +  '</div>' + '</div>';
-                var nodes = node.childNodes;
-                for(var i = 0; i < nodes.length; i++){
-                    antiguaVentana.innerHTML += '<div>'+ nodes[i].getAttribute("label")  + '<input type="number" id="numerics" min=' +nodes[i].getAttribute("min") + ' max = '+ nodes[i].getAttribute("max") + ' title="Format: [format, min, max, step],[' + nodes[i].getAttribute("format") + ", "+ nodes[i].getAttribute("min") + ", " + nodes[i].getAttribute("max") + ", "  + nodes[i].getAttribute("step") +' ]">' + 
-                              '</div>';
-                }
-                antiguaVentana.innerHTML +=  '<button id="updateButton" class="btn btn-default">Actualizar</button>';
+            
+            antiguaVentana.innerHTML += '<div class="propertyBox">'+
+                '<div id = "' + getPropertyId(deviceName, propertyName) + '_bombilla" style="float:left">' + 
+                getBombillita(node.getAttribute("state")) + '</div>'+
+                node.getAttribute("name") ; 
+
+            var nodes = node.childNodes;
+
+
+            for(var i = 0; i < nodes.length; i++){
+                antiguaVentana.innerHTML += '<div>'+ nodes[i].getAttribute("label")  + '<input type="number" id="numerics" min=' +nodes[i].getAttribute("min") + ' max = '+ nodes[i].getAttribute("max") + ' title="Format: [format, min, max, step],[' + nodes[i].getAttribute("format") + ", "+ nodes[i].getAttribute("min") + ", " + nodes[i].getAttribute("max") + ", "  + nodes[i].getAttribute("step") +' ]">' + 
+                          '</div>';
             }
+
+            antiguaVentana.innerHTML +=  '<button id="updateButton" class="btn btn-default">Actualizar</button>';
+            
         }
 
         function getPerm(perm){
