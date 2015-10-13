@@ -2,20 +2,26 @@
 
     width: 600px;
     height: 100px;
+    display: block;
+}
+
+.deviceInfo{
+	width: 100%;
+	display: flex;
+	padding-bottom: 10px;
 }
 
 .propertyBox{
     background-color: #fff000;
     border-color: #000fff;
-    display: flex;
-   /* float: left;*/
+    width: 175px;
+    text-align: center;
 }
 
 #updateButton{
 	width: 25%;
 	font-size: 11px;
 	padding: 6px 6px;
-	/*float: right;*/
 }
 
 .updateBox{
@@ -25,13 +31,14 @@
 .elementBox{
 	border: 1px solid black;
 	text-align: center;
-	/*display: flex;*/
-	/*float: right;*/
 }
 
 .elementName{
 	margin-right: 2em;
-	/*float: right;*/
+}
+
+.elementBoxContainer{
+	width: 175px;
 }
 
 #numerics{

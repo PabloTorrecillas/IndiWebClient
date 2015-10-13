@@ -132,24 +132,35 @@
                 debug("Ya existe");
             }
 
-            antiguaVentana.innerHTML += '<div class="propertyBox">'+
-            '<div id = "' + getPropertyId(deviceName,propertyName) + '_bombilla" style="float:left">' + 
-            getBombillita(node.getAttribute("state")) + '</div>'+
-            node.getAttribute("name") ; 
+            var html = "";
 
-            var nodes = node.childNodes;
+            html += '<div class="deviceInfo">';
+                html += '<div class="propertyBox">'+
+                '<div id = "' + getPropertyId(deviceName,propertyName) + '_bombilla" style="float:left">' + 
+                getBombillita(node.getAttribute("state")) + node.getAttribute("name") + '</div>';
+                 html += '</div>';
 
-            for (var i=0; i < nodes.length; i++) {
-                antiguaVentana.innerHTML += 
-                '<div class = "elementBox">' + 
-                        '<div class = "elementName">' + nodes[i].getAttribute("label") + "-&gt;" + nodes[i].innerHTML + '</div>' + getInputText(node.getAttribute("perm"));
+                var nodes = node.childNodes;
 
-                '</div>';                   
-            }
+                if(nodes.length > 0){
+                   html += '<div class="elementBoxContainer">';
+                   for (var i=0; i < nodes.length; i++) {
+                       html += 
+                       '<div class = "elementBox">' + nodes[i].getAttribute("label") + "-&gt;" + nodes[i].innerHTML + 
+                            getInputText(node.getAttribute("perm")) + '</div>';                   
+                   }
 
-            if(node.getAttribute("perm") != 'ro'){
-                antiguaVentana.innerHTML +=  '<button id="updateButton" class="btn btn-default" style="float:right">Actualizar</button>';
-            }
+                   html += '</div>';
+
+               }
+
+                if(node.getAttribute("perm") != 'ro'){
+                    html +=  '<button id="updateButton" class="btn btn-default" style="float:right">Actualizar</button>';
+                }
+
+            html += '</div>';
+
+            antiguaVentana.innerHTML += html;
 
             
         }
@@ -215,9 +226,9 @@
             }
         }
 
-        function debug(mensaje){
+        function debug(message){
             if(globalDebug){
-                console.log(mensaje);
+                console.log(message);
             }
         }
 
@@ -232,23 +243,18 @@
 
         function getBombillita(state){
 
-            if(state == 'Idle'){
+            switch(state){
+                case 'Idle':
                 return '<img src="images/grey_light.png"/>';
-            }
-            else{ 
-                if(state == 'Ok'){
-                    return '<img src="images/green_light.png"/>';
-                }  
-                else{
-                    if(state == 'Alert'){
-                        return '<img src="images/red_light.png"/>';
-                    }
-                    else{
-                        if(state == 'Busy'){
-                            return '<img src="images/yellow_light.png"/>';
-                        }
-                    }
-                }
+
+                case 'Ok':
+                return '<img src="images/green_light.png"/>';
+
+                case 'Alert':
+                return '<img src="images/red_light.png"/>';
+
+                case 'Busy':
+                return '<img src="images/yellow_light.png"/>';
             }
         }
     </script>
