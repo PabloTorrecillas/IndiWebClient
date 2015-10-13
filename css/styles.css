@@ -7,6 +7,7 @@
 .propertyBox{
     background-color: #fff000;
     border-color: #000fff;
+    display: flex;
    /* float: left;*/
 }
 
@@ -24,12 +25,13 @@
 .elementBox{
 	border: 1px solid black;
 	text-align: center;
+	/*display: flex;*/
 	/*float: right;*/
 }
 
 .elementName{
 	margin-right: 2em;
-
+	/*float: right;*/
 }
 
 #numerics{
