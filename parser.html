@@ -233,7 +233,17 @@
 
         function getInputNumber(perm, node){
             if(perm != 'ro'){
-                return '<input type="number" id="numerics" min=' + node.getAttribute("min") + ' max = ' + node.getAttribute("max") + ' title="Format: [format: ' + node.getAttribute("format") + ", " + node.getAttribute("min") + ", " + node.getAttribute("max") + ", "  + node.getAttribute("step") +' ]">';
+                var nodes = node.childNodes;
+
+                //Creo que aquí me está mostrando el mismo para cada dispositivo en vez de uno diferente por dispositivo.
+                //Preguntar a Sergio!!! 
+                //Dentro de un defNumberVector tengo dos defNumber y solamente me está mostrando el del primero y me lo machaca.
+                //Imagino que eso es porque estoy haciendo el nodes[i] y me coge todo como uno solo.
+
+
+                for(var i = 0; i < nodes.length; i++){
+                    return '<input type="number" id="numerics" min=' + nodes[i].getAttribute("min") + ' max = ' + nodes[i].getAttribute("max") + ' title="Format: [format: ' + nodes[i].getAttribute("format") + ", " + nodes[i].getAttribute("min") + ", " + nodes[i].getAttribute("max") + ", "  + nodes[i].getAttribute("step") +' ]">';               
+                }
             }
             else{
                 return "";

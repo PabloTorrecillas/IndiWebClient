@@ -15,6 +15,7 @@
     background-color: #fff000;
     border-color: #000fff;
     width: 175px;
+    margin: auto;
     text-align: center;
     font-size: 68%;
 }
@@ -46,4 +47,9 @@
 	margin-right: 3em;
 	width: 100px;
 }
+
+#resizable { 
+	width: 150px; height: 150px; padding: 0.5em; 
+}
+
 
