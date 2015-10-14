@@ -103,9 +103,9 @@
                         parserDefTextVector(children[j]);
                     }
 
-                    /*if(nodeName == 'defNumberVector'){
+                    if(nodeName == 'defNumberVector'){
                         parserDefNumberVector(children[j]);
-                    }   */
+                    }   
                 }
                 
                 debug("");
@@ -167,13 +167,7 @@
 
         function parserDefNumberVector(node){
             var deviceName = node.getAttribute("device");
-            var propertyName = node.getAttribute("name");
-
-            var format = node.getAttribute("format");
-            var min = node.getAttribute("min");
-            var max = node.getAttribute("max");
-            var step = node.getAttribute("step");
-            
+            var propertyName = node.getAttribute("name");         
 
             debug(deviceName);
             var windowID = getWindowID(deviceName);
@@ -186,33 +180,42 @@
                 //Inicializacíon de la nueva ventana
                 var dialog = $('#' + windowID).dialog({
                     title: deviceName,
-                    width: '400px',
+                    width: '500px',
                 }); 
                 antiguaVentana = document.getElementById(windowID);
             }
             else{
                 debug("Ya existe");
             }
+
+            var html = "";
             
-            antiguaVentana.innerHTML += '<div class="propertyBox">'+
-                '<div id = "' + getPropertyId(deviceName, propertyName) + '_bombilla" style="float:left">' + 
-                getBombillita(node.getAttribute("state")) + '</div>'+
-                node.getAttribute("name") ; 
+            html += '<div class="deviceInfo">';
+                html += '<div class="propertyBox">'+
+                            '<div id = "' + getPropertyId(deviceName,propertyName) + '_bombilla" style="float:left">' + 
+                                getBombillita(node.getAttribute("state")) + node.getAttribute("name") + 
+                            '</div>';
+                html += '</div>';
 
-            var nodes = node.childNodes;
+                var nodes = node.childNodes;
 
+                if(nodes.length > 0){
+                    html += '<div class = "elementBoxContainer">';
+                        for(var i = 0; i < nodes.length; i++){  
+                            html += 
+                            '<div class = "elementBox">'+ nodes[i].getAttribute("label")   + '-&gt; ' + nodes[i].innerHTML + getInputNumber(node.getAttribute("perm"), node) + 
+                            '</div>';
+                        }
 
-            for(var i = 0; i < nodes.length; i++){
-                
-                antiguaVentana.innerHTML += 
-                '<div class = "elementBox">' + 
-                    '<div class = "elementName">'+ nodes[i].getAttribute("label")   + '-&gt; ' + nodes[i].innerHTML + '</div>' + '<input type="number" id="numerics" min=' + node.getAttribute("min") + ' max = ' + node.getAttribute("max") + ' title="Format: [format: ' + node.getAttribute("format") + ", " + node.getAttribute("min") + ", " + node.getAttribute("max") + ", "  + node.getAttribute("step") +' ]">'
-                '</div>';
-            }
+                    html += '</div>';
 
-            if(node.getAttribute("perm") != 'ro'){
-                antiguaVentana.innerHTML +=  '<button id="updateButton" class="btn btn-default" style="float:right">Actualizar</button>';
-            }
+                    if(node.getAttribute("perm") != 'ro'){
+                        html +=  '<button id="updateButton" class="btn btn-default" style="float:right">Actualizar</button>';
+                    }
+                }
+            html += '</div>';
+
+            antiguaVentana.innerHTML = html;            
             
         }
 
@@ -220,6 +223,15 @@
         function getInputText(perm){
             if(perm != 'ro'){
                 return '<input type="text" placeholder="Modificar" class = "updateBox">';
+            }
+            else{
+                return "";
+            }
+        }
+
+        function getInputNumber(perm, node){
+            if(perm != 'ro'){
+                return '<input type="number" id="numerics" min=' + node.getAttribute("min") + ' max = ' + node.getAttribute("max") + ' title="Format: [format: ' + node.getAttribute("format") + ", " + node.getAttribute("min") + ", " + node.getAttribute("max") + ", "  + node.getAttribute("step") +' ]">';
             }
             else{
                 return "";
