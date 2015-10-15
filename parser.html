@@ -12,7 +12,7 @@
         <link href="css/styles.css" rel='stylesheet'>
         
         <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
 
         <!-- Etiquetas -->
         <meta charset="utf-8">
@@ -22,6 +22,10 @@
         <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
         <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
         <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+                <script src="include/base64.js"></script>
+        <script src="include/util.js"></script>
+        <script src="include/websock.js"></script>
         
 
         <!-- Este es el que está fallando a la hora de crear las ventanas y por eso no me sale la cruceta. -->
@@ -31,12 +35,9 @@
 
     <body>
 
-        <input type="button" value="defTextVector" onclick="readBasicElements('defTextVector')"/>
-        <input type="button" value="defSwitchVector" onclick="readBasicElements('defSwitchVector')"/>
-        <input type="button" value="defNumberVector" onclick="readNumberElements('defNumberVector')"/>
-        <input type="button" value="defBLOBVector" onclick="readBasicElements('defBLOBVector')"/>
-        <input type="button" value="GeneralParser" onclick="parserXML()"/>
-
+    
+        <input type="button" value="GeneralParser" onclick="parserXML(xml)"/>
+        <input type="button" value="Conectar" onclick="connect()"/>
 
     
         <script>
@@ -88,7 +89,7 @@
             }
         }
 
-        function parserXML(){
+        function parserXML(xml){
             var parser = new DOMParser();
             var indiXml = parser.parseFromString(xml,'text/xml');
             var indiSectionArray = indiXml.getElementsByTagName('a');
@@ -116,23 +117,13 @@
         function parserDefTextVector(node){
             var deviceName = node.getAttribute("device");
             var propertyName = node.getAttribute("name");
+            var groupName = node.getAttribute("group");  
+
             debug(deviceName);
             var windowID = getWindowID(deviceName);
             debug(windowID);
-            var antiguaVentana = document.getElementById(windowID);
-            if(antiguaVentana == null){
-                //Añadimos la nueva ventana al body
-                $('body').append('<div class="deviceWindow" id="' + windowID + '">' + '</div>');
-                //Inicializacíon de la nueva ventana
-                var dialog = $('#' + windowID).dialog({
-                    title : deviceName,
-                    width: '600px',
-                }); 
-                antiguaVentana = document.getElementById(windowID);
-            }
-            else{
-                debug("Ya existe");
-            }
+            
+            var antiguaVentana = getVentana(deviceName);
 
             var html = "";
 
@@ -147,6 +138,7 @@
                 if(nodes.length > 0){
                    html += '<div class="elementBoxContainer">';
                    for (var i=0; i < nodes.length; i++) {
+                             debug(nodes[i] + "******");
                        html += 
                        '<div class = "elementBox">' + nodes[i].getAttribute("label") + "-&gt;" + nodes[i].innerHTML + 
                             getInputText(node.getAttribute("perm")) + '</div>';                   
@@ -162,33 +154,21 @@
 
             html += '</div>';
 
-            antiguaVentana.innerHTML += html;
+            addDeviceToTab(deviceName, groupName, html);
 
             
         }
 
         function parserDefNumberVector(node){
             var deviceName = node.getAttribute("device");
-            var propertyName = node.getAttribute("name");         
+            var propertyName = node.getAttribute("name"); 
+            var groupName = node.getAttribute("group");        
 
             debug(deviceName);
             var windowID = getWindowID(deviceName);
             debug(windowID);
-            var antiguaVentana = document.getElementById(windowID);
 
-            if(antiguaVentana == null){
-                //Añadimos la nueva ventana al body
-                $('body').append('<div class="deviceWindow" id="' + windowID + '">' + '</div>');
-                //Inicializacíon de la nueva ventana
-                var dialog = $('#' + windowID).dialog({
-                    title: deviceName,
-                    width: '500px',
-                }); 
-                antiguaVentana = document.getElementById(windowID);
-            }
-            else{
-                debug("Ya existe");
-            }
+            var antiguaVentana = getVentana(deviceName);
 
             var html = "";
             
@@ -201,11 +181,13 @@
 
                 var nodes = node.childNodes;
 
+
+
                 if(nodes.length > 0){
                     html += '<div class = "elementBoxContainer">';
                         for(var i = 0; i < nodes.length; i++){  
                             html += 
-                            '<div class = "elementBox">'+ nodes[i].getAttribute("label")   + '-&gt; ' + nodes[i].innerHTML + getInputNumber(node.getAttribute("perm"), node) + 
+                            '<div class = "elementBox">'+ nodes[i].getAttribute("label")   + '-&gt; ' + nodes[i].innerHTML + getInputNumber(node.getAttribute("perm"), nodes[i]) + 
                             '</div>';
                         }
 
@@ -217,10 +199,25 @@
                 }
             html += '</div>';
 
-            antiguaVentana.innerHTML = html;            
+            addDeviceToTab(deviceName, groupName, html);
             
         }
 
+        function addDeviceToTab(deviceName, groupName, html) {
+            var antiguoTab = getTab(deviceName, groupName);
+            var windowId = getWindowID(deviceName);
+            antiguoTab.innerHTML += html;
+
+            var active = $( "#" + windowId + "_tabs" ).tabs( "option", "active" );
+
+debug(active+ "-----");
+            if (!active) {
+                $( "#" + windowId + "_tabs" ).tabs({
+                  active: 0
+                 });
+            }
+            
+        }
 
         function getInputText(perm){
             if(perm != 'ro'){
@@ -233,17 +230,7 @@
 
         function getInputNumber(perm, node){
             if(perm != 'ro'){
-                var nodes = node.childNodes;
-
-                //Creo que aquí me está mostrando el mismo para cada dispositivo en vez de uno diferente por dispositivo.
-                //Preguntar a Sergio!!! 
-                //Dentro de un defNumberVector tengo dos defNumber y solamente me está mostrando el del primero y me lo machaca.
-                //Imagino que eso es porque estoy haciendo el nodes[i] y me coge todo como uno solo.
-
-
-                for(var i = 0; i < nodes.length; i++){
-                    return '<input type="number" id="numerics" min=' + nodes[i].getAttribute("min") + ' max = ' + nodes[i].getAttribute("max") + ' title="Format: [format: ' + nodes[i].getAttribute("format") + ", " + nodes[i].getAttribute("min") + ", " + nodes[i].getAttribute("max") + ", "  + nodes[i].getAttribute("step") +' ]">';               
-                }
+                    return '<input type="number" id="numerics" min=' + node.getAttribute("min") + ' max = ' + node.getAttribute("max") + ' title="Format: [format: ' + node.getAttribute("format") + ", " + node.getAttribute("min") + ", " + node.getAttribute("max") + ", "  + node.getAttribute("step") +' ]">';               
             }
             else{
                 return "";
@@ -281,7 +268,120 @@
                 return '<img src="images/yellow_light.png"/>';
             }
         }
+
+        function getVentana(deviceName){
+            var windowId = getWindowID(deviceName);
+            var antiguaVentana = document.getElementById(windowId);
+
+            if(antiguaVentana == null){
+                //Añadimos la nueva ventana al body
+                $('body').append('<div class="deviceWindow" id="' + windowId + '"><div id="'+ windowId +'_tabs" class="windowTabs"><ul></ul></div>' + '</div>');
+
+                $( "#" + windowId + '_tabs' ).tabs();
+                //Inicializacíon de la nueva ventana
+                var dialog = $('#' + windowId).dialog({
+                    title: deviceName,
+                    width: '500px',
+                }); 
+                antiguaVentana = document.getElementById(windowId);
+            }
+            else{
+                debug("Ya existe");
+            }
+
+            return antiguaVentana;
+        }
+
+        function getTabId(deviceName, groupName){
+            var concat = deviceName + "_" + groupName;
+            return concat.replace(/[\W_]/g,"_");
+        }
+
+        function getTab(deviceName, groupName){
+            var tabId = getTabId(deviceName, groupName);
+            var windowId = getWindowID(deviceName);
+
+            var antiguoTab = document.getElementById(tabId);
+
+            if(antiguoTab == null){
+
+
+                var windowTabs = $( "#" + windowId + '_tabs' );
+
+                //document.getElementById(windowId + '_tabs');
+
+                var html = '<div id="' + tabId + '" class="tabGroup">' + '</div>';
+
+                windowTabs.append(html);
+             //   windowTabs.innerHTML += html;
+
+                var html2 = "<li><a href='#"+ tabId +"'>" + groupName + "</a></li>";
+                windowTabs.find( ".ui-tabs-nav" ).append( html2);
+
+                antiguoTab = document.getElementById(tabId);
+
+                windowTabs.tabs( "refresh" );
+            }
+            return antiguoTab;
+        }
     </script>
 
+<script>
+                var ws;  
+            
+            function disconnect() {
+              if (ws != null) {
+                console.log("Desconectando");
+                ws.close();
+                ws = null;
+              }
+            }
+            
+            function connect() {
+               disconnect();
+               
+               ws = new Websock();
+               
+               ws.on('message', funcionLectura);
+               
+               ws.on('open', function(e) {
+                 console.log(">> WebSockets.onopen");
+
+                 ws.send_string("<getProperties version=\"1.7\"/>");
+                 
+                 console.log("<< WebSockets.onopen");
+               });
+               
+               ws.on('close', function(e) {
+                 console.log(">> WebSockets.onclose");
+
+                 console.log("<< WebSockets.onclose");
+               });
+               
+               ws.on('error', function(e) {
+                 console.log(">> WebSockets.onerror");
+
+                 console.log("<< WebSockets.onerror");
+               });
+               
+               console.log("Conectando...");
+               ws.open("ws://localhost:4000");
+            }
+            
+            function funcionLectura() {
+              var length = ws.rQlen();
+              var cadena = ws.rQshiftStr(length);
+              
+              console.log(cadena);
+
+              parserXML("<a>" + cadena + "</a>");
+
+              //Aquí en vez de mostrar la cadena por pantalla, lo que tendré que hacer es parsear todo lo que me llegue
+              //Una vez que esté parseado tendré que ir haciendo ventanas, modificando grupos, etc. 
+
+
+              
+            }
+</script>
     </body>
 </html>

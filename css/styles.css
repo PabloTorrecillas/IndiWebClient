@@ -14,20 +14,20 @@
 .propertyBox{
     background-color: #fff000;
     border-color: #000fff;
-    width: 175px;
+    /*width: 175px;*/
     margin: auto;
     text-align: center;
     font-size: 68%;
 }
 
 #updateButton{
-	width: 25%;
+	/*width: 25%;*/
 	font-size: 11px;
 	padding: 6px 6px;
 }
 
 .updateBox{
-	width: 45%;
+	/*width: 45%;*/
 }
 
 .elementBox{
@@ -40,16 +40,19 @@
 }
 
 .elementBoxContainer{
-	width: 175px;
+	/*width: 175px;*/
 }
 
 #numerics{
 	margin-right: 3em;
-	width: 100px;
+	/*width: 100px;*/
+}
+.tabGroup {
+  max-height: 100%;
+ overflow: auto;
 }
 
-#resizable { 
-	width: 150px; height: 150px; padding: 0.5em; 
+.windowTabs {
+  max-height: 100%;
 }
-
 
