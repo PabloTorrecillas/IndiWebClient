@@ -67,9 +67,9 @@
                         parserDefNumberVector(children[j]);
                     }   
 
-                    /*if(nodeName == 'defSwitchVector'){
+                    if(nodeName == 'defSwitchVector'){
                         parserDefSwitchVector(children[j]);
-                    }*/
+                    } 
                 }
                 
                 debug("");
@@ -142,8 +142,6 @@
 
                 var nodes = node.childNodes;
 
-
-
                 if(nodes.length > 0){
                     html += '<div class = "elementBoxContainer">';
                         for(var i = 0; i < nodes.length; i++){  
@@ -164,7 +162,49 @@
             
         }
 
+        function parserDefSwitchVector(node){
+            var deviceName = node.getAttribute("device");
+            var propertyName = node.getAttribute("name"); 
+            var groupName = node.getAttribute("group");        
 
+            debug(deviceName);
+            var windowId = getWindowId(deviceName);
+            debug(windowId);
+
+            var antiguaVentana = getVentana(deviceName);
+
+            var html = "";
+
+            html += '<div class="deviceInfo">';
+                html += '<div class="propertyBox">'+
+                            '<div id = "' + getPropertyId(deviceName,propertyName) + '_bombilla" style="float:left">' + 
+                                getBombillita(node.getAttribute("state")) + node.getAttribute("name") + 
+                            '</div>';
+                html += '</div>';
+
+                var nodes = node.childNodes;
+
+                if(nodes.length > 0){
+                    html += '<div class = "elementBoxContainer">';
+                        for(var i = 0; i < nodes.length; i++){  
+                            html += 
+                            '<div class = "elementBox">'+ nodes[i].getAttribute("label")   + '-&gt; ' + nodes[i].innerHTML + 
+                                //Llamada a la función rule y así devolver lo que corresponda
+                                //getInputNumber(node.getAttribute("perm"), nodes[i]) + 
+                            '</div>';
+                        }
+
+                    html += '</div>';
+
+                    if(node.getAttribute("perm") != 'ro'){
+                        html +=  '<button id="updateButton" class="btn btn-default" style="float:right">Actualizar</button>';
+                    }
+                }
+            html += '</div>';
+
+            addDeviceToTab(deviceName, groupName, html);
+
+        }
 
 
 
@@ -179,7 +219,6 @@
 
             var active = $( "#" + windowId + "_tabs" ).tabs( "option", "active" );
 
-            debug(active+ "-----");
             if (!active) {
                 $( "#" + windowId + "_tabs" ).tabs({
                   active: 0
