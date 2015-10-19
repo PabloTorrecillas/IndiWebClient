@@ -188,7 +188,7 @@
                     html += '<div class = "elementBoxContainer">';
                         for(var i = 0; i < nodes.length; i++){  
                             html += 
-                            '<div class = "elementBox">'+ nodes[i].getAttribute("label")   + '-&gt; ' + nodes[i].innerHTML + 
+                            '<div class = "elementBox">'+ nodes[i].getAttribute("label") + 
                                 getInputSwitch(node.getAttribute("rule"), nodes[i], node.getAttribute("perm"), node.getAttribute("name")) + 
                             '</div>';
                         }
@@ -242,22 +242,23 @@
 
         function getInputSwitch(rule, node, perm, name){
             switch(rule){
+                //Uno de muchos
                 case 'OneOfMany':
                 if(perm != 'ro'){
                     /*Para que pueda seleccionar solamente uno, el name tiene que ser igual.
                     **Actualmente lo que hago es seleccionar el name del node en concreto y lo paso para así tener el mismo 
                     **y solamente poder seleccionar uno solo*/
-                    return '<input type="radio" name='+ name +'><label for='+ node.getAttribute("label") +'></label>';
+                    return '<input type="submit" name='+ node.getAttribute("name") +' value ='+ node.innerHTML +'>';
                 }
-
+                //Como mucho uno y no tiene por qué seleccionarse uno.
                 case 'AtMostOne':
                 if(perm != 'ro'){
-                    return '<input type="radio"><label for='+ node.getAttribute("label") +'></label>';
+                    return '<input type="submit" name='+ node.getAttribute("name") +' value ='+ node.innerHTML +'>';;
                 }
 
                 case 'AnyOfMany':
                 if(perm != 'ro'){
-                    return '<input type="radio"><label for='+ node.getAttribute("label") +'></label>';
+                    return '<input type="submit" name='+ node.getAttribute("name") +' value ='+ node.innerHTML +'>';
                 }
             }            
         }
