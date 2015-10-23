@@ -251,7 +251,41 @@
             addDeviceToTab(deviceName, groupName, html);
         }
 
-        
+        function parserDefLightVector(node){
+            var deviceName = node.getAttribute("device");
+            var propertyName = node.getAttribute("name"); 
+            var groupName = node.getAttribute("group");        
+
+            debug(deviceName);
+            var windowId = getWindowId(deviceName);
+            debug(windowId);
+
+            var antiguaVentana = getVentana(deviceName);
+
+            var html = "";
+            
+            html += '<div class="deviceInfo">';
+                html += '<div class="propertyBox">'+
+                '<div>' + 
+                getBombillita(node.getAttribute("state"), getPropertyId(deviceName,propertyName) + "_bombilla") + node.getAttribute("name") + '</div>';
+                 html += '</div>';
+
+                var nodes = node.childNodes;
+
+                if(nodes.length > 0){
+                    html += '<div class = "elementBoxContainer">';
+                        for(var i = 0; i < nodes.length; i++){  
+                            html += 
+                            '<div class = "elementBox">'+ nodes[i].getAttribute("label")   + '-&gt; ' + getBombillita(nodes[i].innerHTML, getPropertyId(deviceName,propertyName) + "_bombilla") + 
+                            '</div>';
+                        }
+
+                    html += '</div>';
+                }
+            html += '</div>';
+
+            addDeviceToTab(deviceName, groupName, html);    
+        }
 
 
 
