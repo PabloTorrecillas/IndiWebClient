@@ -81,10 +81,9 @@
 
                     if(nodeName == 'setTextVector'){
                         parserSetTextVector(children[j]);
+                        debug("LLEGAAAAAAA1");
                     }
                 }
-                
-                debug("");
             }
         }
 
@@ -322,40 +321,22 @@
             var deviceName = node.getAttribute("device");
             var propertyName = node.getAttribute("name");
 
-            debug(deviceName);
-            var windowId = getWindowId(deviceName);
-            debug(windowId);
-            
-            var antiguaVentana = getVentana(deviceName);
+            var nodes = node.childNodes;
 
-            var html = "";
+            debug("LLEGA AL PARSER")
 
-            html += '<div class="deviceInfo">';
-                html += '<div class="propertyBox">'+
-                '<div>' + 
-                getBombillita(node.getAttribute("state"), getPropertyId(deviceName,propertyName) + "_bombilla") + node.getAttribute("name") + '</div>';
-                 html += '</div>';
+            for(var i = 0; i < nodes.length; i++){
+                var elementName = nodes[i].getAttribute("name");
+                debug("NODES DE I:");
+                debug(nodes[i]);
 
-                var nodes = node.childNodes;
-
-                if(nodes.length > 0){
-                    html += '<div class="elementBoxContainer">';
-                    for (var i=0; i < nodes.length; i++) {
-                        var elementName = nodes[i].getAttribute("name");
-                        html += 
-                        '<div class = "elementBox">' + nodes[i].getAttribute("label") + "-&gt;" + 
-                            '<div id=' + document.getElementById(getElementId(deviceName,propertyName,elementName) + "_value" )+ '>' + 
+                '<div id=' + document.getElementsByTagName(getElementId(deviceName,propertyName,elementName) + "_value" )+ '>' + 
                                 nodes[i].innerHTML + 
-                            '</div>' +
-                            getInputText(node.getAttribute("perm")) + 
-                        '</div>';                   
-                    }
+                '</div>'
+            }
 
-                   html += '</div>';
 
-               }
-
-            html += '</div>';          
+      
         }  
 
 
