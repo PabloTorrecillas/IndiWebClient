@@ -324,30 +324,22 @@
 
             debug("LLEGA AL PARSER"); 
 
+
+
             for(var i = 0; i < nodes.length; i++){
                 var elementName = nodes[i].getAttribute("name");
                 debug("NODES DE I:");
                 debug(nodes[i]);
 
-                '<div id=' + document.getElementsByTagName(getElementId(deviceName,propertyName,elementName) + "_value" )+ '>' + 
+                var html = '<div id=' + document.getElementsByTagName(getElementId(deviceName,propertyName,elementName) + "_value" )+ '>' + 
                                 nodes[i].innerHTML + 
-                '</div>'
+                '</div>';
 
-                var filter = document.getElementsByTagName("FILTER_SLOT_NAME_1");
+                debug("DEPURANDO!!!!");
+                debug(html);
 
-                debug("DEPURANDO");
-                debug(filter);
-
-
-                /*
-                var id= document.getElementsByTagName(getElementId(deviceName,propertyName,elementName) + "_value" );
-
-                 debug("Esto es el id: " + id);
-                */
             }
 
-
-      
         }  
 
 
