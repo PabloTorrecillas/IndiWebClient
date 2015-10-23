@@ -43,7 +43,7 @@
     <script>
         var globalDebug = true;    
 
-        var xml = '<a><defTextVector device="CCD Simulator" name="DRIVER_INFO" label="Driver Info" group="Options" state="Ok" perm="ro" timeout="60" timestamp="2015-09-22T14:55:11"><defText name="DRIVER_NAME" label="Name">CCD Simulator</defText><defText name="DRIVER_EXEC" label="Exec">indi_simulator_ccd</defText><defText name="DRIVER_VERSION" label="Version">1.0</defText><defText name="DRIVER_INTERFACE" label="Interface">22</defText></defTextVector><defTextVector device="OtroSimulator" name="DRIVER_INFO" label="Driver Info" group="Options" state="Idle" perm="ro" timeout="60" timestamp="2015-09-22T14:55:11"><defText name="DRIVER_NAME" label="Name">CCD Simulator</defText><defText name="DRIVER_EXEC" label="Exec">indi_simulator_ccd</defText><defText name="DRIVER_VERSION" label="Version">1.0</defText><defText name="DRIVER_INTERFACE" label="Interface">22</defText></defTextVector><defSwitchVector device="Telescope Simulator" name="DEBUG" label="Debug" group="Options" state="Idle" perm="rw" rule="OneOfMany" timeout="0" timestamp="2015-09-24T10:07:49"><defSwitch name="ENABLE" label="Enable">Off</defSwitch><defSwitch name="DISABLE" label="Disable">On</defSwitch></defSwitchVector><defNumberVector device="Telescope Simulator" name="EQUATORIAL_EOD_COORD" label="Eq. Coordinates" group="Main Control" state="Idle" perm="rw" timeout="60" timestamp="2015-09-24T10:09:36"><defNumber name="RA" label="RA (hh:mm:ss)" format="%010.6m" min="0" max="24" step="0">0</defNumber><defNumber name="DEC" label="DEC (dd:mm:ss)" format="%010.6m" min="-90" max="90" step="0">0</defNumber></defNumberVector><defNumberVector device="CCD Simulator" name="FILTER_SLOT" label="Filter Slot" group="Filter Wheel" state="Idle" perm="rw" timeout="60" timestamp="2015-09-28T16:27:32"><defNumber name="FILTER_SLOT_VALUE" label="Filter" format="%3.0f" min="1" max="5" step="1">1</defNumber></defNumberVector><defTextVector device="CCD Simulator" name="FILTER_NAME" label="Filter names" group="Filter Wheel" state="Alert" perm="rw" timeout="0" timestamp="2015-09-28T16:27:32"><defText name="FILTER_SLOT_NAME_1" label="Filter#1">Red</defText><defText name="FILTER_SLOT_NAME_2" label="Filter#2">Green</defText><defText name="FILTER_SLOT_NAME_3" label="Filter#3">Blue</defText><defText name="FILTER_SLOT_NAME_4" label="Filter#4">H_Alpha</defText><defText name="FILTER_SLOT_NAME_5" label="Filter#5">Luminosity</defText></defTextVector><defBLOBVector device="CCD Simulator" name="CCD1" label="Image Data" group="Image Info" state="Idle" perm="ro" timeout="60" timestamp="2015-09-28T16:27:32"><defBLOB name="CCD1" label="Image"/></defBLOBVector><setSwitchVector device="CCD Simulator" name="CCD_COOLER" state="Busy" timeout="0" timestamp="2015-09-28T16:35:20"><oneSwitch name="COOLER_ON">On</oneSwitch><oneSwitch name="COOLER_OFF">Off</oneSwitch></setSwitchVector><defSwitchVector device="CCD Simulator" name="CONNECTION" label="Connection" group="Main Control" state="Idle" perm="rw" rule="OneOfMany" timeout="60" timestamp="2015-10-15T09:45:26"><defSwitch name="CONNECT" label="Connect">Off</defSwitch><defSwitch name="DISCONNECT" label="Disconnect">On</defSwitch></defSwitchVector><defSwitchVector device="Telescope Simulator" name="CONFIG_PROCESS" label="Configuration" group="Options" state="Idle" perm="rw" rule="AtMostOne" timeout="0" timestamp="2015-10-15T11:44:12"><defSwitch name="CONFIG_LOAD" label="Load">Off</defSwitch><defSwitch name="CONFIG_SAVE" label="Save">Off</defSwitch><defSwitch name="CONFIG_DEFAULT" label="Default">Off</defSwitch></defSwitchVector></a>';
+        var xml = '<a><defTextVector device="CCD Simulator" name="DRIVER_INFO" label="Driver Info" group="Options" state="Ok" perm="ro" timeout="60" timestamp="2015-09-22T14:55:11"><defText name="DRIVER_NAME" label="Name">CCD Simulator</defText><defText name="DRIVER_EXEC" label="Exec">indi_simulator_ccd</defText><defText name="DRIVER_VERSION" label="Version">1.0</defText><defText name="DRIVER_INTERFACE" label="Interface">22</defText></defTextVector><defTextVector device="OtroSimulator" name="DRIVER_INFO" label="Driver Info" group="Options" state="Idle" perm="ro" timeout="60" timestamp="2015-09-22T14:55:11"><defText name="DRIVER_NAME" label="Name">CCD Simulator</defText><defText name="DRIVER_EXEC" label="Exec">indi_simulator_ccd</defText><defText name="DRIVER_VERSION" label="Version">1.0</defText><defText name="DRIVER_INTERFACE" label="Interface">22</defText></defTextVector><defSwitchVector device="Telescope Simulator" name="DEBUG" label="Debug" group="Options" state="Idle" perm="rw" rule="OneOfMany" timeout="0" timestamp="2015-09-24T10:07:49"><defSwitch name="ENABLE" label="Enable">Off</defSwitch><defSwitch name="DISABLE" label="Disable">On</defSwitch></defSwitchVector><defNumberVector device="Telescope Simulator" name="EQUATORIAL_EOD_COORD" label="Eq. Coordinates" group="Main Control" state="Idle" perm="rw" timeout="60" timestamp="2015-09-24T10:09:36"><defNumber name="RA" label="RA (hh:mm:ss)" format="%010.6m" min="0" max="24" step="0">0</defNumber><defNumber name="DEC" label="DEC (dd:mm:ss)" format="%010.6m" min="-90" max="90" step="0">0</defNumber></defNumberVector><defNumberVector device="CCD Simulator" name="FILTER_SLOT" label="Filter Slot" group="Filter Wheel" state="Idle" perm="rw" timeout="60" timestamp="2015-09-28T16:27:32"><defNumber name="FILTER_SLOT_VALUE" label="Filter" format="%3.0f" min="1" max="5" step="1">1</defNumber></defNumberVector><defTextVector device="CCD Simulator" name="FILTER_NAME" label="Filter names" group="Filter Wheel" state="Alert" perm="rw" timeout="0" timestamp="2015-09-28T16:27:32"><defText name="FILTER_SLOT_NAME_1" label="Filter#1">Red</defText><defText name="FILTER_SLOT_NAME_2" label="Filter#2">Green</defText><defText name="FILTER_SLOT_NAME_3" label="Filter#3">Blue</defText><defText name="FILTER_SLOT_NAME_4" label="Filter#4">H_Alpha</defText><defText name="FILTER_SLOT_NAME_5" label="Filter#5">Luminosity</defText></defTextVector><defBLOBVector device="CCD Simulator" name="CCD1" label="Image Data" group="Image Info" state="Idle" perm="ro" timeout="60" timestamp="2015-09-28T16:27:32"><defBLOB name="CCD1" label="Image"/></defBLOBVector><setSwitchVector device="CCD Simulator" name="CCD_COOLER" state="Busy" timeout="0" timestamp="2015-09-28T16:35:20"><oneSwitch name="COOLER_ON">On</oneSwitch><oneSwitch name="COOLER_OFF">Off</oneSwitch></setSwitchVector><defSwitchVector device="CCD Simulator" name="CONNECTION" label="Connection" group="Main Control" state="Idle" perm="rw" rule="OneOfMany" timeout="60" timestamp="2015-10-15T09:45:26"><defSwitch name="CONNECT" label="Connect">Off</defSwitch><defSwitch name="DISCONNECT" label="Disconnect">On</defSwitch></defSwitchVector><defSwitchVector device="Telescope Simulator" name="CONFIG_PROCESS" label="Configuration" group="Options" state="Idle" perm="rw" rule="AtMostOne" timeout="0" timestamp="2015-10-15T11:44:12"><defSwitch name="CONFIG_LOAD" label="Load">Off</defSwitch><defSwitch name="CONFIG_SAVE" label="Save">Off</defSwitch><defSwitch name="CONFIG_DEFAULT" label="Default">Off</defSwitch></defSwitchVector><defLightVector device="CCD Simulator" name="Ejemplo_LUZ" label="Ejemplo Luz" group="Options" state="Ok" timeout="60" timestamp="2015-09-22T14:55:11"><defLight name="Luz1" label="Luz 1">Alert</defLight><defLight name="Luz2" label="Luz 2">Ok</defLight><defLight name="Luz3" label="Luz 3">Idle</defLight><defLight name="Luz4" label="Luz 4">Busy</defLight></defLightVector></a>';
        
 
         function parserXML(xml){
@@ -74,6 +74,10 @@
                     if(nodeName == 'defBLOBVector'){
                         parserDefBLOBVector(children[j]);                
                     }
+
+                    if(nodeName == 'defLightVector'){
+                        parserDefLightVector(children[j]);
+                    }
                 }
                 
                 debug("");
@@ -94,8 +98,8 @@
 
             html += '<div class="deviceInfo">';
                 html += '<div class="propertyBox">'+
-                '<div id = "' + getPropertyId(deviceName,propertyName) + '_bombilla" style="float:left">' + 
-                getBombillita(node.getAttribute("state")) + node.getAttribute("name") + '</div>';
+                '<div>' + 
+                getBombillita(node.getAttribute("state"), getPropertyId(deviceName,propertyName) + "_bombilla") + node.getAttribute("name") + '</div>';
                  html += '</div>';
 
                 var nodes = node.childNodes;
@@ -105,6 +109,8 @@
                    for (var i=0; i < nodes.length; i++) {
                              debug(nodes[i] + "******");
                        html += 
+                       //getElementId(deviceName, properyName, elementName)
+                       //nodes.inner tiene que tener un nombre y tengo que rodearlo con un nombre.
                        '<div class = "elementBox">' + nodes[i].getAttribute("label") + "-&gt;" + nodes[i].innerHTML + 
                             getInputText(node.getAttribute("perm")) + '</div>';                   
                    }
@@ -139,10 +145,9 @@
             
             html += '<div class="deviceInfo">';
                 html += '<div class="propertyBox">'+
-                            '<div id = "' + getPropertyId(deviceName,propertyName) + '_bombilla" style="float:left">' + 
-                                getBombillita(node.getAttribute("state")) + node.getAttribute("name") + 
-                            '</div>';
-                html += '</div>';
+                '<div>' + 
+                getBombillita(node.getAttribute("state"), getPropertyId(deviceName,propertyName) + "_bombilla") + node.getAttribute("name") + '</div>';
+                 html += '</div>';
 
                 var nodes = node.childNodes;
 
@@ -181,10 +186,9 @@
 
             html += '<div class="deviceInfo">';
                 html += '<div class="propertyBox">'+
-                            '<div id = "' + getPropertyId(deviceName,propertyName) + '_bombilla" style="float:left">' + 
-                                getBombillita(node.getAttribute("state")) + node.getAttribute("name") + 
-                            '</div>';
-                html += '</div>';
+                '<div>' + 
+                getBombillita(node.getAttribute("state"), getPropertyId(deviceName,propertyName) + "_bombilla") + node.getAttribute("name") + '</div>';
+                 html += '</div>';
 
                 var nodes = node.childNodes;
 
@@ -220,10 +224,11 @@
             
             html += '<div class="deviceInfo">';
                 html += '<div class="propertyBox">'+
-                            '<div id = "' + getPropertyId(deviceName,propertyName) + '_bombilla" style="float:left">' + 
-                                getBombillita(node.getAttribute("state")) + node.getAttribute("name") + 
-                            '</div>';
-                html += '</div>';
+                '<div>' + 
+                getBombillita(node.getAttribute("state"), getPropertyId(deviceName,propertyName) + "_bombilla") + node.getAttribute("name") + '</div>';
+                 html += '</div>';
+
+                var nodes = node.childNodes;
 
                 var nodes = node.childNodes;
 
@@ -231,7 +236,7 @@
                     html += '<div class = "elementBoxContainer">';
                         for(var i = 0; i < nodes.length; i++){  
                             html += 
-                            '<div class = "elementBox">'+ nodes[i].getAttribute("label")   + '-&gt; ' + nodes[i].innerHTML +
+                            '<div class = "elementBox">'+ nodes[i].getAttribute("label")   + '-&gt; ' + '<input type="text" placeholder="SizeBLOB">' + '<input type="text" placeholder="FormatBLOB">' +
                             '</div>';
                         }
 
@@ -245,6 +250,8 @@
 
             addDeviceToTab(deviceName, groupName, html);
         }
+
+        
 
 
 
@@ -290,17 +297,16 @@
                 //Uno de muchos
                 case 'OneOfMany':
                 if(perm != 'ro'){
-                    /*Para que pueda seleccionar solamente uno, el name tiene que ser igual.
-                    **Actualmente lo que hago es seleccionar el name del node en concreto y lo paso para así tener el mismo 
-                    **y solamente poder seleccionar uno solo*/
+                    /*Combo con las opciones que vayan saliendo.*/
                     return '<input type="submit" name='+ node.getAttribute("name") +' value ='+ node.innerHTML +'>';
                 }
-                //Como mucho uno y no tiene por qué seleccionarse uno.
+                /*Combo pero que la primera opción sea en blanco para que así se pueda dejar vacía.*/
                 case 'AtMostOne':
                 if(perm != 'ro'){
                     return '<input type="submit" name='+ node.getAttribute("name") +' value ='+ node.innerHTML +'>';;
                 }
-
+                //Los que sean. Utilizar un checkbox.
+                /*Poner todos los checkbox y seleccionar todos los que se quieran de todos ellos.*/
                 case 'AnyOfMany':
                 if(perm != 'ro'){
                     return '<input type="submit" name='+ node.getAttribute("name") +' value ='+ node.innerHTML +'>';
@@ -323,20 +329,20 @@
             return concat.replace(/[\W_]/g,"_");
         }
 
-        function getBombillita(state){
+        function getBombillita(state, id){
 
             switch(state){
                 case 'Idle':
-                return '<img src="images/grey_light.png"/>';
+                return '<img src="images/grey_light.png" id="'+ id +'"/>';
 
                 case 'Ok':
-                return '<img src="images/green_light.png"/>';
+                return '<img src="images/green_light.png" id="'+ id +'"/>';
 
                 case 'Alert':
-                return '<img src="images/red_light.png"/>';
+                return '<img src="images/red_light.png" id="'+ id +'"/>';
 
                 case 'Busy':
-                return '<img src="images/yellow_light.png"/>';
+                return '<img src="images/yellow_light.png" id="'+ id +'"/>';
             }
         }
 
@@ -376,17 +382,14 @@
 
             if(antiguoTab == null){
 
-
                 var windowTabs = $( "#" + windowId + '_tabs' );
-
-                //document.getElementById(windowId + '_tabs');
 
                 var html = '<div id="' + tabId + '" class="tabGroup">' + '</div>';
 
                 windowTabs.append(html);
-             //   windowTabs.innerHTML += html;
 
                 var html2 = "<li><a href='#"+ tabId +"'>" + groupName + "</a></li>";
+
                 windowTabs.find( ".ui-tabs-nav" ).append( html2);
 
                 antiguoTab = document.getElementById(tabId);
