@@ -83,10 +83,17 @@
                 debug("");
             }
         }
+
+        /*
+         *
+         *Funciones de definición de los diferentes tipos: Text - Number - Siwtch - BLOB - Light
+         *
+         **/
+
         function parserDefTextVector(node){
             var deviceName = node.getAttribute("device");
             var propertyName = node.getAttribute("name");
-            var groupName = node.getAttribute("group");  
+            var groupName = node.getAttribute("group"); 
 
             debug(deviceName);
             var windowId = getWindowId(deviceName);
@@ -105,15 +112,17 @@
                 var nodes = node.childNodes;
 
                 if(nodes.length > 0){
-                   html += '<div class="elementBoxContainer">';
-                   for (var i=0; i < nodes.length; i++) {
-                             debug(nodes[i] + "******");
-                       html += 
-                       //getElementId(deviceName, properyName, elementName)
-                       //nodes.inner tiene que tener un nombre y tengo que rodearlo con un nombre.
-                       '<div class = "elementBox">' + nodes[i].getAttribute("label") + "-&gt;" + nodes[i].innerHTML + 
-                            getInputText(node.getAttribute("perm")) + '</div>';                   
-                   }
+                    html += '<div class="elementBoxContainer">';
+                    for (var i=0; i < nodes.length; i++) {
+                        var elementName = nodes[i].getAttribute("name");
+                        html += 
+                        '<div class = "elementBox">' + nodes[i].getAttribute("label") + "-&gt;" + 
+                            '<div id=' + getElementId(deviceName,propertyName,elementName) + "_value" + '>' + 
+                                nodes[i].innerHTML + 
+                            '</div>' +
+                            getInputText(node.getAttribute("perm")) + 
+                        '</div>';                   
+                    }
 
                    html += '</div>';
 
@@ -125,9 +134,7 @@
 
             html += '</div>';
 
-            addDeviceToTab(deviceName, groupName, html);
-
-            
+            addDeviceToTab(deviceName, groupName, html);           
         }
 
         function parserDefNumberVector(node){
@@ -154,9 +161,14 @@
                 if(nodes.length > 0){
                     html += '<div class = "elementBoxContainer">';
                         for(var i = 0; i < nodes.length; i++){  
+                            var elementName = nodes[i].getAttribute("name");
                             html += 
-                            '<div class = "elementBox">'+ nodes[i].getAttribute("label")   + '-&gt; ' + nodes[i].innerHTML + getInputNumber(node.getAttribute("perm"), nodes[i]) + 
-                            '</div>';
+                            '<div class = "elementBox">' + nodes[i].getAttribute("label") + "-&gt;" + 
+                                '<div id=' + getElementId(deviceName,propertyName,elementName) + "_value" + '>' + 
+                                    nodes[i].innerHTML + 
+                                '</div>' +
+                                getInputNumber(node.getAttribute("perm"), nodes[i]) + 
+                            '</div>';  
                         }
 
                     html += '</div>';
@@ -206,7 +218,6 @@
             html += '</div>';
 
             addDeviceToTab(deviceName, groupName, html);
-
         }
 
         function parserDefBLOBVector(node){
@@ -234,9 +245,14 @@
 
                 if(nodes.length > 0){
                     html += '<div class = "elementBoxContainer">';
-                        for(var i = 0; i < nodes.length; i++){  
+                        for(var i = 0; i < nodes.length; i++){
+                            var elementName = nodes[i].getAttribute("name");  
                             html += 
-                            '<div class = "elementBox">'+ nodes[i].getAttribute("label")   + '-&gt; ' + '<input type="text" placeholder="SizeBLOB">' + '<input type="text" placeholder="FormatBLOB">' +
+                            '<div class = "elementBox">'+ nodes[i].getAttribute("label")   + '-&gt; ' + 
+                                '<div id=' + getElementId(deviceName,propertyName,elementName) + "_value" + '>' + 
+                                    '<input type="text" placeholder="SizeBLOB">' + 
+                                    '<input type="text" placeholder="FormatBLOB">' + 
+                                '</div>' + 
                             '</div>';
                         }
 
@@ -275,8 +291,12 @@
                 if(nodes.length > 0){
                     html += '<div class = "elementBoxContainer">';
                         for(var i = 0; i < nodes.length; i++){  
+                            var elementName = nodes[i].getAttribute("name"); 
                             html += 
-                            '<div class = "elementBox">'+ nodes[i].getAttribute("label")   + '-&gt; ' + getBombillita(nodes[i].innerHTML, getPropertyId(deviceName,propertyName) + "_bombilla") + 
+                            '<div class = "elementBox">'+ nodes[i].getAttribute("label")   + '-&gt; ' + 
+                                '<div id=' + getElementId(deviceName,propertyName,elementName) + "_value" + '>' + 
+                                    getBombillita(nodes[i].innerHTML, getPropertyId(deviceName,propertyName) + "_bombilla") + 
+                                '</div>' + 
                             '</div>';
                         }
 
@@ -287,6 +307,57 @@
             addDeviceToTab(deviceName, groupName, html);    
         }
 
+
+        /*
+         *
+         *Funciones de modificación de los diferentes tipos: Text - Number - Siwtch - BLOB - Light
+         *
+         **/
+
+        function parserSetTextVector(node){
+            var deviceName = node.getAttribute("device");
+            var propertyName = node.getAttribute("name");
+            var groupName = node.getAttribute("group");  
+
+            debug(deviceName);
+            var windowId = getWindowId(deviceName);
+            debug(windowId);
+            
+            var antiguaVentana = getVentana(deviceName);
+
+            var html = "";
+
+            html += '<div class="deviceInfo">';
+                html += '<div class="propertyBox">'+
+                '<div>' + 
+                getBombillita(node.getAttribute("state"), getPropertyId(deviceName,propertyName) + "_bombilla") + node.getAttribute("name") + '</div>';
+                 html += '</div>';
+
+                var nodes = node.childNodes;
+
+                if(nodes.length > 0){
+                   html += '<div class="elementBoxContainer">';
+                   for (var i=0; i < nodes.length; i++) {
+                             debug(nodes[i] + "******");
+                       html += 
+                       //getElementId(deviceName, properyName, elementName)
+                       //nodes.inner tiene que tener un nombre y tengo que rodearlo con un nombre.
+                       '<div class = "elementBox">' + nodes[i].getAttribute("label") + "-&gt;" + nodes[i].innerHTML + 
+                            getInputText(node.getAttribute("perm")) + '</div>';                   
+                   }
+
+                   html += '</div>';
+
+               }
+
+                if(node.getAttribute("perm") != 'ro'){
+                    html +=  '<button id="updateButton" class="btn btn-default" style="float:right">Actualizar</button>';
+                }
+
+            html += '</div>';
+
+            addDeviceToTab(deviceName, groupName, html);
+        }
 
 
 
@@ -360,6 +431,13 @@
 
         function getPropertyId(deviceName, propertyName){
             var concat = deviceName + "_" + propertyName;
+
+            return concat.replace(/[\W_]/g,"_");
+        }
+
+        function getElementId(deviceName, propertyName, elementName){
+            var concat = deviceName + "_" + propertyName + "_" + elementName;
+
             return concat.replace(/[\W_]/g,"_");
         }
 
