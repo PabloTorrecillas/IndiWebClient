@@ -81,7 +81,6 @@
 
                     if(nodeName == 'setTextVector'){
                         parserSetTextVector(children[j]);
-                        debug("LLEGAAAAAAA1");
                     }
                 }
             }
@@ -323,7 +322,7 @@
 
             var nodes = node.childNodes;
 
-            debug("LLEGA AL PARSER")
+            debug("LLEGA AL PARSER"); 
 
             for(var i = 0; i < nodes.length; i++){
                 var elementName = nodes[i].getAttribute("name");
@@ -333,6 +332,18 @@
                 '<div id=' + document.getElementsByTagName(getElementId(deviceName,propertyName,elementName) + "_value" )+ '>' + 
                                 nodes[i].innerHTML + 
                 '</div>'
+
+                var filter = document.getElementsByTagName("FILTER_SLOT_NAME_1");
+
+                debug("DEPURANDO");
+                debug(filter);
+
+
+                /*
+                var id= document.getElementsByTagName(getElementId(deviceName,propertyName,elementName) + "_value" );
+
+                 debug("Esto es el id: " + id);
+                */
             }
 
 
