@@ -166,9 +166,9 @@
                             var elementName = nodes[i].getAttribute("name");
                             html += 
                             '<div class = "elementBox">' + nodes[i].getAttribute("label") + "-&gt;" + 
-                                '<div id=' + getElementId(deviceName,propertyName,elementName) + "_value" + '>' + 
-                                    nodes[i].innerHTML + 
-                                '</div>' +
+                                '<div id="' + getElementId(deviceName,propertyName,elementName) + "_value" + '">' + 
+                                nodes[i].innerHTML + 
+                            '</div>' +
                                 getInputNumber(node.getAttribute("perm"), nodes[i]) + 
                             '</div>';  
                         }
@@ -243,15 +243,13 @@
 
                 var nodes = node.childNodes;
 
-                var nodes = node.childNodes;
-
                 if(nodes.length > 0){
                     html += '<div class = "elementBoxContainer">';
                         for(var i = 0; i < nodes.length; i++){
                             var elementName = nodes[i].getAttribute("name");  
                             html += 
                             '<div class = "elementBox">'+ nodes[i].getAttribute("label")   + '-&gt; ' + 
-                                '<div id=' + getElementId(deviceName,propertyName,elementName) + "_value" + '>' + 
+                                '<div id="' + getElementId(deviceName,propertyName,elementName) + "_value" + '">' + 
                                     '<input type="text" placeholder="SizeBLOB">' + 
                                     '<input type="text" placeholder="FormatBLOB">' + 
                                 '</div>' + 
@@ -296,7 +294,7 @@
                             var elementName = nodes[i].getAttribute("name"); 
                             html += 
                             '<div class = "elementBox">'+ nodes[i].getAttribute("label")   + '-&gt; ' + 
-                                '<div id=' + getElementId(deviceName,propertyName,elementName) + "_value" + '>' + 
+                                '<div id="' + getElementId(deviceName,propertyName,elementName) + "_value" + '">' + 
                                     getBombillita(nodes[i].innerHTML, getPropertyId(deviceName,propertyName) + "_bombilla") + 
                                 '</div>' + 
                             '</div>';
