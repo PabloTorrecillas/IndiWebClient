@@ -119,7 +119,7 @@
                         var elementName = nodes[i].getAttribute("name");
                         html += 
                         '<div class = "elementBox">' + nodes[i].getAttribute("label") + "-&gt;" + 
-                            '<div id=' + getElementId(deviceName,propertyName,elementName) + "_value" + '>' + 
+                            '<div id="' + getElementId(deviceName,propertyName,elementName) + "_value" + '">' + 
                                 nodes[i].innerHTML + 
                             '</div>' +
                             getInputText(node.getAttribute("perm")) + 
@@ -317,30 +317,20 @@
          **/
 
         function parserSetTextVector(node){
-            var deviceName = node.getAttribute("device");
-            var propertyName = node.getAttribute("name");
+           var deviceName = node.getAttribute("device");
+           var propertyName = node.getAttribute("name");
 
-            var nodes = node.childNodes;
+           var nodes = node.childNodes;
 
-            debug("LLEGA AL PARSER"); 
+           for(var i = 0; i < nodes.length; i++){
+               var elementName = nodes[i].getAttribute("name");
 
+               var existingElement = document.getElementById(getElementId(deviceName,propertyName,elementName) + "_value");
 
+               existingElement.innerHTML = nodes[i].innerHTML;
+           }
 
-            for(var i = 0; i < nodes.length; i++){
-                var elementName = nodes[i].getAttribute("name");
-                debug("NODES DE I:");
-                debug(nodes[i]);
-
-                var html = '<div id=' + document.getElementsByTagName(getElementId(deviceName,propertyName,elementName) + "_value" )+ '>' + 
-                                nodes[i].innerHTML + 
-                '</div>';
-
-                debug("DEPURANDO!!!!");
-                debug(html);
-
-            }
-
-        }  
+       } 
 
 
 
