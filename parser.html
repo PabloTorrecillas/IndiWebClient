@@ -43,7 +43,7 @@
     <script>
         var globalDebug = true;    
 
-        var xml = '<a><defTextVector device="CCD Simulator" name="DRIVER_INFO" label="Driver Info" group="Options" state="Ok" perm="ro" timeout="60" timestamp="2015-09-22T14:55:11"><defText name="DRIVER_NAME" label="Name">CCD Simulator</defText><defText name="DRIVER_EXEC" label="Exec">indi_simulator_ccd</defText><defText name="DRIVER_VERSION" label="Version">1.0</defText><defText name="DRIVER_INTERFACE" label="Interface">22</defText></defTextVector><defTextVector device="OtroSimulator" name="DRIVER_INFO" label="Driver Info" group="Options" state="Idle" perm="ro" timeout="60" timestamp="2015-09-22T14:55:11"><defText name="DRIVER_NAME" label="Name">CCD Simulator</defText><defText name="DRIVER_EXEC" label="Exec">indi_simulator_ccd</defText><defText name="DRIVER_VERSION" label="Version">1.0</defText><defText name="DRIVER_INTERFACE" label="Interface">22</defText></defTextVector><defSwitchVector device="Telescope Simulator" name="DEBUG" label="Debug" group="Options" state="Idle" perm="rw" rule="OneOfMany" timeout="0" timestamp="2015-09-24T10:07:49"><defSwitch name="ENABLE" label="Enable">Off</defSwitch><defSwitch name="DISABLE" label="Disable">On</defSwitch></defSwitchVector><defNumberVector device="Telescope Simulator" name="EQUATORIAL_EOD_COORD" label="Eq. Coordinates" group="Main Control" state="Idle" perm="rw" timeout="60" timestamp="2015-09-24T10:09:36"><defNumber name="RA" label="RA (hh:mm:ss)" format="%010.6m" min="0" max="24" step="0">0</defNumber><defNumber name="DEC" label="DEC (dd:mm:ss)" format="%010.6m" min="-90" max="90" step="0">0</defNumber></defNumberVector><defNumberVector device="CCD Simulator" name="FILTER_SLOT" label="Filter Slot" group="Filter Wheel" state="Idle" perm="rw" timeout="60" timestamp="2015-09-28T16:27:32"><defNumber name="FILTER_SLOT_VALUE" label="Filter" format="%3.0f" min="1" max="5" step="1">1</defNumber></defNumberVector><defTextVector device="CCD Simulator" name="FILTER_NAME" label="Filter names" group="Filter Wheel" state="Alert" perm="rw" timeout="0" timestamp="2015-09-28T16:27:32"><defText name="FILTER_SLOT_NAME_1" label="Filter#1">Red</defText><defText name="FILTER_SLOT_NAME_2" label="Filter#2">Green</defText><defText name="FILTER_SLOT_NAME_3" label="Filter#3">Blue</defText><defText name="FILTER_SLOT_NAME_4" label="Filter#4">H_Alpha</defText><defText name="FILTER_SLOT_NAME_5" label="Filter#5">Luminosity</defText></defTextVector><defBLOBVector device="CCD Simulator" name="CCD1" label="Image Data" group="Image Info" state="Idle" perm="ro" timeout="60" timestamp="2015-09-28T16:27:32"><defBLOB name="CCD1" label="Image"/></defBLOBVector><setSwitchVector device="CCD Simulator" name="CCD_COOLER" state="Busy" timeout="0" timestamp="2015-09-28T16:35:20"><oneSwitch name="COOLER_ON">On</oneSwitch><oneSwitch name="COOLER_OFF">Off</oneSwitch></setSwitchVector><defSwitchVector device="CCD Simulator" name="CONNECTION" label="Connection" group="Main Control" state="Idle" perm="rw" rule="OneOfMany" timeout="60" timestamp="2015-10-15T09:45:26"><defSwitch name="CONNECT" label="Connect">Off</defSwitch><defSwitch name="DISCONNECT" label="Disconnect">On</defSwitch></defSwitchVector><defSwitchVector device="Telescope Simulator" name="CONFIG_PROCESS" label="Configuration" group="Options" state="Idle" perm="rw" rule="AtMostOne" timeout="0" timestamp="2015-10-15T11:44:12"><defSwitch name="CONFIG_LOAD" label="Load">Off</defSwitch><defSwitch name="CONFIG_SAVE" label="Save">Off</defSwitch><defSwitch name="CONFIG_DEFAULT" label="Default">Off</defSwitch></defSwitchVector><defLightVector device="CCD Simulator" name="Ejemplo_LUZ" label="Ejemplo Luz" group="Options" state="Ok" timeout="60" timestamp="2015-09-22T14:55:11"><defLight name="Luz1" label="Luz 1">Alert</defLight><defLight name="Luz2" label="Luz 2">Ok</defLight><defLight name="Luz3" label="Luz 3">Idle</defLight><defLight name="Luz4" label="Luz 4">Busy</defLight></defLightVector><setTextVector device="CCD Simulator" name="FILTER_NAME" state="Ok" timeout="0" timestamp="2015-10-23T10:13:31"><oneText name="FILTER_SLOT_NAME_1">Otro</oneText><oneText name="FILTER_SLOT_NAME_2">Verde</oneText><oneText name="FILTER_SLOT_NAME_3">Azul</oneText><oneText name="FILTER_SLOT_NAME_4">H_Alpha</oneText><oneText name="FILTER_SLOT_NAME_5">Luminosidad</oneText></setTextVector><setNumberVector device="Telescope Simulator" name="EQUATORIAL_EOD_COORD" state="Idle" timeout="60" timestamp="2015-10-26T18:25:52"><oneNumber name="RA">0.0061339482475999997091</oneNumber><oneNumber name="DEC">90</oneNumber></setNumberVector></a>';
+        var xml = '<a><defTextVector device="CCD Simulator" name="DRIVER_INFO" label="Driver Info" group="Options" state="Ok" perm="ro" timeout="60" timestamp="2015-09-22T14:55:11"><defText name="DRIVER_NAME" label="Name">CCD Simulator</defText><defText name="DRIVER_EXEC" label="Exec">indi_simulator_ccd</defText><defText name="DRIVER_VERSION" label="Version">1.0</defText><defText name="DRIVER_INTERFACE" label="Interface">22</defText></defTextVector><defTextVector device="OtroSimulator" name="DRIVER_INFO" label="Driver Info" group="Options" state="Idle" perm="ro" timeout="60" timestamp="2015-09-22T14:55:11"><defText name="DRIVER_NAME" label="Name">CCD Simulator</defText><defText name="DRIVER_EXEC" label="Exec">indi_simulator_ccd</defText><defText name="DRIVER_VERSION" label="Version">1.0</defText><defText name="DRIVER_INTERFACE" label="Interface">22</defText></defTextVector><defSwitchVector device="Telescope Simulator" name="DEBUG" label="Debug" group="Options" state="Idle" perm="rw" rule="OneOfMany" timeout="0" timestamp="2015-09-24T10:07:49"><defSwitch name="ENABLE" label="Enable">Off</defSwitch><defSwitch name="DISABLE" label="Disable">On</defSwitch></defSwitchVector><defNumberVector device="Telescope Simulator" name="EQUATORIAL_EOD_COORD" label="Eq. Coordinates" group="Main Control" state="Idle" perm="rw" timeout="60" timestamp="2015-09-24T10:09:36"><defNumber name="RA" label="RA (hh:mm:ss)" format="%010.6m" min="0" max="24" step="0">0</defNumber><defNumber name="DEC" label="DEC (dd:mm:ss)" format="%010.6m" min="-90" max="90" step="0">0</defNumber></defNumberVector><defNumberVector device="CCD Simulator" name="FILTER_SLOT" label="Filter Slot" group="Filter Wheel" state="Idle" perm="rw" timeout="60" timestamp="2015-09-28T16:27:32"><defNumber name="FILTER_SLOT_VALUE" label="Filter" format="%3.0f" min="1" max="5" step="1">1</defNumber></defNumberVector><defTextVector device="CCD Simulator" name="FILTER_NAME" label="Filter names" group="Filter Wheel" state="Alert" perm="rw" timeout="0" timestamp="2015-09-28T16:27:32"><defText name="FILTER_SLOT_NAME_1" label="Filter#1">Red</defText><defText name="FILTER_SLOT_NAME_2" label="Filter#2">Green</defText><defText name="FILTER_SLOT_NAME_3" label="Filter#3">Blue</defText><defText name="FILTER_SLOT_NAME_4" label="Filter#4">H_Alpha</defText><defText name="FILTER_SLOT_NAME_5" label="Filter#5">Luminosity</defText></defTextVector><defBLOBVector device="CCD Simulator" name="CCD1" label="Image Data" group="Image Info" state="Idle" perm="ro" timeout="60" timestamp="2015-09-28T16:27:32"><defBLOB name="CCD1" label="Image"/></defBLOBVector><setSwitchVector device="CCD Simulator" name="CCD_COOLER" state="Busy" timeout="0" timestamp="2015-09-28T16:35:20"><oneSwitch name="COOLER_ON">On</oneSwitch><oneSwitch name="COOLER_OFF">Off</oneSwitch></setSwitchVector><defSwitchVector device="CCD Simulator" name="CONNECTION" label="Connection" group="Main Control" state="Idle" perm="rw" rule="OneOfMany" timeout="60" timestamp="2015-10-15T09:45:26"><defSwitch name="CONNECT" label="Connect">Off</defSwitch><defSwitch name="DISCONNECT" label="Disconnect">On</defSwitch></defSwitchVector><defSwitchVector device="Telescope Simulator" name="CONFIG_PROCESS" label="Configuration" group="Options" state="Idle" perm="rw" rule="AtMostOne" timeout="0" timestamp="2015-10-15T11:44:12"><defSwitch name="CONFIG_LOAD" label="Load">Off</defSwitch><defSwitch name="CONFIG_SAVE" label="Save">Off</defSwitch><defSwitch name="CONFIG_DEFAULT" label="Default">Off</defSwitch></defSwitchVector><defLightVector device="CCD Simulator" name="Ejemplo_LUZ" label="Ejemplo Luz" group="Options" state="Ok" timeout="60" timestamp="2015-09-22T14:55:11"><defLight name="Luz1" label="Luz 1">Alert</defLight><defLight name="Luz2" label="Luz 2">Ok</defLight><defLight name="Luz3" label="Luz 3">Idle</defLight><defLight name="Luz4" label="Luz 4">Busy</defLight></defLightVector><setTextVector device="CCD Simulator" name="FILTER_NAME" state="Busy" timeout="0" timestamp="2015-10-23T10:13:31"><oneText name="FILTER_SLOT_NAME_1">Otro</oneText><oneText name="FILTER_SLOT_NAME_2">Verde</oneText><oneText name="FILTER_SLOT_NAME_3">Azul</oneText><oneText name="FILTER_SLOT_NAME_4">H_Alpha</oneText><oneText name="FILTER_SLOT_NAME_5">Luminosidad</oneText></setTextVector><setNumberVector device="Telescope Simulator" name="EQUATORIAL_EOD_COORD" state="Idle" timeout="60" timestamp="2015-10-26T18:25:52"><oneNumber name="RA">0.0061339482475999997091</oneNumber><oneNumber name="DEC">90</oneNumber></setNumberVector><defSwitchVector device="Telescope Simulator" name="PRUEBA_CHECKBOX" label="Configuration" group="Options" state="Idle" perm="rw" rule="AnyOfMany" timeout="0" timestamp="2015-10-15T11:44:12"><defSwitch name="CONFIG_LOAD" label="Load">Off</defSwitch><defSwitch name="CONFIG_SAVE" label="Save">Off</defSwitch><defSwitch name="CONFIG_DEFAULT" label="Default">Off</defSwitch></defSwitchVector><defTextVector device="CCD Simulator" name="DRIVER_INFO" label="Driver Info" group="Options" state="Ok" perm="ro" timeout="60" timestamp="2015-09-22T14:55:11"><defText name="DRIVER_NAME" label="Name">CCD Simulator</defText><defText name="DRIVER_EXEC" label="Exec">indi_simulator_ccd</defText><defText name="DRIVER_VERSION" label="Version">1.0</defText><defText name="DRIVER_INTERFACE" label="Interface">22</defText></defTextVector><setLightVector device="CCD Simulator" name="Ejemplo_LUZ" state="Ok" timeout="60" timestamp="2015-09-22T14:55:11"><oneLight name="Luz1">Ok</oneLight></setLightVector></a>';
        
 
         function parserXML(xml) {
@@ -90,17 +90,17 @@
                     }
 
                     if(nodeName == 'setSwitchVector'){
-                        parserSetNumberVector(children[j]);
+                        parserSetSwitchVector(children[j]);
                     }
 
                     //Como viene en los BLOBs?
                     if(nodeName == 'setBLOBVector'){
-                        parserSetNumberVector(children[j]);
+                        parserSetBLOBVector(children[j]);
                     }
 
                     //Como viene en los Lights?
                     if(nodeName == 'setLightVector'){
-                        parserSetNumberVector(children[j]);
+                        parserSetLightVector(children[j]);
                     }
                 }
             }
@@ -120,6 +120,13 @@
          //   debug(deviceName);
             var windowId = getWindowId(deviceName);
          //   debug(windowId);
+
+            var exist = document.getElementById(getPropertyId(deviceName,propertyName) + "_bombilla");
+
+            if(exist){
+                debug(exist);
+                return;
+            }
             
             var antiguaVentana = getVentana(deviceName);
 
@@ -239,6 +246,10 @@
                             '</div>';
                         }
 
+                        if(node.getAttribute("rule") == 'AnyOfMany'){
+                            html += '<button id="updateButton" class="btn btn-default">Actualizar</button>';
+                        }
+
                     html += '</div>';
                 }
             html += '</div>';
@@ -320,9 +331,7 @@
                             var elementName = nodes[i].getAttribute("name"); 
                             html += 
                             '<div class = "elementBox">'+ nodes[i].getAttribute("label")   + '-&gt; ' + 
-                                '<div id="' + getElementId(deviceName,propertyName,elementName) + "_value" + '">' + 
-                                    getBombillita(nodes[i].innerHTML, getPropertyId(deviceName,propertyName) + "_bombilla") + 
-                                '</div>' + 
+                                    getBombillita(nodes[i].innerHTML, getElementId(deviceName,propertyName,elementName) + "_bombilla") + 
                             '</div>';
                         }
 
@@ -346,8 +355,13 @@
 
            var nodes = node.getElementsByTagName('oneText');
 
+
+               var bombilla = document.getElementById(getPropertyId(deviceName,propertyName) + "_bombilla");
+               bombilla.setAttribute("src",getURLBombillita(node.getAttribute("state")));
+
            for(var i = 0; i < nodes.length; i++){
                var elementName = nodes[i].getAttribute("name");
+
 
                var existingElement = document.getElementById(getElementId(deviceName,propertyName,elementName) + "_value");
 
@@ -360,6 +374,9 @@
            var propertyName = node.getAttribute("name");
 
            var nodes = node.getElementsByTagName('oneNumber');
+
+           var bombilla = document.getElementById(getPropertyId(deviceName,propertyName) + "_bombilla");
+               bombilla.setAttribute("src",getURLBombillita(node.getAttribute("state")));
 
            for(var i = 0; i < nodes.length; i++){
                var elementName = nodes[i].getAttribute("name");
@@ -375,22 +392,29 @@
            var deviceName = node.getAttribute("device");
            var propertyName = node.getAttribute("name");
 
-           var nodes = node.getElementsByTagName('oneNumber');
+           var nodes = node.getElementsByTagName('oneSwitch');
 
-           for(var i = 0; i < nodes.length; i++){
+
+            /*var bombilla = document.getElementById(getPropertyId(deviceName,propertyName) + "_bombilla");
+            bombilla.setAttribute("src",getURLBombillita(node.getAttribute("state")));*/
+
+           /*for(var i = 0; i < nodes.length; i++){
                var elementName = nodes[i].getAttribute("name");
 
                var existingElement = document.getElementById(getElementId(deviceName,propertyName,elementName) + "_value");
 
                existingElement.innerHTML = nodes[i].innerHTML;
-           }
+           }*/
        }
 
        function parserSetBLOBVector(node){
            var deviceName = node.getAttribute("device");
            var propertyName = node.getAttribute("name");
 
-           var nodes = node.getElementsByTagName('oneNumber');
+           var nodes = node.getElementsByTagName('oneBLOB');
+
+           var bombilla = document.getElementById(getPropertyId(deviceName,propertyName) + "_bombilla");
+        bombilla.setAttribute("src",getURLBombillita(node.getAttribute("state")));
 
            for(var i = 0; i < nodes.length; i++){
                var elementName = nodes[i].getAttribute("name");
@@ -405,14 +429,19 @@
            var deviceName = node.getAttribute("device");
            var propertyName = node.getAttribute("name");
 
-           var nodes = node.getElementsByTagName('oneNumber');
+           var nodes = node.getElementsByTagName('oneLight');
+
+           debug("ENTRANDO EN LIGHT")
+
+           var bombilla = document.getElementById(getPropertyId(deviceName,propertyName) + "_bombilla");
+               bombilla.setAttribute("src",getURLBombillita(node.getAttribute("state")));
 
            for(var i = 0; i < nodes.length; i++){
                var elementName = nodes[i].getAttribute("name");
 
-               var existingElement = document.getElementById(getElementId(deviceName,propertyName,elementName) + "_value");
+               var existingElement = document.getElementById(getElementId(deviceName,propertyName,elementName) + "_bombilla");
 
-               existingElement.innerHTML = nodes[i].innerHTML;
+               existingElement.setAttribute("src",getURLBombillita(nodes[i].innerHTML));
            }
        }
 
@@ -459,18 +488,22 @@
                 case 'OneOfMany':
                 if(perm != 'ro'){
                     /*Combo con las opciones que vayan saliendo.*/
-                    return '<input type="submit" name='+ node.getAttribute("name") +' value ='+ node.innerHTML +'>';
+                    return '<select>' + 
+                                '<option name='+ node.getAttribute("name") +' value ='+ node.innerHTML +'>' + node.innerHTML + '</option>'+
+                            '</select>';
                 }
                 /*Combo pero que la primera opción sea en blanco para que así se pueda dejar vacía.*/
                 case 'AtMostOne':
                 if(perm != 'ro'){
-                    return '<input type="submit" name='+ node.getAttribute("name") +' value ='+ node.innerHTML +'>';;
+                    return '<select>' + '<option> </option>' + 
+                                '<option name='+ node.getAttribute("name") +' value ='+ node.innerHTML +'>' + node.innerHTML + '</option>'+
+                            '</select>';
                 }
                 //Los que sean. Utilizar un checkbox.
                 /*Poner todos los checkbox y seleccionar todos los que se quieran de todos ellos.*/
                 case 'AnyOfMany':
                 if(perm != 'ro'){
-                    return '<input type="submit" name='+ node.getAttribute("name") +' value ='+ node.innerHTML +'>';
+                    return '<input type="checkbox" name='+ node.getAttribute("name") +' value ='+ node.innerHTML +'>';
                 }
             }            
         }
@@ -499,18 +532,23 @@
 
         function getBombillita(state, id){
 
+            return '<img src="'+ getURLBombillita(state) +'" id="'+ id +'"/>';
+
+        }
+
+        function getURLBombillita(state){
             switch(state){
                 case 'Idle':
-                return '<img src="images/grey_light.png" id="'+ id +'"/>';
+                return "images/grey_light.png";
 
                 case 'Ok':
-                return '<img src="images/green_light.png" id="'+ id +'"/>';
+                return "images/green_light.png"
 
                 case 'Alert':
-                return '<img src="images/red_light.png" id="'+ id +'"/>';
+                return "images/red_light.png";
 
                 case 'Busy':
-                return '<img src="images/yellow_light.png" id="'+ id +'"/>';
+                return "images/yellow_light.png"
             }
         }
 
