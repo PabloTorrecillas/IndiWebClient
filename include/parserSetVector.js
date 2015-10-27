@@ -80,8 +80,6 @@ function parserSetLightVector(node){
 
   var nodes = node.getElementsByTagName('oneLight');
 
-  debug("ENTRANDO EN LIGHT")
-
   var bombilla = document.getElementById(getPropertyId(deviceName,propertyName) + "_bombilla");
   bombilla.setAttribute("src",getURLBombillita(node.getAttribute("state")));
 

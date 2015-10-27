@@ -60,9 +60,6 @@
                 var children = indiSectionArray[i].childNodes; 
                 
                 for(var j=0; j < children.length; j++) {
-                   // debug(children[j].nodeName);
-                    
-                   // debug("+++" + children[j] + "+++");
                     var nodeName = children[j].nodeName;
 
                     if(nodeName == 'defTextVector'){
@@ -97,19 +94,16 @@
                         parserSetSwitchVector(children[j]);
                     }
 
-                    //Como viene en los BLOBs?
                     if(nodeName == 'setBLOBVector'){
                         parserSetBLOBVector(children[j]);
                     }
 
-                    //Como viene en los Lights?
                     if(nodeName == 'setLightVector'){
                         parserSetLightVector(children[j]);
                     }
                 }
             }
         }    
-
 
 
         /*Funciones Auxiliares para los diferentes parsers*/

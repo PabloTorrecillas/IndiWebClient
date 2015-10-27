@@ -181,8 +181,8 @@ function parserDefBLOBVector(node){
                     html += 
                     '<div class = "elementBox">'+ nodes[i].getAttribute("label")   + '-&gt; ' + 
                         '<div id="' + getElementId(deviceName,propertyName,elementName) + "_value" + '">' + 
-                            '<input type="text" placeholder="SizeBLOB">' + 
-                            '<input type="text" placeholder="FormatBLOB">' + 
+                            '<input id="' + getElementId(deviceName,propertyName,elementName) + "_value_Size" + ' type="text" placeholder="SizeBLOB">' + 
+                            '<input id="' + getElementId(deviceName,propertyName,elementName) + "_value_Format" + ' type="text" placeholder="FormatBLOB">' + 
                         '</div>' + 
                     '</div>';
                 }
