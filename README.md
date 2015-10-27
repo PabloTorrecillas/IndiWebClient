@@ -5,14 +5,14 @@
 #### La necesidad de poder controlar un observatorio remoto en cualquier momento hace que el desarrollo de clientes web que puedan ser ejecutados en un navegador web actual sea un objetivo muy interesante para cualquier operador de observatorio.
 
 ## OBJETIVOS: 
-#### El objetivo principal de este proyecto es la creación de un cliente Web utilizando la plataforma INDI para poder controlar una gran variedad de hardware astronómico. Dicho cliente web debe funcionar en cualquier navegador actual y, a ser posible, sin la necesidad de instalar software adicional. Todo el desarrollo se hará bajo licencias libres y usando software libre.
+#### El objetivo principal de este proyecto es la creación de un prototipo de cliente Web utilizando la plataforma INDI para poder controlar una gran variedad de hardware astronómico. Dicho prototipo de cliente web debe funcionar en cualquier navegador actual y, a ser posible, sin la necesidad de instalar software adicional. Todo el desarrollo se hará bajo licencias libres y usando software libre.
 
 ## DESARROLLO:
 #### Para el desarrollo del proyecto se llevarán a cabo las siguientes actividades:
 * Estudio del problema a resolver.
 * Estudio de la plataforma INDI para el control de distintos dispositivos astronómicos.
-* Estudio de las herramientas que se utilizarán para la creación del cliente. Algunas posibles alterativas serán jQuery, Web Sockets, etc.
-* Diseño, implementación y pruebas de un cliente web que usando la plataforma INDI permita controlar los distintos componentes de un 	observatorio. Las pruebas deberán pasarse en los principales navegadores web existentes.
+* Estudio de las herramientas que se utilizarán para la creación del prototipo del cliente. Algunas posibles alterativas serán jQuery, Web Sockets, etc.
+* Diseño, implementación y pruebas de un prototipo de cliente web que usando la plataforma INDI permita controlar los distintos componentes de un 	observatorio. Las pruebas deberán pasarse en los principales navegadores web existentes.
 
 ## CONOCIMIENTOS PREVIOS:
 #### Aunque no hacen falta conocimientos previos explícitos (ciertas tecnologías se pueden aprender durante la realización del proyecto) es recomendable:
