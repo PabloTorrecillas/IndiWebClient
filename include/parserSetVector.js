@@ -68,9 +68,11 @@ function parserSetBLOBVector(node){
   for(var i = 0; i < nodes.length; i++){
     var elementName = nodes[i].getAttribute("name");
 
-    var existingElement = document.getElementById(getElementId(deviceName,propertyName,elementName) + "_value");
+    /*var sizeBLOB = document.getElementById(getElementId(deviceName,propertyName,elementName) + "_value_Size");
+    sizeBLOB.innerHTML += nodes[i].getAttribute("size");
 
-    existingElement.innerHTML = nodes[i].innerHTML;
+    var formatBLOB = document.getElementById(getElementId(deviceName,propertyName,elementName) + "_value_Format");
+    formatBLOB.innerHTML += nodes[i].getAttribute("format");*/
   }
 }
 

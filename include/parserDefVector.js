@@ -180,9 +180,9 @@ function parserDefBLOBVector(node){
                     var elementName = nodes[i].getAttribute("name");  
                     html += 
                     '<div class = "elementBox">'+ nodes[i].getAttribute("label")   + '-&gt; ' + 
-                        '<div id="' + getElementId(deviceName,propertyName,elementName) + "_value" + '">' + 
-                            '<input id="' + getElementId(deviceName,propertyName,elementName) + "_value_Size" + ' type="text" placeholder="SizeBLOB">' + 
-                            '<input id="' + getElementId(deviceName,propertyName,elementName) + "_value_Format" + ' type="text" placeholder="FormatBLOB">' + 
+                        '<div id="' + getElementId(deviceName,propertyName,elementName) + '_value' + '">' + 
+                            '<div id="' + getElementId(deviceName,propertyName,elementName) + '_value_Size' + '">' + 'Size: ' + '</div>' +
+                            '<div id="' + getElementId(deviceName,propertyName,elementName) + '_value_Format' + '">' + 'Format: ' + '</div>' +
                         '</div>' + 
                     '</div>';
                 }
