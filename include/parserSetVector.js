@@ -68,11 +68,11 @@ function parserSetBLOBVector(node){
   for(var i = 0; i < nodes.length; i++){
     var elementName = nodes[i].getAttribute("name");
 
-    /*var sizeBLOB = document.getElementById(getElementId(deviceName,propertyName,elementName) + "_value_Size");
-    sizeBLOB.innerHTML += nodes[i].getAttribute("size");
+    var existingElement = document.getElementById(getElementId(deviceName,propertyName,elementName) + "_value_Size");
+    existingElement.innerHTML += nodes[i].getAttribute("size");
 
-    var formatBLOB = document.getElementById(getElementId(deviceName,propertyName,elementName) + "_value_Format");
-    formatBLOB.innerHTML += nodes[i].getAttribute("format");*/
+    existingElement = document.getElementById(getElementId(deviceName,propertyName,elementName) + "_value_Format");
+    existingElement.innerHTML += nodes[i].getAttribute("format");
   }
 }
 
