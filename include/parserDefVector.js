@@ -9,7 +9,6 @@ function parserDefTextVector(node){
     var exist = document.getElementById(getPropertyId(deviceName,propertyName) + "_bombilla");
 
     if(exist){
-        debug(exist);
         return;
     }
 
@@ -21,7 +20,6 @@ function parserDefTextVector(node){
         getBombillita(node.getAttribute("state"), getPropertyId(deviceName,propertyName) + "_bombilla") + node.getAttribute("name") + '</div>';
          html += '</div>';
 
-        //var nodes = node.childNodes;
         var nodes = node.getElementsByTagName('defText');
 
         if(nodes.length > 0){
@@ -29,7 +27,7 @@ function parserDefTextVector(node){
             for (var i=0; i < nodes.length; i++) {
                 var elementName = nodes[i].getAttribute("name");
                 html += 
-                '<div class = "elementBox">' + nodes[i].getAttribute("label") + "-&gt;" + 
+                '<div class = "elementBox">' + nodes[i].getAttribute("label") + ":" + 
                     '<div id="' + getElementId(deviceName,propertyName,elementName) + "_value" + '">' + 
                         nodes[i].innerHTML + 
                     '</div>' +
@@ -61,7 +59,6 @@ function parserDefNumberVector(node){
     var exist = document.getElementById(getPropertyId(deviceName,propertyName) + "_bombilla");
 
     if(exist){
-        debug(exist);
         return;
     }
 
@@ -73,7 +70,6 @@ function parserDefNumberVector(node){
         getBombillita(node.getAttribute("state"), getPropertyId(deviceName,propertyName) + "_bombilla") + node.getAttribute("name") + '</div>';
          html += '</div>';
 
-        //var nodes = node.childNodes;
         var nodes = node.getElementsByTagName('defNumber');
 
         if(nodes.length > 0){
@@ -81,7 +77,7 @@ function parserDefNumberVector(node){
                 for(var i = 0; i < nodes.length; i++){  
                     var elementName = nodes[i].getAttribute("name");
                     html += 
-                    '<div class = "elementBox">' + nodes[i].getAttribute("label") + "-&gt;" + 
+                    '<div class = "elementBox">' + nodes[i].getAttribute("label") + ":" + 
                         '<div id="' + getElementId(deviceName,propertyName,elementName) + "_value" + '">' + 
                         nodes[i].innerHTML + 
                     '</div>' +
@@ -112,7 +108,6 @@ function parserDefSwitchVector(node){
     var exist = document.getElementById(getPropertyId(deviceName,propertyName) + "_bombilla");
 
     if(exist){
-        debug(exist);
         return;
     }
 
@@ -124,21 +119,47 @@ function parserDefSwitchVector(node){
         getBombillita(node.getAttribute("state"), getPropertyId(deviceName,propertyName) + "_bombilla") + node.getAttribute("name") + '</div>';
          html += '</div>';
 
-       // var nodes = node.childNodes;
         var nodes = node.getElementsByTagName('defSwitch');
 
         if(nodes.length > 0){
             html += '<div class = "elementBoxContainer">';
-                for(var i = 0; i < nodes.length; i++){  
-               // debug(nodes[i]);
-                    html += 
-                    '<div class = "elementBox">'+ nodes[i].getAttribute("label") + 
-                        getInputSwitch(node.getAttribute("rule"), nodes[i], node.getAttribute("perm"), node.getAttribute("name")) + 
-                    '</div>';
+
+                if(node.getAttribute("rule") == 'OneOfMany'){      
+                    html += '<select>';        
+                        for(var i = 0; i < nodes.length; i++){  
+                            html += 
+                            '<div class = "elementBox">' + 
+                                getInputSwitch(node.getAttribute("rule"), nodes[i], node.getAttribute("perm"), node.getAttribute("name")) + 
+                            '</div>';
+                        }
+                    html += '</select>';
                 }
 
+                if(node.getAttribute("rule") == 'AtMostOne'){
+                    html += '<select>' +
+                             '<option> </option>';
+                
+                    for(var i = 0; i < nodes.length; i++){  
+                        html += 
+                        '<div class = "elementBox">' + 
+                            getInputSwitch(node.getAttribute("rule"), nodes[i], node.getAttribute("perm"), node.getAttribute("name")) + 
+                        '</div>';
+                    }
+
+                    html += '</select>';
+                }                
+
                 if(node.getAttribute("rule") == 'AnyOfMany'){
-                    html += '<button id="updateButton" class="btn btn-default">Actualizar</button>';
+                    html += '<div class = "elementBoxContainer">';
+                        for(var i = 0; i < nodes.length; i++){  
+                            html += 
+                            '<div class = "elementBox">'+ nodes[i].getAttribute("label") + 
+                                getInputSwitch(node.getAttribute("rule"), nodes[i], node.getAttribute("perm"), node.getAttribute("name")) + 
+                            '</div>';
+                        }
+                        html += '<button id="updateButton" class="btn btn-default">Actualizar</button>';
+
+                    html += '</div>';
                 }
 
             html += '</div>';
@@ -159,7 +180,6 @@ function parserDefBLOBVector(node){
     var exist = document.getElementById(getPropertyId(deviceName,propertyName) + "_bombilla");
 
     if(exist){
-        debug(exist);
         return;
     }
 
@@ -171,7 +191,6 @@ function parserDefBLOBVector(node){
         getBombillita(node.getAttribute("state"), getPropertyId(deviceName,propertyName) + "_bombilla") + node.getAttribute("name") + '</div>';
          html += '</div>';
 
-        //var nodes = node.childNodes;
         var nodes = node.getElementsByTagName('defBLOB');
 
         if(nodes.length > 0){
@@ -179,7 +198,7 @@ function parserDefBLOBVector(node){
                 for(var i = 0; i < nodes.length; i++){
                     var elementName = nodes[i].getAttribute("name");  
                     html += 
-                    '<div class = "elementBox">'+ nodes[i].getAttribute("label")   + '-&gt; ' + 
+                    '<div class = "elementBox">'+ nodes[i].getAttribute("label")   + ': ' + 
                         '<div id="' + getElementId(deviceName,propertyName,elementName) + '_value' + '">' + 
                             '<div id="' + getElementId(deviceName,propertyName,elementName) + '_value_Size' + '">' + 'Size: ' + '</div>' +
                             '<div id="' + getElementId(deviceName,propertyName,elementName) + '_value_Format' + '">' + 'Format: ' + '</div>' +
@@ -209,7 +228,6 @@ function parserDefLightVector(node){
     var exist = document.getElementById(getPropertyId(deviceName,propertyName) + "_bombilla");
 
     if(exist){
-        debug(exist);
         return;
     }
 
@@ -219,9 +237,8 @@ function parserDefLightVector(node){
         html += '<div class="propertyBox">'+
         '<div>' + 
         getBombillita(node.getAttribute("state"), getPropertyId(deviceName,propertyName) + "_bombilla") + node.getAttribute("name") + '</div>';
-         html += '</div>';
+        html += '</div>';
 
-        //var nodes = node.childNodes;
         var nodes = node.getElementsByTagName('defLight');
 
         if(nodes.length > 0){
@@ -229,7 +246,7 @@ function parserDefLightVector(node){
                 for(var i = 0; i < nodes.length; i++){  
                     var elementName = nodes[i].getAttribute("name"); 
                     html += 
-                    '<div class = "elementBox">'+ nodes[i].getAttribute("label")   + '-&gt; ' + 
+                    '<div class = "elementBox">'+ nodes[i].getAttribute("label")   + ': ' + 
                             getBombillita(nodes[i].innerHTML, getElementId(deviceName,propertyName,elementName) + "_bombilla") + 
                     '</div>';
                 }
