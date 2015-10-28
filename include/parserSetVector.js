@@ -44,8 +44,8 @@ function parserSetSwitchVector(node){
   var nodes = node.getElementsByTagName('oneSwitch');
 
 
-  /*var bombilla = document.getElementById(getPropertyId(deviceName,propertyName) + "_bombilla");
-  bombilla.setAttribute("src",getURLBombillita(node.getAttribute("state")));*/
+  var bombilla = document.getElementById(getPropertyId(deviceName,propertyName) + "_bombilla");
+  bombilla.setAttribute("src",getURLBombillita(node.getAttribute("state")));
 
   /*for(var i = 0; i < nodes.length; i++){
       var elementName = nodes[i].getAttribute("name");
