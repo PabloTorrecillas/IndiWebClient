@@ -121,15 +121,16 @@ function parserDefSwitchVector(node){
 
         var nodes = node.getElementsByTagName('defSwitch');
 
-        if(nodes.length > 0){
+        if(nodes.length > 0 && node.getAttribute("perm") != 'ro'){
             html += '<div class = "elementBoxContainer">';
 
                 if(node.getAttribute("rule") == 'OneOfMany'){      
                     html += '<select>';        
                         for(var i = 0; i < nodes.length; i++){  
+                            var elementName = nodes[i].getAttribute("name");
                             html += 
-                            '<div class = "elementBox">' + 
-                                getInputSwitch(node.getAttribute("rule"), nodes[i], node.getAttribute("perm"), node.getAttribute("name")) + 
+                            '<div class = "elementBox" id="' + getElementId(deviceName,propertyName,elementName) + "_value" + '">' + 
+                                getInputSwitch(node.getAttribute("rule"), nodes[i]) + 
                             '</div>';
                         }
                     html += '</select>';
@@ -139,9 +140,10 @@ function parserDefSwitchVector(node){
                     html += '<select>' +
                              '<option> </option>';
                 
-                    for(var i = 0; i < nodes.length; i++){  
+                    for(var i = 0; i < nodes.length; i++){ 
+                        var elementName = nodes[i].getAttribute("name"); 
                         html += 
-                        '<div class = "elementBox">' + 
+                        '<div class = "elementBox" id="' + getElementId(deviceName,propertyName,elementName) + "_value" + '">' +
                             getInputSwitch(node.getAttribute("rule"), nodes[i], node.getAttribute("perm"), node.getAttribute("name")) + 
                         '</div>';
                     }
@@ -152,8 +154,9 @@ function parserDefSwitchVector(node){
                 if(node.getAttribute("rule") == 'AnyOfMany'){
                     html += '<div class = "elementBoxContainer">';
                         for(var i = 0; i < nodes.length; i++){  
+                            var elementName = nodes[i].getAttribute("name");
                             html += 
-                            '<div class = "elementBox">'+ nodes[i].getAttribute("label") + 
+                            '<div class = "elementBox" id="' + getElementId(deviceName,propertyName,elementName) + "_value" + '">' + nodes[i].getAttribute("label") + 
                                 getInputSwitch(node.getAttribute("rule"), nodes[i], node.getAttribute("perm"), node.getAttribute("name")) + 
                             '</div>';
                         }

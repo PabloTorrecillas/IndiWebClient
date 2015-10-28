@@ -141,25 +141,19 @@
             }
         }
 
-        function getInputSwitch(rule, node, perm, name){
+        function getInputSwitch(rule, node){
             switch(rule){
-                //Uno de muchos
+                /*Combo con las opciones que vayan saliendo.*/
                 case 'OneOfMany':
-                if(perm != 'ro'){
-                    /*Combo con las opciones que vayan saliendo.*/
                     return '<option value="'+ node.innerHTML +'">' + node.getAttribute("label") + '</option>';
-                }
+                
                 /*Combo pero que la primera opción sea en blanco para que así se pueda dejar vacía.*/
                 case 'AtMostOne':
-                if(perm != 'ro'){
                     return '<option value="'+ node.innerHTML +'">' + node.getAttribute("label") + '</option>';
-                }
-                //Los que sean. Utilizar un checkbox.
+                
                 /*Poner todos los checkbox y seleccionar todos los que se quieran de todos ellos.*/
                 case 'AnyOfMany':
-                if(perm != 'ro'){
-                    return '<input type="checkbox" name='+ node.getAttribute("name") +' value ='+ node.innerHTML +'>';
-                }
+                    return '<input type="checkbox" value ='+ node.innerHTML +'>';
             }            
         }
 

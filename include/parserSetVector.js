@@ -47,13 +47,22 @@ function parserSetSwitchVector(node){
   var bombilla = document.getElementById(getPropertyId(deviceName,propertyName) + "_bombilla");
   bombilla.setAttribute("src",getURLBombillita(node.getAttribute("state")));
 
-  /*for(var i = 0; i < nodes.length; i++){
+  /*
+
+
+    Dice que no puede encontrar la propiedad innerHTML. No entiendo por qué si yo estoy haciendo lo mismo que en los otros casos. 
+    Será por el switch que no puede entrar en él?
+
+
+  */
+
+  for(var i = 0; i < nodes.length; i++){
       var elementName = nodes[i].getAttribute("name");
 
       var existingElement = document.getElementById(getElementId(deviceName,propertyName,elementName) + "_value");
 
       existingElement.innerHTML = nodes[i].innerHTML;
-  }*/
+  }
 }
 
 function parserSetBLOBVector(node){
