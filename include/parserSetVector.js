@@ -43,26 +43,26 @@ function parserSetSwitchVector(node){
 
   var nodes = node.getElementsByTagName('oneSwitch');
 
-
   var bombilla = document.getElementById(getPropertyId(deviceName,propertyName) + "_bombilla");
   bombilla.setAttribute("src",getURLBombillita(node.getAttribute("state")));
 
-  /*
+  var propertyValue = document.getElementById(getPropertyId(deviceName,propertyName) + "_value");
 
 
-    Dice que no puede encontrar la propiedad innerHTML. No entiendo por qué si yo estoy haciendo lo mismo que en los otros casos. 
-    Será por el switch que no puede entrar en él?
-
-
-  */
-
-  for(var i = 0; i < nodes.length; i++){
-      var elementName = nodes[i].getAttribute("name");
-
-      var existingElement = document.getElementById(getElementId(deviceName,propertyName,elementName) + "_value");
-
-      existingElement.innerHTML = nodes[i].innerHTML;
-  }
+  propertyValue.innerHTML= '';
+                 for(var i = 0; i < nodes.length; i++){
+                    if(nodes[i].innerHTML.trim() == 'On'){
+                      var element = document.getElementById(getElementId(deviceName,propertyName,nodes[i].getAttribute("name")) + "_value");
+                      
+                      if(element.nodeName == 'option'){
+                        propertyValue.innerHTML += ' ' + element.innerHTML;
+                      }
+                      else{
+                        propertyValue.innerHTML += ' ' + element.parentNode.getElementsByTagName("span")[0].innerHTML;
+                      }
+                      
+                    }
+                 }
 }
 
 function parserSetBLOBVector(node){

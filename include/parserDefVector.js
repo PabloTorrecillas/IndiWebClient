@@ -121,6 +121,12 @@ function parserDefSwitchVector(node){
 
         var nodes = node.getElementsByTagName('defSwitch');
 
+        html += '<div id="' + getPropertyId(deviceName,propertyName) + "_value" + '">'+ 
+
+
+                 '</div>';
+
+
         if(nodes.length > 0 && node.getAttribute("perm") != 'ro'){
             html += '<div class = "elementBoxContainer">';
 
@@ -130,7 +136,7 @@ function parserDefSwitchVector(node){
                             var elementName = nodes[i].getAttribute("name");
                             html += 
                             '<div class = "elementBox" id="' + getElementId(deviceName,propertyName,elementName) + "_value" + '">' + 
-                                getInputSwitch(node.getAttribute("rule"), nodes[i]) + 
+                                getInputSwitch(node.getAttribute("rule"), nodes[i], deviceName, propertyName, elementName) + 
                             '</div>';
                         }
                     html += '</select>';
@@ -144,7 +150,7 @@ function parserDefSwitchVector(node){
                         var elementName = nodes[i].getAttribute("name"); 
                         html += 
                         '<div class = "elementBox" id="' + getElementId(deviceName,propertyName,elementName) + "_value" + '">' +
-                            getInputSwitch(node.getAttribute("rule"), nodes[i], node.getAttribute("perm"), node.getAttribute("name")) + 
+                            getInputSwitch(node.getAttribute("rule"), nodes[i], deviceName, propertyName, elementName) + 
                         '</div>';
                     }
 
@@ -156,8 +162,8 @@ function parserDefSwitchVector(node){
                         for(var i = 0; i < nodes.length; i++){  
                             var elementName = nodes[i].getAttribute("name");
                             html += 
-                            '<div class = "elementBox" id="' + getElementId(deviceName,propertyName,elementName) + "_value" + '">' + nodes[i].getAttribute("label") + 
-                                getInputSwitch(node.getAttribute("rule"), nodes[i], node.getAttribute("perm"), node.getAttribute("name")) + 
+                            '<div class = "elementBox">' + 
+                                getInputSwitch(node.getAttribute("rule"), nodes[i], deviceName, propertyName, elementName) + 
                             '</div>';
                         }
                         html += '<button id="updateButton" class="btn btn-default">Actualizar</button>';
@@ -170,6 +176,14 @@ function parserDefSwitchVector(node){
     html += '</div>';
 
     addDeviceToTab(deviceName, groupName, html);
+
+    var propertyValue = document.getElementById(getPropertyId(deviceName,propertyName) + "_value");
+
+                 for(var i = 0; i < nodes.length; i++){
+                    if(nodes[i].innerHTML.trim() == 'On'){
+                        propertyValue.innerHTML += ' ' + nodes[i].getAttribute("label");
+                    }
+                 }
 }
 
 function parserDefBLOBVector(node){
