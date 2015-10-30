@@ -48,21 +48,35 @@ function parserSetSwitchVector(node){
 
   var propertyValue = document.getElementById(getPropertyId(deviceName,propertyName) + "_value");
 
+  propertyValue.innerHTML = '';
+  for(var i = 0; i < nodes.length; i++){
+    if(nodes[i].innerHTML.trim().toLowerCase() == 'on'){
+      var element = document.getElementById(getElementId(deviceName,propertyName,nodes[i].getAttribute("name")) + "_value");
+      debug("PARSEANDO");
+      debug(element);
+      if(element.nodeName == 'OPTION'){
+        debug("ES UN OPTION");
+        debug(node);
+        
+          propertyValue.innerHTML = element.innerHTML;
+          if(propertyValue.innerHTML == ''){
+            debug("propertyValue");
+            debug(propertyValue);
+          }
+          debug("FIN ES UN OPTION");
 
-  propertyValue.innerHTML= '';
-                 for(var i = 0; i < nodes.length; i++){
-                    if(nodes[i].innerHTML.trim() == 'On'){
-                      var element = document.getElementById(getElementId(deviceName,propertyName,nodes[i].getAttribute("name")) + "_value");
-                      
-                      if(element.nodeName == 'option'){
-                        propertyValue.innerHTML += ' ' + element.innerHTML;
-                      }
-                      else{
-                        propertyValue.innerHTML += ' ' + element.parentNode.getElementsByTagName("span")[0].innerHTML;
-                      }
-                      
-                    }
-                 }
+      }
+      else{
+        debug("NO ES UN OPTION");
+          var labelNode = element.parentNode;
+          var spanNode = labelNode.getElementsByTagName("span")[0];
+          debug("SPAN!!!");
+          debug(spanNode);
+          propertyValue.innerHTML += ' ' + spanNode.innerHTML;
+          debug("FIN NO ES UN OPTION");
+      }
+    }
+  }
 }
 
 function parserSetBLOBVector(node){

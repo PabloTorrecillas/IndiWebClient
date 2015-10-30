@@ -40,7 +40,7 @@ var ws;
             var length = ws.rQlen();
             var cadena = ws.rQshiftStr(length);
           
-            console.log("---" + cadena + "---");
+            //console.log("---" + cadena + "---");
             
             
 
