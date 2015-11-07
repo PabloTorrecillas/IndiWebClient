@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- Etiquetas -->
+        <meta charset="utf-8">
+
         <title>Indi Web Client</title>
 
         <!-- CSS JQuery UI -->
@@ -16,15 +19,13 @@
         <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.0/css/bootstrap-toggle.min.css" rel="stylesheet">
         <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.0/js/bootstrap-toggle.min.js"></script>
 
-        <!-- Etiquetas -->
-        <meta charset="utf-8">
-
         <!-- Bibliotecas JQuery -->
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
         <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
         <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
         <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 
+        <!-- Bibliotecas propias -->
         <script src="include/base64.js"></script>
         <script src="include/util.js"></script>
         <script src="include/websock.js"></script>
@@ -41,6 +42,7 @@
 
     <body>
 
+    <div class="content">
         <div class="button-container">
             <div class="buttons-left">
                 <button type="button" class="btn btn-primary" onclick="parserXML(xml)">GeneralParser</button>
@@ -53,9 +55,11 @@
                 </span>
             </div>
         </div>
-        
+        <div class="console-container">
+            <textarea id="console-log" class="form-control" rows="4"></textarea>
+        </div>
+    </div>    
 
-        
     <script>
         var globalDebug = true;    
 
@@ -123,6 +127,8 @@
         function debug(message){
             if(globalDebug){
                 console.log(message);
+                var console1 = document.getElementById("console-log");
+                console1.innerHTML += message;
             }
         }
 
