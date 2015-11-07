@@ -12,7 +12,9 @@
         <link href="css/styles.css" rel='stylesheet'>
         
         <!-- Latest compiled and minified CSS -->
-        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.0/css/bootstrap-toggle.min.css" rel="stylesheet">
+        <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.0/js/bootstrap-toggle.min.js"></script>
 
         <!-- Etiquetas -->
         <meta charset="utf-8">
@@ -41,11 +43,14 @@
 
         <div class="button-container">
             <div class="buttons-left">
-                <input type="button" value="GeneralParser" onclick="parserXML(xml)"/>
-                <input type="button" value="Conectar" onclick="connect()"/>
+                <button type="button" class="btn btn-primary" onclick="parserXML(xml)">GeneralParser</button>
+                <button type="button" class="btn btn-primary" onclick="connect()">Conectar</button>
             </div>
             <div class="buttons-right">
-                <input type="button" value="Enable BLOBS" onclick="TO-DO"/>
+                <span>
+                    Enable BLOBS
+                    <input type="checkbox" data-toggle="toggle">
+                </span>
             </div>
         </div>
         

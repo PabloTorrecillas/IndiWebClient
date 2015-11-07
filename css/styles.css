@@ -57,6 +57,10 @@
 }
 /************************************************/
 /************ Main screen styles ****************/
+body{
+	padding: 20px;
+}
+
 .button-container{
 	display: inline;
 }
@@ -67,4 +71,9 @@
 
 .buttons-right{
 	float: right;
+}
+/************************************************/
+
+.btn:focus {
+  outline: none;
 }
