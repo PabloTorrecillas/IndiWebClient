@@ -1,5 +1,5 @@
+/************ Runtime windows styles ************/
 .deviceWindow{
-
     width: 600px;
     height: 100px;
     display: block;
@@ -55,4 +55,16 @@
 .windowTabs {
   max-height: 100%;
 }
+/************************************************/
+/************ Main screen styles ****************/
+.button-container{
+	display: inline;
+}
 
+.buttons-left{
+	float: left;
+}
+
+.buttons-right{
+	float: right;
+}

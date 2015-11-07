@@ -39,11 +39,18 @@
 
     <body>
 
-    
-        <input type="button" value="GeneralParser" onclick="parserXML(xml)"/>
-        <input type="button" value="Conectar" onclick="connect()"/>
+        <div class="button-container">
+            <div class="buttons-left">
+                <input type="button" value="GeneralParser" onclick="parserXML(xml)"/>
+                <input type="button" value="Conectar" onclick="connect()"/>
+            </div>
+            <div class="buttons-right">
+                <input type="button" value="Enable BLOBS" onclick="TO-DO"/>
+            </div>
+        </div>
+        
 
-    
+        
     <script>
         var globalDebug = true;    
 
