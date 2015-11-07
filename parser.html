@@ -127,8 +127,10 @@
         function debug(message){
             if(globalDebug){
                 console.log(message);
-                var console1 = document.getElementById("console-log");
-                console1.innerHTML += message;
+                var date = new Date();
+                var formattedMessage = date.toString() + ": " + message + "\n";
+                var consoleArea = document.getElementById("console-log");
+                consoleArea.innerHTML += formattedMessage;
             }
         }
 
