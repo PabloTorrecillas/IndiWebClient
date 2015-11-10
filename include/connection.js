@@ -40,15 +40,24 @@ var ws;
             var length = ws.rQlen();
             var cadena = ws.rQshiftStr(length);
           
-            console.log("---" + cadena + "---");
+            //console.log("---" + cadena + "---");
             
             
 
             parserXML("<a>" + cadena + "</a>");
         }
 
-        function funcionEscritura(){
-            var cadena = '<newTextVector device="Telescope Simulator" name="DEVICE_PORT"><oneText name="PORT">XXXX</oneText></newTextVector>';
+        function funcionEscritura(deviceName, propertyName, elementNames, values){
+            debug(deviceName);
+            debug(propertyName);
+            var cadena = '<newTextVector device="' + deviceName + '" name="' + propertyName + '">';
+
+            for(var i = 0; i < elementNames.length; i++){
+                cadena += '<oneText name="'+ elementNames[i] +'">'+ values[i] +'</oneText>';
+            }
+
+            cadena += '</newTextVector>';
+            
             ws.send_string(cadena);
             ws.flush();
         }

@@ -39,13 +39,21 @@ function parserDefTextVector(node){
 
        }
 
+       var buttonId = getElementId(deviceName,propertyName,elementName) + "_updateButton";
+
         if(node.getAttribute("perm") != 'ro'){
-            html +=  '<button id="updateButton" class="btn btn-default" style="float:right">Actualizar</button>';
+            html +=  '<button id="' +  buttonId +'" class="btn btn-default">Actualizar</button>';
+
         }
 
     html += '</div>';
 
-    addDeviceToTab(deviceName, groupName, html);           
+    addDeviceToTab(deviceName, groupName, html);      
+
+    $(buttonId).click(function()
+    {
+        console.log("llega");
+    });     
 }
 
 function parserDefNumberVector(node){
@@ -281,7 +289,7 @@ function getVentana(deviceName){
 
     if(antiguaVentana == null){
         //Añadimos la nueva ventana al body
-        $('body').append('<div class="deviceWindow" id="' + windowId + '"><div id="'+ windowId +'_tabs" class="windowTabs"><ul></ul></div>' + '</div>');
+        $('body').append('<div class="deviceWindow" id="' + windowId + '"><div><span>Enable BLOBS<input type="checkbox" data-toggle="toggle"></span></div><div id="'+ windowId +'_tabs" class="windowTabs"><ul></ul></div>' + '</div>');
 
         $( "#" + windowId + '_tabs' ).tabs();
         //Inicializacíon de la nueva ventana
