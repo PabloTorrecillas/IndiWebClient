@@ -40,9 +40,23 @@ var ws;
             var length = ws.rQlen();
             var cadena = ws.rQshiftStr(length);
           
-            //console.log("---" + cadena + "---");
+            console.log("---" + cadena + "---");
             
             
 
             parserXML("<a>" + cadena + "</a>");
         }
+
+        function funcionEscritura(){
+            var cadena = '<newTextVector device="Telescope Simulator" name="DEVICE_PORT"><oneText name="PORT">XXXX</oneText></newTextVector>';
+            ws.send_string(cadena);
+            ws.flush();
+        }
+
+
+        /*
+            PAra cada uno de los dispositivos (ventanas), crear el botón de enableBLOB y enviar en el ON el Also y en el off el Never
+
+            <enableBLOB device="NOMBREDELDISPOSITIVO">Also/Never</enableBLOB>
+        */
+        
