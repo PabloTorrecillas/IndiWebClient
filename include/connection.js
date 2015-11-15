@@ -47,7 +47,7 @@ var ws;
             parserXML("<a>" + cadena + "</a>");
         }
 
-        function funcionEscritura(deviceName, propertyName, elementNames, values){
+        function writeText(deviceName, propertyName, elementNames, values){
             debug(deviceName);
             debug(propertyName);
             var cadena = '<newTextVector device="' + deviceName + '" name="' + propertyName + '">';
@@ -57,6 +57,21 @@ var ws;
             }
 
             cadena += '</newTextVector>';
+            
+            ws.send_string(cadena);
+            ws.flush();
+        }
+
+        function writeNumber(deviceName, propertyName, elementNames, values){
+            debug(deviceName);
+            debug(propertyName);
+            var cadena = '<newNumberVector device="' + deviceName + '" name="' + propertyName + '">';
+
+            for(var i = 0; i < elementNames.length; i++){
+                cadena += '<oneNumber name="'+ elementNames[i] +'">'+ values[i] +'</oneNumber>';
+            }
+
+            cadena += '</newNumberVector>';
             
             ws.send_string(cadena);
             ws.flush();
