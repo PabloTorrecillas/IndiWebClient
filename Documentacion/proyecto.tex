@@ -4,9 +4,9 @@
 \usepackage[utf8]{inputenc}
 \usepackage[spanish]{babel}
 
-% \usepackage[style=list, number=none]{glossary} %
-%\usepackage{titlesec}
-%\usepackage{pailatino}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{eurosym}
 
 \decimalpoint
 \usepackage{dcolumn}
@@ -30,17 +30,17 @@
 % ********************************************************************
 % Re-usable information
 % ********************************************************************
-\newcommand{\myTitle}{Título del proyecto\xspace}
-\newcommand{\myDegree}{Grado en ...\xspace}
-\newcommand{\myName}{Nombre Apllido1 Apellido2 (alumno)\xspace}
-\newcommand{\myProf}{Nombre Apllido1 Apellido2 (tutor1)\xspace}
-\newcommand{\myOtherProf}{Nombre Apllido1 Apellido2 (tutor2)\xspace}
+\newcommand{\myTitle}{INDI Web Client, Desarrollo de un prototipo de cliente Web INDI para el control de instrumental astronómico\xspace}
+\newcommand{\myDegree}{Grado en Ingeniería Informática\xspace}
+\newcommand{\myName}{Pablo Torrecillas Ortega\xspace}
+\newcommand{\myProf}{Sergio Alonso Burgos)\xspace}
+%\newcommand{\myOtherProf}{Nombre Apllido1 Apellido2 (tutor2)\xspace}
 %\newcommand{\mySupervisor}{Put name here\xspace}
 \newcommand{\myFaculty}{Escuela Técnica Superior de Ingenierías Informática y de
 Telecomunicación\xspace}
 \newcommand{\myFacultyShort}{E.T.S. de Ingenierías Informática y de
 Telecomunicación\xspace}
-\newcommand{\myDepartment}{Departamento de ...\xspace}
+\newcommand{\myDepartment}{Departamento de Lenguajes y Sistemas Informáticos\xspace}
 \newcommand{\myUni}{\protect{Universidad de Granada}\xspace}
 \newcommand{\myLocation}{Granada\xspace}
 \newcommand{\myTime}{\today\xspace}
@@ -48,11 +48,11 @@ Telecomunicación\xspace}
 
 
 \hypersetup{
-pdfauthor = {\myName (email (en) ugr (punto) es)},
+pdfauthor = {\myName (pablo18@correo.ugr.es)},
 pdftitle = {\myTitle},
 pdfsubject = {},
-pdfkeywords = {palabra_clave1, palabra_clave2, palabra_clave3, ...},
-pdfcreator = {LaTeX con el paquete ....},
+pdfkeywords = {INDI, Software Libre, Cliente Web, Internet, Astronomía, Control, Prototipo, Navegador},
+pdfcreator = {LaTeX},
 pdfproducer = {pdflatex}
 }
 
@@ -181,8 +181,10 @@ pdfproducer = {pdflatex}
 %
 %\mainmatter
 %\setlength{\parskip}{5pt}
+\setcounter{tocdepth}{2}
+\tableofcontents
 
-%\input{capitulos/01_Introduccion}
+\input{capitulos/01_Introduccion}
 %
 %\input{capitulos/02_EspecificacionRequisitos}
 %
