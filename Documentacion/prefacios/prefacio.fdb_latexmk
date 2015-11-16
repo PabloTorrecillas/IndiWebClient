@@ -1,0 +1,12 @@
+# Fdb version 3
+["pdflatex"] 1447712377 "prefacio.tex" "prefacio.pdf" "prefacio" 1447712377
+  "/etc/texmf/web2c/texmf.cnf" 1447690340 1101 af7716885e081ab43982cab7b4672c1a ""
+  "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1392645748 31083 1dfd8bf685ce0009c40532fedf8a7c53 ""
+  "/usr/share/texmf/web2c/texmf.cnf" 1392645748 31083 1dfd8bf685ce0009c40532fedf8a7c53 ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1447690399 3822875 ca241aa0a66e43a29e88802b99359c90 ""
+  "portada/portada_2.tex" 0 -1 0 ""
+  "prefacio.aux" 1447712377 8 a94a2480d3289e625eea47cd1b285758 ""
+  "prefacio.tex" 1447712374 5855 7f4c4181d294ab3041108605adbb72b7 ""
+  (generated)
+  "prefacio.pdf"
+  "prefacio.log"

@@ -3,7 +3,7 @@
 \contentsline {section}{\numberline {1.1}Astronom\IeC {\'\i }a}{15}{section.1.1}
 \contentsline {section}{\numberline {1.2}Observatorio e Instrumental Astron\IeC {\'o}mico}{18}{section.1.2}
 \contentsline {subsection}{\numberline {1.2.1}Telescopio}{18}{subsection.1.2.1}
-\contentsline {subsection}{\numberline {1.2.2}C\IeC {\'a}mara CCD}{18}{subsection.1.2.2}
+\contentsline {subsection}{\numberline {1.2.2}C\IeC {\'a}mara CCD}{19}{subsection.1.2.2}
 \contentsline {subsection}{\numberline {1.2.3}Montura}{19}{subsection.1.2.3}
 \contentsline {subsection}{\numberline {1.2.4}Enfocador}{19}{subsection.1.2.4}
 \contentsline {subsection}{\numberline {1.2.5}Rueda Portafiltros}{19}{subsection.1.2.5}
@@ -11,3 +11,4 @@
 \contentsline {subsection}{\numberline {1.2.7}\IeC {\'O}ptica Adaptativa}{19}{subsection.1.2.7}
 \contentsline {subsection}{\numberline {1.2.8}Estaci\IeC {\'o}n Meteorol\IeC {\'o}gica}{19}{subsection.1.2.8}
 \contentsline {subsection}{\numberline {1.2.9}Controlador de Dispositivos}{19}{subsection.1.2.9}
+\contentsline {section}{\numberline {1.3}Estado del arte: \textit {Software}}{19}{section.1.3}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.11.16)  16 NOV 2015 22:26
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.11.16)  16 NOV 2015 23:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -573,7 +573,7 @@ LaTeX Info: Redefining \nameref on input line 174.
 
  (./portada/portada.tex
 \centeroffset=\skip63
- <imagenes/logo_ugr.jpg, id=52, 777.90625pt x 231.86626pt>
+ <imagenes/logo_ugr.jpg, id=56, 777.90625pt x 231.86626pt>
 File: imagenes/logo_ugr.jpg Graphic file (type jpg)
  <use imagenes/logo_ugr.jpg>
 Package pdftex.def Info: imagenes/logo_ugr.jpg used on input line 12.
@@ -589,7 +589,7 @@ Overfull \hbox (24.0pt too wide) in paragraph at lines 9--24
 | $[]$ 
  []
 
-<imagenes/etsiit_logo.png, id=53, 110.814pt x 40.4712pt>
+<imagenes/etsiit_logo.png, id=57, 110.814pt x 40.4712pt>
 File: imagenes/etsiit_logo.png Graphic file (type png)
  <use imagenes/etsiit_logo.png>
 Package pdftex.def Info: imagenes/etsiit_logo.png used on input line 32.
@@ -705,7 +705,7 @@ Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 1.
  [4
 
-] <imagenes/logo.png, id=78, 123.46124pt x 45.92157pt>
+] <imagenes/logo.png, id=82, 123.46124pt x 45.92157pt>
 File: imagenes/logo.png Graphic file (type png)
  <use imagenes/logo.png>
 Package pdftex.def Info: imagenes/logo.png used on input line 21.
@@ -1400,7 +1400,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 48.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 48.
-<./imagenes/telescopio.jpg, id=165, 451.6875pt x 451.6875pt>
+<./imagenes/telescopio.jpg, id=170, 451.6875pt x 451.6875pt>
 File: ./imagenes/telescopio.jpg Graphic file (type jpg)
  <use ./imagenes/telescopio.jpg>
 Package pdftex.def Info: ./imagenes/telescopio.jpg used on input line 52.
@@ -1418,6 +1418,18 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 56.
 Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 57.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 57.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 57.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 57.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 57.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 57.
+Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 58.
 Package babel Info: Redefining spanish shorthand >>
 (babel)             in language  on input line 58.
@@ -1490,17 +1502,17 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 63.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 64.
+(babel)             in language  on input line 65.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 64.
+(babel)             in language  on input line 65.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 64.
+(babel)             in language  on input line 65.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 64.
+(babel)             in language  on input line 65.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 64.
+(babel)             in language  on input line 65.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 64.
+(babel)             in language  on input line 65.
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1619,22 +1631,22 @@ LaTeX Info: Redefining \% on input line 23.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 219.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 219.
 Package rerunfilecheck Info: File `proyecto.out' has not changed.
-(rerunfilecheck)             Checksum: 059CBA3E248789E9D36A48E7C203FA7E;818.
+(rerunfilecheck)             Checksum: 43DF5DDA3D457837D00563D91C6B7DD9;890.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 219.
  ) 
 Here is how much of TeX's memory you used:
- 8704 strings out of 493304
- 125216 string characters out of 6139870
+ 8707 strings out of 493304
+ 125258 string characters out of 6139870
  227473 words of memory out of 5000000
- 11989 multiletter control sequences out of 15000+600000
- 10416 words of font info for 36 fonts, out of 8000000 for 9000
+ 11991 multiletter control sequences out of 15000+600000
+ 10775 words of font info for 37 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  34i,12n,43p,774b,447s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on proyecto.pdf (25 pages, 335158 bytes).
+Output written on proyecto.pdf (25 pages, 337812 bytes).
 PDF statistics:
- 218 PDF objects out of 1000 (max. 8388607)
- 178 compressed objects within 2 object streams
- 41 named destinations out of 1000 (max. 500000)
- 117 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 223 PDF objects out of 1000 (max. 8388607)
+ 183 compressed objects within 2 object streams
+ 42 named destinations out of 1000 (max. 500000)
+ 125 words of extra memory for PDF output out of 10000 (max. 10000000)
 
