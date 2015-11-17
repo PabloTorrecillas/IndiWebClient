@@ -10,5 +10,5 @@
 \contentsline {subsection}{\numberline {1.2.6}C\IeC {\'u}pula}{23}{subsection.1.2.6}
 \contentsline {subsection}{\numberline {1.2.7}\IeC {\'O}ptica Adaptativa}{23}{subsection.1.2.7}
 \contentsline {subsection}{\numberline {1.2.8}Estaci\IeC {\'o}n Meteorol\IeC {\'o}gica}{24}{subsection.1.2.8}
-\contentsline {subsection}{\numberline {1.2.9}Controlador de Dispositivos}{24}{subsection.1.2.9}
-\contentsline {section}{\numberline {1.3}Estado del arte: \textit {Software}}{24}{section.1.3}
+\contentsline {subsection}{\numberline {1.2.9}Controlador de Dispositivos}{25}{subsection.1.2.9}
+\contentsline {section}{\numberline {1.3}Estado del arte: \textit {Software}}{25}{section.1.3}

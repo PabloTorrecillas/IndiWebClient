@@ -1,5 +1,5 @@
 function parserDefTextVector(node){
-    var deviceName = node.getAttribute("device");
+    var deviceName = node.getAttribute("device").trim();
     var propertyName = node.getAttribute("name");
     var groupName = node.getAttribute("group"); 
 
@@ -23,15 +23,17 @@ function parserDefTextVector(node){
         var nodes = node.getElementsByTagName('defText');
 
         if(nodes.length > 0){
-            html += '<div class="elementBoxContainer">';
+            var boxId = getPropertyId(deviceName,propertyName) + "_box";
+
+            html += '<div class="elementBoxContainer" id="' +  boxId +'">';
             for (var i=0; i < nodes.length; i++) {
                 var elementName = nodes[i].getAttribute("name");
                 html += 
-                '<div class = "elementBox">' + nodes[i].getAttribute("label") + ":" + 
+                '<div class = "elementBox" data_elementname = "'+ elementName +'">' + nodes[i].getAttribute("label") + ":" + 
                     '<div id="' + getElementId(deviceName,propertyName,elementName) + "_value" + '">' + 
                         nodes[i].innerHTML + 
                     '</div>' +
-                    getInputText(node.getAttribute("perm")) + 
+                    getInputText(getElementId(deviceName,propertyName,elementName) + "_input", node.getAttribute("perm")) + 
                 '</div>';                   
             }
 
@@ -39,21 +41,16 @@ function parserDefTextVector(node){
 
        }
 
-       var buttonId = getElementId(deviceName,propertyName,elementName) + "_updateButton";
+       var buttonId = getPropertyId(deviceName,propertyName) + "_updateButton";
 
         if(node.getAttribute("perm") != 'ro'){
-            html +=  '<button id="' +  buttonId +'" class="btn btn-default">Actualizar</button>';
+            html +=  '<button id="' +  buttonId +'" class="btn btn-default" onclick="funcionEscritura(\'' + deviceName + '\', \'' + propertyName + '\');">Actualizar</button>';
 
         }
 
     html += '</div>';
 
     addDeviceToTab(deviceName, groupName, html);      
-
-    $(buttonId).click(function()
-    {
-        console.log("llega");
-    });     
 }
 
 function parserDefNumberVector(node){
@@ -303,9 +300,9 @@ function getVentana(deviceName){
     return antiguaVentana;
 }
 
-function getInputText(perm){
+function getInputText(id, perm){
     if(perm != 'ro'){
-        return '<input type="text" placeholder="Modificar" class = "updateBox">';
+        return '<input id ="'+ id +'"type="text" placeholder="Modificar" class = "updateBox">';
     }
     else{
         return "";

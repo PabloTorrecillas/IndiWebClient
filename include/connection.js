@@ -47,9 +47,34 @@ var ws;
             parserXML("<a>" + cadena + "</a>");
         }
 
-        function writeText(deviceName, propertyName, elementNames, values){
+        function funcionEscritura(deviceName, propertyName){
             debug(deviceName);
-            debug(propertyName);
+          debug(propertyName);
+
+          var boxId = getPropertyId(deviceName,propertyName) + "_box";
+
+          var box = document.getElementById(boxId);
+
+          var children = box.childNodes; 
+          var elementNames = new Array();
+          var values = new Array();
+
+          for(var i = 0; i < children.length; i++){
+            var hijo = children[i];
+            var elementName = hijo.getAttribute("data_elementname");
+
+            debug(elementName);
+
+            elementNames[i] = elementName;
+
+            var inputId = getElementId(deviceName,propertyName,elementName) + "_input";
+            var input = document.getElementById(inputId);
+
+            values[i] = input.value;
+
+            debug(values[i]);
+          }
+          
             var cadena = '<newTextVector device="' + deviceName + '" name="' + propertyName + '">';
 
             for(var i = 0; i < elementNames.length; i++){
