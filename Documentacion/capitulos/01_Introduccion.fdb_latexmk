@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1447754066 "01_Introduccion.tex" "01_Introduccion.pdf" "01_Introduccion" 1447754067
+["pdflatex"] 1447786408 "01_Introduccion.tex" "01_Introduccion.pdf" "01_Introduccion" 1447786408
   "/etc/texmf/web2c/texmf.cnf" 1447690340 1101 af7716885e081ab43982cab7b4672c1a ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti10.tfm" 1136768653 1480 aa8e34af0eb6a2941b776984cf1dfdc4 ""
@@ -7,7 +7,7 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1392645748 31083 1dfd8bf685ce0009c40532fedf8a7c53 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1447690399 3822875 ca241aa0a66e43a29e88802b99359c90 ""
   "01_Introduccion.aux" 1447753103 8 a94a2480d3289e625eea47cd1b285758 ""
-  "01_Introduccion.tex" 1447754060 19110 fe90b3fef0955e367962eab63cb35a2e ""
+  "01_Introduccion.tex" 1447786407 19128 4bb44c100dcdb5b8b77790341f26d64e ""
   (generated)
   "01_Introduccion.log"
   "01_Introduccion.pdf"

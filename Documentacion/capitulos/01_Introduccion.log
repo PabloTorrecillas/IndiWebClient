@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.11.16)  17 NOV 2015 10:54
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.11.16)  17 NOV 2015 19:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -7477,7 +7477,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.52 \caption
-             {Telescopio Astronómico (http://blog.astroaficion.com/)} \labe...
+             {Telescopio Astronómico  (Figura original: http://blog.astroaf...
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -7504,6 +7504,21 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no ( in font nullfont!
+Missing character: There is no F in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no : in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no t in font nullfont!

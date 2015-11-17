@@ -78,24 +78,29 @@ function parserDefNumberVector(node){
         var nodes = node.getElementsByTagName('defNumber');
 
         if(nodes.length > 0){
-            html += '<div class = "elementBoxContainer">';
+            var boxId = getPropertyId(deviceName,propertyName) + "_box";
+
+            html += '<div class = "elementBoxContainer" id = "'+ boxId +'">';
                 for(var i = 0; i < nodes.length; i++){  
                     var elementName = nodes[i].getAttribute("name");
                     html += 
-                    '<div class = "elementBox">' + nodes[i].getAttribute("label") + ":" + 
+                    '<div class = "elementBox" data_elementname = "'+ elementName +'">' + nodes[i].getAttribute("label") + ":" + 
                         '<div id="' + getElementId(deviceName,propertyName,elementName) + "_value" + '">' + 
                         nodes[i].innerHTML + 
                     '</div>' +
-                        getInputNumber(node.getAttribute("perm"), nodes[i]) + 
+                        getInputNumber(getElementId(deviceName,propertyName,elementName) + "_input", node.getAttribute("perm"), nodes[i]) + 
                     '</div>';  
                 }
 
-            html += '</div>';
-
-            if(node.getAttribute("perm") != 'ro'){
-                html +=  '<button id="updateButton" class="btn btn-default" style="float:right">Actualizar</button>';
-            }
+            html += '</div>';   
         }
+
+        var buttonId = getPropertyId(deviceName,propertyName) + "_updateButton";
+
+        if(node.getAttribute("perm") != 'ro'){
+                html +=  '<button id="'+ buttonId +'" class="btn btn-default" onclick="writeNumber(\'' + deviceName + '\', \'' + propertyName + '\');">Actualizar</button>';
+        }
+
     html += '</div>';
 
     addDeviceToTab(deviceName, groupName, html);
@@ -309,9 +314,9 @@ function getInputText(id, perm){
     }
 }
 
-function getInputNumber(perm, node){
+function getInputNumber(id, perm, node){
     if(perm != 'ro'){
-            return '<input type="number" id="numerics" min=' + node.getAttribute("min") + ' max = ' + node.getAttribute("max") + ' title="Format: [format: ' + node.getAttribute("format") + ", " + node.getAttribute("min") + ", " + node.getAttribute("max") + ", "  + node.getAttribute("step") +' ]">';               
+            return '<input id = "'+ id +'" type="number" id="numerics" min=' + node.getAttribute("min") + ' max = ' + node.getAttribute("max") + ' title="Format: [format: ' + node.getAttribute("format") + ", " + node.getAttribute("min") + ", " + node.getAttribute("max") + ", "  + node.getAttribute("step") +' ]">';               
     }
     else{
         return "";
