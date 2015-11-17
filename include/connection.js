@@ -49,32 +49,32 @@ var ws;
 
         function funcionEscritura(deviceName, propertyName){
             debug(deviceName);
-          debug(propertyName);
+            debug(propertyName);
 
-          var boxId = getPropertyId(deviceName,propertyName) + "_box";
+            var boxId = getPropertyId(deviceName,propertyName) + "_box";
 
-          var box = document.getElementById(boxId);
+            var box = document.getElementById(boxId);
 
-          var children = box.childNodes; 
-          var elementNames = new Array();
-          var values = new Array();
+            var children = box.childNodes; 
+            var elementNames = new Array();
+            var values = new Array();
 
-          for(var i = 0; i < children.length; i++){
-            var hijo = children[i];
-            var elementName = hijo.getAttribute("data_elementname");
+            for(var i = 0; i < children.length; i++){
+                var hijo = children[i];
+                var elementName = hijo.getAttribute("data_elementname");
 
-            debug(elementName);
+                debug(elementName);
 
-            elementNames[i] = elementName;
+                elementNames[i] = elementName;
 
-            var inputId = getElementId(deviceName,propertyName,elementName) + "_input";
-            var input = document.getElementById(inputId);
+                var inputId = getElementId(deviceName,propertyName,elementName) + "_input";
+                var input = document.getElementById(inputId);
 
-            values[i] = input.value;
+                values[i] = input.value;
 
-            debug(values[i]);
-          }
-          
+                debug(values[i]);
+            }
+
             var cadena = '<newTextVector device="' + deviceName + '" name="' + propertyName + '">';
 
             for(var i = 0; i < elementNames.length; i++){
@@ -82,7 +82,7 @@ var ws;
             }
 
             cadena += '</newTextVector>';
-            
+
             ws.send_string(cadena);
             ws.flush();
         }
