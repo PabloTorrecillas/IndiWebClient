@@ -1,23 +1,28 @@
 \select@language {spanish}
 \contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n}{15}{chapter.1}
 \contentsline {section}{\numberline {1.1}Astronom\IeC {\'\i }a}{15}{section.1.1}
-\contentsline {section}{\numberline {1.2}Observatorio e Instrumental Astron\IeC {\'o}mico}{18}{section.1.2}
+\contentsline {section}{\numberline {1.2}Observatorio e Instrumental Astron\IeC {\'o}mico}{17}{section.1.2}
 \contentsline {subsection}{\numberline {1.2.1}Telescopio}{18}{subsection.1.2.1}
-\contentsline {subsection}{\numberline {1.2.2}C\IeC {\'a}mara CCD}{20}{subsection.1.2.2}
-\contentsline {subsection}{\numberline {1.2.3}Montura}{21}{subsection.1.2.3}
-\contentsline {subsection}{\numberline {1.2.4}Enfocador}{22}{subsection.1.2.4}
-\contentsline {subsection}{\numberline {1.2.5}Rueda Portafiltros}{22}{subsection.1.2.5}
-\contentsline {subsection}{\numberline {1.2.6}C\IeC {\'u}pula}{23}{subsection.1.2.6}
+\contentsline {subsection}{\numberline {1.2.2}C\IeC {\'a}mara CCD}{19}{subsection.1.2.2}
+\contentsline {subsection}{\numberline {1.2.3}Montura}{20}{subsection.1.2.3}
+\contentsline {subsection}{\numberline {1.2.4}Enfocador}{21}{subsection.1.2.4}
+\contentsline {subsection}{\numberline {1.2.5}Rueda Portafiltros}{21}{subsection.1.2.5}
+\contentsline {subsection}{\numberline {1.2.6}C\IeC {\'u}pula}{22}{subsection.1.2.6}
 \contentsline {subsection}{\numberline {1.2.7}\IeC {\'O}ptica Adaptativa}{23}{subsection.1.2.7}
-\contentsline {subsection}{\numberline {1.2.8}Estaci\IeC {\'o}n Meteorol\IeC {\'o}gica}{24}{subsection.1.2.8}
-\contentsline {subsection}{\numberline {1.2.9}Controlador de Dispositivos}{25}{subsection.1.2.9}
-\contentsline {section}{\numberline {1.3}Estado del arte: \textit {Software}}{25}{section.1.3}
-\contentsline {section}{\numberline {1.4}ASCOM}{25}{section.1.4}
-\contentsline {section}{\numberline {1.5}INDI}{26}{section.1.5}
-\contentsline {subsection}{\numberline {1.5.1}Como funciona INDI}{26}{subsection.1.5.1}
-\contentsline {subsection}{\numberline {1.5.2}\textit {Drivers}, Servidores y Clientes de INDI}{26}{subsection.1.5.2}
-\contentsline {chapter}{\numberline {2}Objetivos}{27}{chapter.2}
-\contentsline {section}{\numberline {2.1}Objetivos Principales y Secundarios}{27}{section.2.1}
-\contentsline {section}{\numberline {2.2}Materias y Herramientas para el Desarrollo}{28}{section.2.2}
-\contentsline {section}{\numberline {2.3}Alcance de los Objetivos}{29}{section.2.3}
-\contentsline {section}{\numberline {2.4}Interdependencia de los Objetivos}{29}{section.2.4}
+\contentsline {subsection}{\numberline {1.2.8}Estaci\IeC {\'o}n Meteorol\IeC {\'o}gica}{23}{subsection.1.2.8}
+\contentsline {subsection}{\numberline {1.2.9}Controlador de Dispositivos}{24}{subsection.1.2.9}
+\contentsline {section}{\numberline {1.3}Plataformas para la creaci\IeC {\'o}n de \textit {software} astron\IeC {\'o}mico}{24}{section.1.3}
+\contentsline {section}{\numberline {1.4}ASCOM}{24}{section.1.4}
+\contentsline {section}{\numberline {1.5}INDI}{25}{section.1.5}
+\contentsline {subsection}{\numberline {1.5.1}Como funciona INDI}{25}{subsection.1.5.1}
+\contentsline {subsection}{\numberline {1.5.2}\textit {Drivers}, Servidores y Clientes de INDI}{25}{subsection.1.5.2}
+\contentsline {subsection}{\numberline {1.5.3}Descripci\IeC {\'o}n del protocolo}{26}{subsection.1.5.3}
+\contentsline {subsection}{\numberline {1.5.4}Simuladores}{27}{subsection.1.5.4}
+\contentsline {section}{\numberline {1.6}Estado del arte. \textit {Software} con INDI y sin \IeC {\'e}l}{27}{section.1.6}
+\contentsline {subsection}{\numberline {1.6.1}Clientes que no hacen uso de INDI}{27}{subsection.1.6.1}
+\contentsline {subsection}{\numberline {1.6.2}Clientes que hacen uso de INDI}{28}{subsection.1.6.2}
+\contentsline {chapter}{\numberline {2}Objetivos}{29}{chapter.2}
+\contentsline {section}{\numberline {2.1}Objetivos Principales y Secundarios}{29}{section.2.1}
+\contentsline {section}{\numberline {2.2}Materias y Herramientas para el Desarrollo}{30}{section.2.2}
+\contentsline {section}{\numberline {2.3}Alcance de los Objetivos}{31}{section.2.3}
+\contentsline {section}{\numberline {2.4}Interdependencia de los Objetivos}{31}{section.2.4}
