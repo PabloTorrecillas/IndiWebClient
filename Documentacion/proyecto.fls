@@ -196,6 +196,8 @@ INPUT ./imagenes/estacionMeteorologica.jpg
 INPUT ./imagenes/estacionMeteorologica.jpg
 INPUT ./imagenes/estacionMeteorologica.jpg
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbxti10.tfm
+INPUT capitulos/02_Objetivos.tex
+INPUT capitulos/02_Objetivos.tex
 INPUT proyecto.aux
 INPUT ./proyecto.out
 INPUT ./proyecto.out
