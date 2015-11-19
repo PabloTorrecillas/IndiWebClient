@@ -157,3 +157,45 @@ Hoy en día, en los observatorios, se pueden controlar los diversos instrumentos
 
 
 \section{Estado del arte: \textit{Software}}
+Actualmente existen dos grandes protocolos para la creación de \textit{software} astronómico. Estos dos claros protocolos son ASCOM e INDI.  La función de ambos protocolos es llegar a poder controlar  todo el instrumental astronómico desde una misma máquina.
+
+\section{ASCOM}
+El protocolo ASCOM está formado por un conjunto de desarrolladores y fabricantes de instrumentales astronómicos. Lo que buscan lograr es la compatibilidad plug-and-play, independientemente del lenguaje que se utilice entre el \textit{software} y los instrumentos astronómicos. Para ello, crean una capa para separar los dispositivos del \textit{software} que utilizan los dispositivos. Otro objetivo es conseguir hacer que cualquier driver pueda ser utilizado en cualquier lenguaje de programación.
+
+Tiene un gran inconveniente y es que actualmente solo funciona en sistemas operativos de Microsoft Windows y dificulta su desarrollo ya que solamente está abierto a un único sistema operativo.
+
+Por otra parte, hay que detallar que ASCOM no está pensado para funcionar remotamente pues su función está pensada para hacer escritorio remoto desde un sistema operativo de Microsoft Windows
+
+
+!!!!!!!!!!!!!!!!!!!!IMPORTANTE!!!!!!!!!!!!!!!!!!!!
+(PONER REFERENCIA A LA WEB DE ASCOM PARA ENGANCHAR CON LA BIBLIOGRAFIA)  (http://www.ascom-standards.org/)
+
+\section{INDI}
+INDI es un protocolo de \textit{software} libre diseñado para apoyar el control, la automatización, la adquisición de datos y el intercambio entre los dispositivos \textit{hardware} y las interfaces \textit{software}. Se puede usar tanto en dispositivos reales como en dispositivos virtuales.
+
+Su biblioteca permite controlar cualquier dispositivo con un driver INDI mediante el paso de archivos del tipo XML.
+
+INDI significa “\textit{Instrument-Neutral-Distributed-Interface}”. INDI fue creado por \textit{Elwood C. Downey} del \textit{ClearSky Institute}.
+
+\subsection{Como funciona INDI}
+Hoy en día, los sistemas de control que se desarrollan se hacen para una gama de dispositivos concretos o incluso para un dispositivo específico. Si se modifica algún parámetro del dispositivo o de la gama de dispositivos, el \textit{software} debe modificarse para asentar dicho cambio. En otras palabras, hay una fuerte conexión entre el \textit{software} y el \textit{backend} del \textit{hardware}.
+
+Para que no exista esa fuerte conexión entre el \textit{software} y el \textit{backend} del \textit{hardware} se desarrolla INDI,  ya que los clientes son totalmente conscientes de las capacidades de los diferentes dispositivos que tienen conectados a través del protocolo INDI. Esto hace que en tiempo de ejecución, se construya una interfaz gráfica en función a las características que envíe el dispositivo. Dicha interfaz por tanto, se construye de forma dinámica.
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.6\textwidth]{./imagenes/funcionINDI}
+\caption{Configuración de INDI (http://indilib.org/)} \label{fig:funcionINDI}
+\end{figure}
+
+Para que INDI funcione con total perfección se definen tres sustantivos muy importantes que hacen que encajen todas las piezas correctamente. Estos sustantivos son: \textit{drivers}, servidor y cliente.
+
+\subsection{\textit{Drivers}, Servidores y Clientes de INDI}
+\begin{itemize}
+  \item El \textit{driver} de INDI es un controlador que se comunica directamente con el dispositivo. Permite conectarse a uno o más dispositivos físicos y es el responsable de definir todos los clientes. Los \textit{drivers} envían una lista de propiedades a los clientes para que éstos puedan así definir dinámicamente sus interfaces gráficas.
+  \item El servidor es un programa que ejecuta los diferentes \textit{drivers} de los distintos dispositivos. Hace de conexión entre los dispositivos y los clientes. Por regla general está alojado en un ordenador en el cual están todos los dispositivos conectados. También el servidor permite que estén los dispositivos conectados en otras máquinas y éstas envíen los datos al servidor.
+ Todo el intercambio de datos que se realiza entre el servidor y los \textit{drivers} se consigue mediante el uso del protocolo INDI.
+  \item El cliente es un programa que hace dinámicamente la interfaz gráfica. Puede estar conectado con uno o más servidores. Una vez que conecta con uno o más servidores el cliente solicita toda la información y el servidor se la da. Seguidamente, el cliente procesa los datos y los muestra creando la interfaz que se menciona anteriormente.
+\end{itemize}
+
+\subsection{Descripción del protocolo}

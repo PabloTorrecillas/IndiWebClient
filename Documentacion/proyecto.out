@@ -11,8 +11,12 @@
 \BOOKMARK [2][-]{subsection.1.2.8}{Estaci\363n Meteorol\363gica}{section.1.2}% 11
 \BOOKMARK [2][-]{subsection.1.2.9}{Controlador de Dispositivos}{section.1.2}% 12
 \BOOKMARK [1][-]{section.1.3}{Estado del arte: Software}{chapter.1}% 13
-\BOOKMARK [0][-]{chapter.2}{Objetivos}{}% 14
-\BOOKMARK [1][-]{section.2.1}{Objetivos Principales y Secundarios}{chapter.2}% 15
-\BOOKMARK [1][-]{section.2.2}{Materias y Herramientas para el Desarrollo}{chapter.2}% 16
-\BOOKMARK [1][-]{section.2.3}{Alcance de los Objetivos}{chapter.2}% 17
-\BOOKMARK [1][-]{section.2.4}{Interdependencia de los Objetivos}{chapter.2}% 18
+\BOOKMARK [1][-]{section.1.4}{ASCOM}{chapter.1}% 14
+\BOOKMARK [1][-]{section.1.5}{INDI}{chapter.1}% 15
+\BOOKMARK [2][-]{subsection.1.5.1}{Como funciona INDI}{section.1.5}% 16
+\BOOKMARK [2][-]{subsection.1.5.2}{Drivers, Servidores y Clientes de INDI}{section.1.5}% 17
+\BOOKMARK [0][-]{chapter.2}{Objetivos}{}% 18
+\BOOKMARK [1][-]{section.2.1}{Objetivos Principales y Secundarios}{chapter.2}% 19
+\BOOKMARK [1][-]{section.2.2}{Materias y Herramientas para el Desarrollo}{chapter.2}% 20
+\BOOKMARK [1][-]{section.2.3}{Alcance de los Objetivos}{chapter.2}% 21
+\BOOKMARK [1][-]{section.2.4}{Interdependencia de los Objetivos}{chapter.2}% 22
