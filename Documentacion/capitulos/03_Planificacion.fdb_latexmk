@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1448282214 "03_Planificacion.tex" "03_Planificacion.pdf" "03_Planificacion" 1448282214
+["pdflatex"] 1448285406 "03_Planificacion.tex" "03_Planificacion.pdf" "03_Planificacion" 1448285406
   "/etc/texmf/web2c/texmf.cnf" 1447690340 1101 af7716885e081ab43982cab7b4672c1a ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
@@ -9,7 +9,7 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1392645748 31083 1dfd8bf685ce0009c40532fedf8a7c53 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1447690399 3822875 ca241aa0a66e43a29e88802b99359c90 ""
   "03_Planificacion.aux" 1448282214 8 a94a2480d3289e625eea47cd1b285758 ""
-  "03_Planificacion.tex" 1448282209 6308 fcc4922457a0ae588ec15a8b8507314f ""
+  "03_Planificacion.tex" 1448285403 10521 0af17017d1ae150638d64363b3f10758 ""
   (generated)
-  "03_Planificacion.log"
   "03_Planificacion.pdf"
+  "03_Planificacion.log"

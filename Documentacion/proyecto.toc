@@ -36,6 +36,12 @@
 \contentsline {subsection}{\numberline {3.2.5}Construcci\IeC {\'o}n}{39}{subsection.3.2.5}
 \contentsline {section}{\numberline {3.3}Estimaci\IeC {\'o}n Temporal}{39}{section.3.3}
 \contentsline {section}{\numberline {3.4}Recursos Humanos}{40}{section.3.4}
-\contentsline {chapter}{\numberline {4}Analisis}{43}{chapter.4}
-\contentsline {chapter}{\numberline {5}Dise\IeC {\~n}o}{45}{chapter.5}
-\contentsline {chapter}{\numberline {6}Implementaci\IeC {\'o}n}{47}{chapter.6}
+\contentsline {section}{\numberline {3.5}Recursos \textit {Software} Reutilizables}{41}{section.3.5}
+\contentsline {section}{\numberline {3.6}Estimaci\IeC {\'o}n de Costes Econ\IeC {\'o}micos}{41}{section.3.6}
+\contentsline {subsection}{\numberline {3.6.1}Licencias \textit {Software}}{41}{subsection.3.6.1}
+\contentsline {subsection}{\numberline {3.6.2}Recursos Humanos}{42}{subsection.3.6.2}
+\contentsline {subsection}{\numberline {3.6.3}Material}{42}{subsection.3.6.3}
+\contentsline {section}{\numberline {3.7}Temporizaci\IeC {\'o}n}{42}{section.3.7}
+\contentsline {chapter}{\numberline {4}Analisis}{45}{chapter.4}
+\contentsline {chapter}{\numberline {5}Dise\IeC {\~n}o}{47}{chapter.5}
+\contentsline {chapter}{\numberline {6}Implementaci\IeC {\'o}n}{49}{chapter.6}

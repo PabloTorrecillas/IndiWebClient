@@ -215,6 +215,9 @@ INPUT capitulos/03_Planificacion.tex
 INPUT ./imagenes/modeloIterativo.png
 INPUT ./imagenes/modeloIterativo.png
 INPUT ./imagenes/modeloIterativo.png
+INPUT ./imagenes/proyectoGantt.png
+INPUT ./imagenes/proyectoGantt.png
+INPUT ./imagenes/proyectoGantt.png
 INPUT capitulos/04_Analisis.tex
 INPUT capitulos/04_Analisis.tex
 INPUT capitulos/05_Diseno.tex
