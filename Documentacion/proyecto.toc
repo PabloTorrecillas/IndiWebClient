@@ -1,28 +1,41 @@
 \select@language {spanish}
-\contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n}{15}{chapter.1}
-\contentsline {section}{\numberline {1.1}Astronom\IeC {\'\i }a}{15}{section.1.1}
-\contentsline {section}{\numberline {1.2}Observatorio e Instrumental Astron\IeC {\'o}mico}{17}{section.1.2}
-\contentsline {subsection}{\numberline {1.2.1}Telescopio}{18}{subsection.1.2.1}
-\contentsline {subsection}{\numberline {1.2.2}C\IeC {\'a}mara CCD}{19}{subsection.1.2.2}
-\contentsline {subsection}{\numberline {1.2.3}Montura}{20}{subsection.1.2.3}
-\contentsline {subsection}{\numberline {1.2.4}Enfocador}{21}{subsection.1.2.4}
-\contentsline {subsection}{\numberline {1.2.5}Rueda Portafiltros}{21}{subsection.1.2.5}
-\contentsline {subsection}{\numberline {1.2.6}C\IeC {\'u}pula}{22}{subsection.1.2.6}
-\contentsline {subsection}{\numberline {1.2.7}\IeC {\'O}ptica Adaptativa}{23}{subsection.1.2.7}
-\contentsline {subsection}{\numberline {1.2.8}Estaci\IeC {\'o}n Meteorol\IeC {\'o}gica}{23}{subsection.1.2.8}
-\contentsline {subsection}{\numberline {1.2.9}Controlador de Dispositivos}{24}{subsection.1.2.9}
-\contentsline {section}{\numberline {1.3}Plataformas para la creaci\IeC {\'o}n de \textit {software} astron\IeC {\'o}mico}{24}{section.1.3}
-\contentsline {section}{\numberline {1.4}ASCOM}{24}{section.1.4}
-\contentsline {section}{\numberline {1.5}INDI}{25}{section.1.5}
-\contentsline {subsection}{\numberline {1.5.1}Como funciona INDI}{25}{subsection.1.5.1}
-\contentsline {subsection}{\numberline {1.5.2}\textit {Drivers}, Servidores y Clientes de INDI}{25}{subsection.1.5.2}
-\contentsline {subsection}{\numberline {1.5.3}Descripci\IeC {\'o}n del protocolo}{26}{subsection.1.5.3}
-\contentsline {subsection}{\numberline {1.5.4}Simuladores}{27}{subsection.1.5.4}
-\contentsline {section}{\numberline {1.6}Estado del arte. \textit {Software} con INDI y sin \IeC {\'e}l}{27}{section.1.6}
-\contentsline {subsection}{\numberline {1.6.1}Clientes que no hacen uso de INDI}{27}{subsection.1.6.1}
-\contentsline {subsection}{\numberline {1.6.2}Clientes que hacen uso de INDI}{28}{subsection.1.6.2}
-\contentsline {chapter}{\numberline {2}Objetivos}{29}{chapter.2}
-\contentsline {section}{\numberline {2.1}Objetivos Principales y Secundarios}{29}{section.2.1}
-\contentsline {section}{\numberline {2.2}Materias y Herramientas para el Desarrollo}{30}{section.2.2}
-\contentsline {section}{\numberline {2.3}Alcance de los Objetivos}{31}{section.2.3}
-\contentsline {section}{\numberline {2.4}Interdependencia de los Objetivos}{31}{section.2.4}
+\contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n}{19}{chapter.1}
+\contentsline {section}{\numberline {1.1}Astronom\IeC {\'\i }a}{19}{section.1.1}
+\contentsline {section}{\numberline {1.2}Observatorio e Instrumental Astron\IeC {\'o}mico}{21}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Telescopio}{22}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}C\IeC {\'a}mara CCD}{23}{subsection.1.2.2}
+\contentsline {subsection}{\numberline {1.2.3}Montura}{24}{subsection.1.2.3}
+\contentsline {subsection}{\numberline {1.2.4}Enfocador}{25}{subsection.1.2.4}
+\contentsline {subsection}{\numberline {1.2.5}Rueda Portafiltros}{25}{subsection.1.2.5}
+\contentsline {subsection}{\numberline {1.2.6}C\IeC {\'u}pula}{26}{subsection.1.2.6}
+\contentsline {subsection}{\numberline {1.2.7}\IeC {\'O}ptica Adaptativa}{27}{subsection.1.2.7}
+\contentsline {subsection}{\numberline {1.2.8}Estaci\IeC {\'o}n Meteorol\IeC {\'o}gica}{27}{subsection.1.2.8}
+\contentsline {subsection}{\numberline {1.2.9}Controlador de Dispositivos}{28}{subsection.1.2.9}
+\contentsline {section}{\numberline {1.3}Plataformas para la creaci\IeC {\'o}n de \textit {software} astron\IeC {\'o}mico}{28}{section.1.3}
+\contentsline {section}{\numberline {1.4}ASCOM}{28}{section.1.4}
+\contentsline {section}{\numberline {1.5}INDI}{29}{section.1.5}
+\contentsline {subsection}{\numberline {1.5.1}C\IeC {\'o}mo funciona INDI}{29}{subsection.1.5.1}
+\contentsline {subsection}{\numberline {1.5.2}\textit {Drivers}, Servidores y Clientes de INDI}{29}{subsection.1.5.2}
+\contentsline {subsection}{\numberline {1.5.3}Descripci\IeC {\'o}n del protocolo}{30}{subsection.1.5.3}
+\contentsline {subsection}{\numberline {1.5.4}Simuladores}{31}{subsection.1.5.4}
+\contentsline {section}{\numberline {1.6}Estado del arte. \textit {Software} con INDI y sin \IeC {\'e}l}{31}{section.1.6}
+\contentsline {subsection}{\numberline {1.6.1}Clientes que no hacen uso de INDI}{31}{subsection.1.6.1}
+\contentsline {subsection}{\numberline {1.6.2}Clientes que hacen uso de INDI}{32}{subsection.1.6.2}
+\contentsline {chapter}{\numberline {2}Objetivos}{33}{chapter.2}
+\contentsline {section}{\numberline {2.1}Objetivos Principales y Secundarios}{33}{section.2.1}
+\contentsline {section}{\numberline {2.2}Materias y Herramientas para el Desarrollo}{34}{section.2.2}
+\contentsline {section}{\numberline {2.3}Alcance de los Objetivos}{35}{section.2.3}
+\contentsline {section}{\numberline {2.4}Interdependencia de los Objetivos}{35}{section.2.4}
+\contentsline {chapter}{\numberline {3}Planificaci\IeC {\'o}n}{37}{chapter.3}
+\contentsline {section}{\numberline {3.1}Metodolog\IeC {\'\i }a de Desarrollo}{37}{section.3.1}
+\contentsline {section}{\numberline {3.2}Fases}{37}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Planteamiento del Problema}{38}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Especificaciones del Proyecto}{38}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Planificaci\IeC {\'o}n}{38}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Ingenier\IeC {\'\i }a}{39}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}Construcci\IeC {\'o}n}{39}{subsection.3.2.5}
+\contentsline {section}{\numberline {3.3}Estimaci\IeC {\'o}n Temporal}{39}{section.3.3}
+\contentsline {section}{\numberline {3.4}Recursos Humanos}{40}{section.3.4}
+\contentsline {chapter}{\numberline {4}Analisis}{43}{chapter.4}
+\contentsline {chapter}{\numberline {5}Dise\IeC {\~n}o}{45}{chapter.5}
+\contentsline {chapter}{\numberline {6}Implementaci\IeC {\'o}n}{47}{chapter.6}
