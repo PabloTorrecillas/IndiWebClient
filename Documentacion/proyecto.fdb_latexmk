@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1448182934 "proyecto.tex" "proyecto.pdf" "proyecto" 1448182935
+["pdflatex"] 1448187744 "proyecto.tex" "proyecto.pdf" "proyecto" 1448187745
   "/etc/texmf/web2c/texmf.cnf" 1447690340 1101 af7716885e081ab43982cab7b4672c1a ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
@@ -84,7 +84,7 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1392645748 31083 1dfd8bf685ce0009c40532fedf8a7c53 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1447690440 1346346 7f2b8b715a9ddb095afe3697a6ba02b5 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1447690399 3822875 ca241aa0a66e43a29e88802b99359c90 ""
-  "capitulos/01_Introduccion.tex" 1447957744 28919 3c93b85a8064377f492e5e91227ea81e ""
+  "capitulos/01_Introduccion.tex" 1448187740 28920 197e4430e7dc17e1f649db83887b1ffe ""
   "capitulos/02_Objetivos.tex" 1448182931 5616 566e8efe9b33b0f526ddf5490963531d ""
   "imagenes/ccd.jpg" 1447482615 34677 4769a5021899e8a9f1abc61aaf502e2e ""
   "imagenes/cupula.jpg" 1447582933 13243 326ccb6e8fa7ec202bf77d1129569de9 ""
@@ -102,13 +102,13 @@
   "portada/portada.tex" 1447713644 1218 180a456df965d0034ade323894df17fe ""
   "portada/portada_2.tex" 1447691259 1219 4ec87d1451c01633a88f48bb6811c286 ""
   "prefacios/prefacio.tex" 1447746554 5865 cab53742d4a71b1a56c016d34e0d9625 ""
-  "proyecto.aux" 1448182935 6328 fd070ce962c3e91685771cd3c61fd649 ""
-  "proyecto.out" 1448182935 1968 bd2d5298eb95226c10494db8f12d2d16 ""
+  "proyecto.aux" 1448187745 6328 fd070ce962c3e91685771cd3c61fd649 ""
+  "proyecto.out" 1448187745 1968 bd2d5298eb95226c10494db8f12d2d16 ""
   "proyecto.tex" 1447940096 5431 81f93ae1c7f9da9b92719ce1d06f7480 ""
-  "proyecto.toc" 1448182935 2518 c393b4f28c02d7fe847a23150b3569df ""
+  "proyecto.toc" 1448187745 2518 c393b4f28c02d7fe847a23150b3569df ""
   (generated)
-  "proyecto.pdf"
-  "proyecto.log"
   "proyecto.aux"
-  "proyecto.out"
+  "proyecto.pdf"
   "proyecto.toc"
+  "proyecto.log"
+  "proyecto.out"

@@ -138,14 +138,16 @@ function parserDefSwitchVector(node){
 
 
         if(nodes.length > 0 && node.getAttribute("perm") != 'ro'){
-            html += '<div class = "elementBoxContainer">';
+            var boxId = getPropertyId(deviceName, propertyName) + "_box";
+
+            html += '<div class = "elementBoxContainer" id = "'+ boxId +'">';
 
                 if(node.getAttribute("rule") == 'OneOfMany'){      
                     html += '<select>';        
                         for(var i = 0; i < nodes.length; i++){  
                             var elementName = nodes[i].getAttribute("name");
                             html += 
-                            '<div class = "elementBox" id="' + getElementId(deviceName,propertyName,elementName) + "_value" + '">' + 
+                            '<div class = "elementBox" data_elementname = "'+ elementName +'" id="' + getElementId(deviceName,propertyName,elementName) + "_value" + '">' + 
                                 getInputSwitch(node.getAttribute("rule"), nodes[i], deviceName, propertyName, elementName) + 
                             '</div>';
                         }

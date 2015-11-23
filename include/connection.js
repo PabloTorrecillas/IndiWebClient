@@ -119,8 +119,6 @@ var ws;
                 debug(values[i]);
             }
 
-
-
             var cadena = '<newNumberVector device="' + deviceName + '" name="' + propertyName + '">';
 
             for(var i = 0; i < elementNames.length; i++){
@@ -133,10 +131,44 @@ var ws;
             ws.flush();
         }
 
+        function writeSwitch(deviceName, propertyName){
+            debug(deviceName);
+            debug(propertyName);
 
-        /*
-            PAra cada uno de los dispositivos (ventanas), crear el botón de enableBLOB y enviar en el ON el Also y en el off el Never
+            var boxId = getPropertyId(deviceName,propertyName) + "_box";
 
-            <enableBLOB device="NOMBREDELDISPOSITIVO">Also/Never</enableBLOB>
-        */
+            var box = document.getElementById(boxId);
+
+            var children = box.childNodes; 
+            var elementNames = new Array();
+            var values = new Array();
+
+            for(var i = 0; i < children.length; i++){
+                var hijo = children[i];
+                var elementName = hijo.getAttribute("data_elementname");
+
+                debug(elementName);
+
+                elementNames[i] = elementName;
+
+                var inputId = getElementId(deviceName,propertyName,elementName) + "_input";
+                var input = document.getElementById(inputId);
+
+                values[i] = input.value;
+
+                debug(values[i]);
+            }
+
+            var cadena = '<newSwitchVector device="' + deviceName + '" name="' + propertyName + '">';
+
+            for(var i = 0; i < elementNames.length; i++){
+                cadena += '<oneSwitch name="'+ elementNames[i] +'">'+ values[i] +'</oneSwitch>';
+            }
+
+            cadena += '</newSwitchVector>';
+            
+            ws.send_string(cadena);
+            ws.flush();
+        }
+
         
