@@ -11,38 +11,38 @@
 \BOOKMARK [2][-]{subsection.1.2.8}{Estaci\363n Meteorol\363gica}{section.1.2}% 11
 \BOOKMARK [2][-]{subsection.1.2.9}{Controlador de Dispositivos}{section.1.2}% 12
 \BOOKMARK [1][-]{section.1.3}{Plataformas para la creaci\363n de software astron\363mico}{chapter.1}% 13
-\BOOKMARK [1][-]{section.1.4}{ASCOM}{chapter.1}% 14
-\BOOKMARK [1][-]{section.1.5}{INDI}{chapter.1}% 15
-\BOOKMARK [2][-]{subsection.1.5.1}{C\363mo funciona INDI}{section.1.5}% 16
-\BOOKMARK [2][-]{subsection.1.5.2}{Drivers, Servidores y Clientes de INDI}{section.1.5}% 17
-\BOOKMARK [2][-]{subsection.1.5.3}{Descripci\363n del protocolo}{section.1.5}% 18
-\BOOKMARK [2][-]{subsection.1.5.4}{Simuladores}{section.1.5}% 19
-\BOOKMARK [1][-]{section.1.6}{Estado del arte. Software con INDI y sin \351l}{chapter.1}% 20
-\BOOKMARK [2][-]{subsection.1.6.1}{Clientes que no hacen uso de INDI}{section.1.6}% 21
-\BOOKMARK [2][-]{subsection.1.6.2}{Clientes que hacen uso de INDI}{section.1.6}% 22
-\BOOKMARK [0][-]{chapter.2}{Objetivos}{}% 23
-\BOOKMARK [1][-]{section.2.1}{Objetivos Principales y Secundarios}{chapter.2}% 24
-\BOOKMARK [1][-]{section.2.2}{Materias y Herramientas para el Desarrollo}{chapter.2}% 25
-\BOOKMARK [1][-]{section.2.3}{Alcance de los Objetivos}{chapter.2}% 26
-\BOOKMARK [1][-]{section.2.4}{Interdependencia de los Objetivos}{chapter.2}% 27
-\BOOKMARK [0][-]{chapter.3}{Planificaci\363n}{}% 28
-\BOOKMARK [1][-]{section.3.1}{Metodolog\355a de Desarrollo}{chapter.3}% 29
-\BOOKMARK [1][-]{section.3.2}{Fases}{chapter.3}% 30
-\BOOKMARK [2][-]{subsection.3.2.1}{Planteamiento del Problema}{section.3.2}% 31
-\BOOKMARK [2][-]{subsection.3.2.2}{Especificaciones del Proyecto}{section.3.2}% 32
-\BOOKMARK [2][-]{subsection.3.2.3}{Planificaci\363n}{section.3.2}% 33
-\BOOKMARK [2][-]{subsection.3.2.4}{Ingenier\355a}{section.3.2}% 34
-\BOOKMARK [2][-]{subsection.3.2.5}{Construcci\363n}{section.3.2}% 35
-\BOOKMARK [1][-]{section.3.3}{Estimaci\363n Temporal}{chapter.3}% 36
-\BOOKMARK [1][-]{section.3.4}{Recursos Humanos}{chapter.3}% 37
-\BOOKMARK [1][-]{section.3.5}{Recursos Software Reutilizables}{chapter.3}% 38
-\BOOKMARK [1][-]{section.3.6}{Estimaci\363n de Costes Econ\363micos}{chapter.3}% 39
-\BOOKMARK [2][-]{subsection.3.6.1}{Licencias Software}{section.3.6}% 40
-\BOOKMARK [2][-]{subsection.3.6.2}{Recursos Humanos}{section.3.6}% 41
-\BOOKMARK [2][-]{subsection.3.6.3}{Material}{section.3.6}% 42
-\BOOKMARK [1][-]{section.3.7}{Temporizaci\363n}{chapter.3}% 43
-\BOOKMARK [0][-]{chapter.4}{Analisis}{}% 44
-\BOOKMARK [1][-]{section.4.1}{An\341lisis de Requisitos}{chapter.4}% 45
-\BOOKMARK [2][-]{subsection.4.1.1}{Requisitos Funcionales}{section.4.1}% 46
+\BOOKMARK [2][-]{subsection.1.3.1}{ASCOM}{section.1.3}% 14
+\BOOKMARK [2][-]{subsection.1.3.2}{INDI}{section.1.3}% 15
+\BOOKMARK [1][-]{section.1.4}{Estado del arte. Software con INDI y sin \351l}{chapter.1}% 16
+\BOOKMARK [2][-]{subsection.1.4.1}{Clientes que no hacen uso de INDI}{section.1.4}% 17
+\BOOKMARK [2][-]{subsection.1.4.2}{Clientes que hacen uso de INDIClientesINDI}{section.1.4}% 18
+\BOOKMARK [1][-]{section.1.5}{Conexi\363n: Socket y WebSocket}{chapter.1}% 19
+\BOOKMARK [0][-]{chapter.2}{Objetivos}{}% 20
+\BOOKMARK [1][-]{section.2.1}{Objetivos Principales y Secundarios}{chapter.2}% 21
+\BOOKMARK [1][-]{section.2.2}{Materias y Herramientas para el Desarrollo}{chapter.2}% 22
+\BOOKMARK [1][-]{section.2.3}{Alcance de los Objetivos}{chapter.2}% 23
+\BOOKMARK [1][-]{section.2.4}{Interdependencia de los Objetivos}{chapter.2}% 24
+\BOOKMARK [0][-]{chapter.3}{Planificaci\363n}{}% 25
+\BOOKMARK [1][-]{section.3.1}{Metodolog\355a de Desarrollo}{chapter.3}% 26
+\BOOKMARK [1][-]{section.3.2}{Fases}{chapter.3}% 27
+\BOOKMARK [2][-]{subsection.3.2.1}{Planteamiento del Problema}{section.3.2}% 28
+\BOOKMARK [2][-]{subsection.3.2.2}{Especificaciones del Proyecto}{section.3.2}% 29
+\BOOKMARK [2][-]{subsection.3.2.3}{Planificaci\363n}{section.3.2}% 30
+\BOOKMARK [2][-]{subsection.3.2.4}{Ingenier\355a}{section.3.2}% 31
+\BOOKMARK [2][-]{subsection.3.2.5}{Construcci\363n}{section.3.2}% 32
+\BOOKMARK [1][-]{section.3.3}{Estimaci\363n Temporal}{chapter.3}% 33
+\BOOKMARK [1][-]{section.3.4}{Recursos Humanos}{chapter.3}% 34
+\BOOKMARK [1][-]{section.3.5}{Recursos Software Reutilizables}{chapter.3}% 35
+\BOOKMARK [1][-]{section.3.6}{Estimaci\363n de Costes Econ\363micos}{chapter.3}% 36
+\BOOKMARK [2][-]{subsection.3.6.1}{Licencias Software}{section.3.6}% 37
+\BOOKMARK [2][-]{subsection.3.6.2}{Recursos Humanos}{section.3.6}% 38
+\BOOKMARK [2][-]{subsection.3.6.3}{Material}{section.3.6}% 39
+\BOOKMARK [1][-]{section.3.7}{Temporizaci\363n}{chapter.3}% 40
+\BOOKMARK [0][-]{chapter.4}{Analisis}{}% 41
+\BOOKMARK [1][-]{section.4.1}{An\341lisis de Requisitos}{chapter.4}% 42
+\BOOKMARK [2][-]{subsection.4.1.1}{Requisitos Funcionales}{section.4.1}% 43
+\BOOKMARK [2][-]{subsection.4.1.2}{Requisitos No Funcionales}{section.4.1}% 44
+\BOOKMARK [1][-]{section.4.2}{Descripci\363n de Actores}{chapter.4}% 45
+\BOOKMARK [1][-]{section.4.3}{Descripci\363n de Casos de Uso}{chapter.4}% 46
 \BOOKMARK [0][-]{chapter.5}{Dise\361o e Implementaci\363n}{}% 47
-\BOOKMARK [0][-]{chapter*.8}{Bibliograf\355a}{}% 48
+\BOOKMARK [0][-]{chapter*.12}{Bibliograf\355a}{}% 48

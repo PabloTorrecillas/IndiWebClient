@@ -3,46 +3,52 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: proyecto.aux
 The style file: plain.bst
 Database file #1: bibliografia.bib
+Warning--to sort, need author or key in ClientesINDI
 Warning--to sort, need author or key in ASCOM
-You've used 1 entry,
+Warning--to sort, need author or key in INDI
+Warning--to sort, need author or key in MaximDL
+Warning--to sort, need author or key in ImagesPlus
+Warning--to sort, need author or key in Astroplanner
+Warning--to sort, need author or key in NikonAmazon
+You've used 7 entries,
             2118 wiz_defined-function locations,
-            502 strings with 4120 characters,
-and the built_in function-call counts, 188 in all, are:
-= -- 17
-> -- 1
+            526 strings with 4742 characters,
+and the built_in function-call counts, 1196 in all, are:
+= -- 119
+> -- 7
 < -- 0
-+ -- 1
++ -- 7
 - -- 0
-* -- 7
-:= -- 28
-add.period$ -- 3
-call.type$ -- 1
-change.case$ -- 3
+* -- 37
+:= -- 142
+add.period$ -- 21
+call.type$ -- 7
+change.case$ -- 21
 chr.to.int$ -- 0
-cite$ -- 2
-duplicate$ -- 7
-empty$ -- 24
+cite$ -- 14
+duplicate$ -- 49
+empty$ -- 162
 format.name$ -- 0
-if$ -- 43
+if$ -- 295
 int.to.chr$ -- 0
-int.to.str$ -- 1
+int.to.str$ -- 7
 missing$ -- 0
-newline$ -- 8
+newline$ -- 38
 num.names$ -- 0
-pop$ -- 10
+pop$ -- 70
 preamble$ -- 1
-purify$ -- 2
+purify$ -- 14
 quote$ -- 0
-skip$ -- 5
+skip$ -- 35
 stack$ -- 0
-substring$ -- 5
-swap$ -- 1
+substring$ -- 35
+swap$ -- 7
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 4
-warning$ -- 1
+type$ -- 28
+warning$ -- 7
 while$ -- 0
-width$ -- 2
-write$ -- 11
-(There was 1 warning)
+width$ -- 8
+write$ -- 65
+(There were 7 warnings)

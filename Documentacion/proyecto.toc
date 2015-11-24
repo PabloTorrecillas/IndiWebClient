@@ -12,15 +12,16 @@
 \contentsline {subsection}{\numberline {1.2.8}Estaci\IeC {\'o}n Meteorol\IeC {\'o}gica}{27}{subsection.1.2.8}
 \contentsline {subsection}{\numberline {1.2.9}Controlador de Dispositivos}{28}{subsection.1.2.9}
 \contentsline {section}{\numberline {1.3}Plataformas para la creaci\IeC {\'o}n de \textit {software} astron\IeC {\'o}mico}{28}{section.1.3}
-\contentsline {section}{\numberline {1.4}ASCOM}{28}{section.1.4}
-\contentsline {section}{\numberline {1.5}INDI}{29}{section.1.5}
-\contentsline {subsection}{\numberline {1.5.1}C\IeC {\'o}mo funciona INDI}{29}{subsection.1.5.1}
-\contentsline {subsection}{\numberline {1.5.2}\textit {Drivers}, Servidores y Clientes de INDI}{29}{subsection.1.5.2}
-\contentsline {subsection}{\numberline {1.5.3}Descripci\IeC {\'o}n del protocolo}{30}{subsection.1.5.3}
-\contentsline {subsection}{\numberline {1.5.4}Simuladores}{31}{subsection.1.5.4}
-\contentsline {section}{\numberline {1.6}Estado del arte. \textit {Software} con INDI y sin \IeC {\'e}l}{31}{section.1.6}
-\contentsline {subsection}{\numberline {1.6.1}Clientes que no hacen uso de INDI}{31}{subsection.1.6.1}
-\contentsline {subsection}{\numberline {1.6.2}Clientes que hacen uso de INDI}{32}{subsection.1.6.2}
+\contentsline {subsection}{\numberline {1.3.1}ASCOM}{28}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}INDI}{29}{subsection.1.3.2}
+\contentsline {subsubsection}{C\IeC {\'o}mo funciona INDI}{29}{section*.8}
+\contentsline {subsubsection}{\textit {Drivers}, Servidores y Clientes de INDI}{29}{section*.9}
+\contentsline {subsubsection}{Descripci\IeC {\'o}n del protocolo}{30}{section*.10}
+\contentsline {subsubsection}{Simuladores}{31}{section*.11}
+\contentsline {section}{\numberline {1.4}Estado del arte. \textit {Software} con INDI y sin \IeC {\'e}l}{31}{section.1.4}
+\contentsline {subsection}{\numberline {1.4.1}Clientes que no hacen uso de INDI}{31}{subsection.1.4.1}
+\contentsline {subsection}{\numberline {1.4.2}Clientes que hacen uso de INDI\cite {ClientesINDI}}{32}{subsection.1.4.2}
+\contentsline {section}{\numberline {1.5}Conexi\IeC {\'o}n: \textit {Socket} y \textit {WebSocket}}{32}{section.1.5}
 \contentsline {chapter}{\numberline {2}Objetivos}{33}{chapter.2}
 \contentsline {section}{\numberline {2.1}Objetivos Principales y Secundarios}{33}{section.2.1}
 \contentsline {section}{\numberline {2.2}Materias y Herramientas para el Desarrollo}{34}{section.2.2}
@@ -45,5 +46,8 @@
 \contentsline {chapter}{\numberline {4}Analisis}{45}{chapter.4}
 \contentsline {section}{\numberline {4.1}An\IeC {\'a}lisis de Requisitos}{45}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Requisitos Funcionales}{45}{subsection.4.1.1}
-\contentsline {chapter}{\numberline {5}Dise\IeC {\~n}o e Implementaci\IeC {\'o}n}{47}{chapter.5}
-\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{49}{chapter*.8}
+\contentsline {subsection}{\numberline {4.1.2}Requisitos No Funcionales}{46}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.2}Descripci\IeC {\'o}n de Actores}{46}{section.4.2}
+\contentsline {section}{\numberline {4.3}Descripci\IeC {\'o}n de Casos de Uso}{47}{section.4.3}
+\contentsline {chapter}{\numberline {5}Dise\IeC {\~n}o e Implementaci\IeC {\'o}n}{49}{chapter.5}
+\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{51}{chapter*.12}
