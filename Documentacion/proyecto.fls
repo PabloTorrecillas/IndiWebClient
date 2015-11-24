@@ -36,6 +36,8 @@ INPUT /usr/share/texlive/texmf-dist/tex/generic/babel-spanish/spanish.ldf
 INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
 INPUT /usr/share/texlive/texmf-dist/tex/latex/eurosym/eurosym.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/eurosym/eurosym.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/cite/cite.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/cite/cite.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/dcolumn.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/dcolumn.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
@@ -215,15 +217,17 @@ INPUT capitulos/03_Planificacion.tex
 INPUT ./imagenes/modeloIterativo.png
 INPUT ./imagenes/modeloIterativo.png
 INPUT ./imagenes/modeloIterativo.png
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/eurosym/feymr10.tfm
 INPUT ./imagenes/proyectoGantt.png
 INPUT ./imagenes/proyectoGantt.png
 INPUT ./imagenes/proyectoGantt.png
 INPUT capitulos/04_Analisis.tex
 INPUT capitulos/04_Analisis.tex
-INPUT capitulos/05_Diseno.tex
-INPUT capitulos/05_Diseno.tex
-INPUT capitulos/06_Implementacion.tex
-INPUT capitulos/06_Implementacion.tex
+INPUT capitulos/05_DisenoEImplementacion.tex
+INPUT capitulos/05_DisenoEImplementacion.tex
+INPUT proyecto.bbl
+INPUT proyecto.bbl
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
 INPUT proyecto.aux
 INPUT ./proyecto.out
 INPUT ./proyecto.out
@@ -234,3 +238,5 @@ INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/eurosym/feymr10.pfb
