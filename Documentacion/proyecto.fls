@@ -229,6 +229,9 @@ INPUT ./imagenes/proyectoGantt.png
 INPUT ./imagenes/proyectoGantt.png
 INPUT capitulos/04_Analisis.tex
 INPUT capitulos/04_Analisis.tex
+INPUT ./imagenes/DiagramaCasosUsoFinal.jpeg
+INPUT ./imagenes/DiagramaCasosUsoFinal.jpeg
+INPUT ./imagenes/DiagramaCasosUsoFinal.jpeg
 INPUT capitulos/05_DisenoEImplementacion.tex
 INPUT capitulos/05_DisenoEImplementacion.tex
 INPUT proyecto.bbl
