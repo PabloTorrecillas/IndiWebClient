@@ -249,3 +249,31 @@ A continuación se hace un pequeño detalle de algunos de estos \textit{software
 Como conclusión final diremos, que vistos algunos de los clientes que se pueden usar para llevar a cabo el control de un observatorio hay que resaltar que ninguno de ellos es capaz de llevar dicho control desde el navegador, y por tanto, necesitaríamos de un pc con unos requerimientos mínimos puesto que todos los pcs que existen en la actualidad los superarían, y una instalación del \textit{software} que, en nuestro caso, seleccionásemos.
 
 \section{Conexión: \textit{Socket} y \textit{WebSocket}}
+Al comenzar a trabajar en el apartado de  las conexiones del cliente web y el servidor, advertimos  que necesitábamos  crear un socket desde el prototipo del cliente para que funcionase correctamente, ya que lo que se pretendía, y esa era nuestra búsqueda, que la conexión fuese persistente entre el cliente y el servidor, y además, que ambas partes pudiesen enviar datos en cualquier momento. Para ello se hizo uso del \textit{websocket}.
+
+\subsection{\textit{Socket}}
+Un \textit{Socket} de Internet es un método en la comunicación por el cual un cliente y un servidor pueden intercambiar cualquier flujo de datos y que generalmente se hace de manera fiable y ordenada. Es usado para la familia de protocolos \textit{TCP/IP}.
+
+El \textit{Socket} constituye el mecanismo para la entrega de paquetes de datos que provienen de la tarjeta de red a los procesos o hilos apropiados. Además, queda definido por un par de direcciones IP, una local y otra remota, un protocolo de transporte y un par de números que son el puerto local y el puerto remoto. \cite{Socket}
+
+\subsection{\textit{WebSocket}}
+Un \textit{WebSocket} es una tecnología que proporciona un canal de comunicación bidireccional sobre un único \textit{socket TCP}. Está diseñada para ser implementada en navegadores y en servidores web, sin embargo, puede utilizarse por cualquier aplicación cliente/servidor.
+
+En el ámbito del cliente, \textit{WebSocket} está ya implementado en \textit{Mozilla Firefox 8}, \textit{Google Chrome 4} y \textit{Safari 5}. Para versión móvil de \textit{Safari} en el \textit{iOS 4.2} y en \textit{Internet Explorer 10}. \cite{WebSocket}
+
+Para ejecutar un \textit{websocket}, tan solo hay que lanzar en el terminal la siguiente instrucción:
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.8\textwidth]{./imagenes/WebSocket}
+\caption{Lanzamiento de un \textit{WebSocket}} \label{fig:WebSocket}
+\end{figure}\\
+
+Con eso estaremos “\textit{WebSockificando}” el puerto 4000 del servidor y el puerto 7624 de nuestra máquina.\\
+
+Las comunicaciones de origen cruzado son un protocolo moderno creado directamente para \textit{WebSocket}. Aunque sigue siendo necesario que se aseguren las comunicaciones entre clientes y servidores de forma segura, \textit{WebSocket} permite la comunicación entre las partes de cualquier dominio.\\
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.3\textwidth]{./imagenes/WebSocketsDiagrama}
+\caption{Diagrama de funcionamiento de un \textit{WebSocket}} \label{fig:WebSocketsDiagrama}
+\end{figure}

@@ -22,32 +22,47 @@
 \contentsline {subsection}{\numberline {1.4.1}Clientes que no hacen uso de INDI}{31}{subsection.1.4.1}
 \contentsline {subsection}{\numberline {1.4.2}Clientes que hacen uso de INDI\cite {ClientesINDI}}{32}{subsection.1.4.2}
 \contentsline {section}{\numberline {1.5}Conexi\IeC {\'o}n: \textit {Socket} y \textit {WebSocket}}{32}{section.1.5}
-\contentsline {chapter}{\numberline {2}Objetivos}{33}{chapter.2}
-\contentsline {section}{\numberline {2.1}Objetivos Principales y Secundarios}{33}{section.2.1}
-\contentsline {section}{\numberline {2.2}Materias y Herramientas para el Desarrollo}{34}{section.2.2}
-\contentsline {section}{\numberline {2.3}Alcance de los Objetivos}{35}{section.2.3}
-\contentsline {section}{\numberline {2.4}Interdependencia de los Objetivos}{35}{section.2.4}
-\contentsline {chapter}{\numberline {3}Planificaci\IeC {\'o}n}{37}{chapter.3}
-\contentsline {section}{\numberline {3.1}Metodolog\IeC {\'\i }a de Desarrollo}{37}{section.3.1}
-\contentsline {section}{\numberline {3.2}Fases}{37}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Planteamiento del Problema}{38}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Especificaciones del Proyecto}{38}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Planificaci\IeC {\'o}n}{38}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}Ingenier\IeC {\'\i }a}{39}{subsection.3.2.4}
-\contentsline {subsection}{\numberline {3.2.5}Construcci\IeC {\'o}n}{39}{subsection.3.2.5}
-\contentsline {section}{\numberline {3.3}Estimaci\IeC {\'o}n Temporal}{39}{section.3.3}
-\contentsline {section}{\numberline {3.4}Recursos Humanos}{40}{section.3.4}
-\contentsline {section}{\numberline {3.5}Recursos \textit {Software} Reutilizables}{41}{section.3.5}
-\contentsline {section}{\numberline {3.6}Estimaci\IeC {\'o}n de Costes Econ\IeC {\'o}micos}{41}{section.3.6}
-\contentsline {subsection}{\numberline {3.6.1}Licencias \textit {Software}}{41}{subsection.3.6.1}
-\contentsline {subsection}{\numberline {3.6.2}Recursos Humanos}{42}{subsection.3.6.2}
-\contentsline {subsection}{\numberline {3.6.3}Material}{42}{subsection.3.6.3}
-\contentsline {section}{\numberline {3.7}Temporizaci\IeC {\'o}n}{42}{section.3.7}
-\contentsline {chapter}{\numberline {4}Analisis}{45}{chapter.4}
-\contentsline {section}{\numberline {4.1}An\IeC {\'a}lisis de Requisitos}{45}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Requisitos Funcionales}{45}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Requisitos No Funcionales}{46}{subsection.4.1.2}
-\contentsline {section}{\numberline {4.2}Descripci\IeC {\'o}n de Actores}{46}{section.4.2}
-\contentsline {section}{\numberline {4.3}Descripci\IeC {\'o}n de Casos de Uso}{47}{section.4.3}
-\contentsline {chapter}{\numberline {5}Dise\IeC {\~n}o e Implementaci\IeC {\'o}n}{49}{chapter.5}
-\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{51}{chapter*.12}
+\contentsline {subsection}{\numberline {1.5.1}\textit {Socket}}{32}{subsection.1.5.1}
+\contentsline {subsection}{\numberline {1.5.2}\textit {WebSocket}}{33}{subsection.1.5.2}
+\contentsline {chapter}{\numberline {2}Objetivos}{35}{chapter.2}
+\contentsline {section}{\numberline {2.1}Objetivos Principales y Secundarios}{35}{section.2.1}
+\contentsline {section}{\numberline {2.2}Materias y Herramientas para el Desarrollo}{36}{section.2.2}
+\contentsline {section}{\numberline {2.3}Alcance de los Objetivos}{37}{section.2.3}
+\contentsline {section}{\numberline {2.4}Interdependencia de los Objetivos}{37}{section.2.4}
+\contentsline {chapter}{\numberline {3}Planificaci\IeC {\'o}n}{39}{chapter.3}
+\contentsline {section}{\numberline {3.1}Metodolog\IeC {\'\i }a de Desarrollo}{39}{section.3.1}
+\contentsline {section}{\numberline {3.2}Fases}{39}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Planteamiento del Problema}{40}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Especificaciones del Proyecto}{40}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Planificaci\IeC {\'o}n}{40}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Ingenier\IeC {\'\i }a}{41}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}Construcci\IeC {\'o}n}{41}{subsection.3.2.5}
+\contentsline {section}{\numberline {3.3}Estimaci\IeC {\'o}n Temporal}{41}{section.3.3}
+\contentsline {section}{\numberline {3.4}Recursos Humanos}{42}{section.3.4}
+\contentsline {section}{\numberline {3.5}Recursos \textit {Software} Reutilizables}{43}{section.3.5}
+\contentsline {section}{\numberline {3.6}Estimaci\IeC {\'o}n de Costes Econ\IeC {\'o}micos}{43}{section.3.6}
+\contentsline {subsection}{\numberline {3.6.1}Licencias \textit {Software}}{43}{subsection.3.6.1}
+\contentsline {subsection}{\numberline {3.6.2}Recursos Humanos}{44}{subsection.3.6.2}
+\contentsline {subsection}{\numberline {3.6.3}Material}{44}{subsection.3.6.3}
+\contentsline {section}{\numberline {3.7}Temporizaci\IeC {\'o}n}{44}{section.3.7}
+\contentsline {chapter}{\numberline {4}Analisis}{47}{chapter.4}
+\contentsline {section}{\numberline {4.1}An\IeC {\'a}lisis de Requisitos}{47}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Requisitos Funcionales}{47}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Requisitos No Funcionales}{48}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.2}Descripci\IeC {\'o}n de Actores}{48}{section.4.2}
+\contentsline {section}{\numberline {4.3}Descripci\IeC {\'o}n de Casos de Uso}{49}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}\textbf {CU-1: Conectarse a un servidor}}{49}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}\textbf {CU-2: Obtener los diferentes dispositivos}}{49}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}\textbf {CU-3: Finalizar la aplicaci\IeC {\'o}n}}{50}{subsection.4.3.3}
+\contentsline {subsection}{\numberline {4.3.4}\textbf {CU-4: Mostrar un dispositivo}}{50}{subsection.4.3.4}
+\contentsline {subsection}{\numberline {4.3.5}\textbf {CU-5: Editar la propiedad \textit {text}}}{51}{subsection.4.3.5}
+\contentsline {subsection}{\numberline {4.3.6}\textbf {CU-6: Editar la propiedad \textit {number}}}{52}{subsection.4.3.6}
+\contentsline {subsection}{\numberline {4.3.7}\textbf {CU-7: Editar la propiedad \textit {switch}}}{53}{subsection.4.3.7}
+\contentsline {subsection}{\numberline {4.3.8}\textbf {CU-8: Editar la propiedad \textit {blob}}}{53}{subsection.4.3.8}
+\contentsline {subsection}{\numberline {4.3.9}\textbf {CU-9: Activar la recepci\IeC {\'o}n de \textit {blob}}}{54}{subsection.4.3.9}
+\contentsline {subsection}{\numberline {4.3.10}\textbf {CU-10: Desactivar la recepci\IeC {\'o}n de \textit {blob}}}{55}{subsection.4.3.10}
+\contentsline {subsection}{\numberline {4.3.11}\textbf {CU-11: Guardar un \textit {blob}}}{55}{subsection.4.3.11}
+\contentsline {subsection}{\numberline {4.3.12}\textbf {CU-12: Cambiar de grupo de propiedades}}{56}{subsection.4.3.12}
+\contentsline {subsection}{\numberline {4.3.13}\textbf {CU-13: Cerrar un dispositivo}}{56}{subsection.4.3.13}
+\contentsline {chapter}{\numberline {5}Dise\IeC {\~n}o e Implementaci\IeC {\'o}n}{59}{chapter.5}
+\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{61}{chapter*.12}

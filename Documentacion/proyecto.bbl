@@ -36,4 +36,14 @@ Nikon d3200 de amazon.
   \url{http://www.amazon.es/Nikon-D3200-pantalla-estabilizador-importado/dp/B00I3M5U5M/ref=sr_1_1?ie=UTF8&qid=1448363877&sr=8-1&keywords=nikond3200}.
 \newblock Última revisión: 24 de noviembre de 2015.
 
+\bibitem{Socket}
+Socket de internet.
+\newblock \url{https://es.wikipedia.org/wiki/Socket_de_Internet}.
+\newblock Última revisión: 16 de octubre de 2015.
+
+\bibitem{WebSocket}
+Websocket de internet.
+\newblock \url{https://es.wikipedia.org/wiki/WebSocket}.
+\newblock Última revisión: 17 de octubre de 2015.
+
 \end{thebibliography}
