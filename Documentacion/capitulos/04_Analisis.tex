@@ -91,7 +91,7 @@ Los diferentes casos de uso nos permiten conocer como los actores se desenvuelve
 	  \\ \hline
 	\end{tabular}
 	\caption{CU-1. Conectarse a un servidor}
-	\label{table:cu_1}
+	\label{table:CU_1}
       \end{center}
     \end{table}
 \end{itemize}
@@ -135,7 +135,7 @@ Los diferentes casos de uso nos permiten conocer como los actores se desenvuelve
     \\ \hline
   \end{tabular}
   \caption{CU-2. Obtener los diferentes dispositivos}
-  \label{table:cu_2}
+  \label{table:CU_2}
       \end{center}
     \end{table}
   \end{itemize}
@@ -177,7 +177,7 @@ Los diferentes casos de uso nos permiten conocer como los actores se desenvuelve
     \\ \hline
   \end{tabular}
   \caption{CU-3. Finalizar la aplicación}
-  \label{table:cu_3}
+  \label{table:CU_3}
       \end{center}
     \end{table}
 \end{itemize}
@@ -223,7 +223,7 @@ Los diferentes casos de uso nos permiten conocer como los actores se desenvuelve
     \\ \hline
   \end{tabular}
   \caption{CU-4. Mostrar un dispositivo}
-  \label{table:cu_4}
+  \label{table:CU_4}
       \end{center}
     \end{table}
 \end{itemize}
@@ -274,7 +274,7 @@ Los diferentes casos de uso nos permiten conocer como los actores se desenvuelve
 	  \\ \hline
 	\end{tabular}
 	\caption{CU-5. Editar la propiedad \textit{text}}
-	\label{table:cu_5}
+	\label{table:CU_5}
       \end{center}
     \end{table}
 \end{itemize}
@@ -327,7 +327,7 @@ Los diferentes casos de uso nos permiten conocer como los actores se desenvuelve
     \\ \hline
   \end{tabular}
   \caption{CU-6. Editar la propiedad \textit{number}}
-  \label{table:cu_6}
+  \label{table:CU_6}
       \end{center}
     \end{table}
 \end{itemize}
@@ -372,7 +372,7 @@ Los diferentes casos de uso nos permiten conocer como los actores se desenvuelve
     \\ \hline
   \end{tabular}
   \caption{CU-7. Editar la propiedad \textit{switch}}
-  \label{table:cu_7}
+  \label{table:CU_7}
       \end{center}
     \end{table}
 \end{itemize}
@@ -415,7 +415,7 @@ Los diferentes casos de uso nos permiten conocer como los actores se desenvuelve
     \\ \hline
   \end{tabular}
   \caption{CU-8. Editar la propiedad \textit{blob}}
-  \label{table:cu_8}
+  \label{table:CU_8}
       \end{center}
     \end{table}
 \end{itemize}
@@ -460,7 +460,7 @@ Los diferentes casos de uso nos permiten conocer como los actores se desenvuelve
     \\ \hline
   \end{tabular}
   \caption{CU-9. Activar la recepción de \textit{blob}}
-  \label{table:cu_9}
+  \label{table:CU_9}
       \end{center}
     \end{table}
 \end{itemize}
@@ -504,7 +504,7 @@ Los diferentes casos de uso nos permiten conocer como los actores se desenvuelve
     \\ \hline
   \end{tabular}
   \caption{CU-10. Desactivar la recepción de \textit{blob}}
-  \label{table:cu_10}
+  \label{table:CU_10}
       \end{center}
     \end{table}
 \end{itemize}
@@ -547,7 +547,7 @@ Los diferentes casos de uso nos permiten conocer como los actores se desenvuelve
     \\ \hline
   \end{tabular}
   \caption{CU-11. Guardar un \textit{blob}}
-  \label{table:cu_11}
+  \label{table:CU_11}
       \end{center}
     \end{table}
 \end{itemize}
@@ -556,26 +556,87 @@ Los diferentes casos de uso nos permiten conocer como los actores se desenvuelve
 
 \subsection{\textbf{CU-12: Cambiar de grupo de propiedades}}
 \begin{itemize}
-  \item \textbf{Actores:}
-  \item \textbf{Tipo:}
-  \item \textbf{Precondición:}
-  \item \textbf{Postcondición:}
-  \item \textbf{Propósito:}
-  \item \textbf{Resumen:}
+  \item \textbf{Actores:} Usuario (I)
+  \item \textbf{Tipo:} Primario, Esencial
+  \item \textbf{Precondición:} Que exista un dispositivo conectado al servidor y que tenga al menos dos grupos de propiedades.
+  \item \textbf{Postcondición:} Se cambiará la vista de la pestaña según los elementos que tenga.
+  \item \textbf{Propósito:} Cambiar de grupo de propiedades.
+  \item \textbf{Resumen:} El usuario cambiará de pestaña en la ventana de un dispositivo.
   \item \textbf{Autor:} Pablo Torrecillas Ortega
   \item \textbf{Versión:} 1.0
+  \begin{table}[!ht]
+      \begin{center}
+  \begin{tabular}{|l|l|l|l|}
+    \hline
+    \multicolumn{4}{|c|}{{\bf Curso normal}}
+    \\ \hline
+    \multicolumn{2}{|c|}{{\bf Actor}} & \multicolumn{2}{c|}{{\bf Sistema}}
+    \\ \hline
+    {\it 1} &
+    \begin{tabular}[c]{@{}l@{}}
+      Usuario: Pulsa el nombre de\\
+      la pestaña para cambiar de\\
+      grupo de propiedades.\\
+    \end{tabular} &
+    &
+    \\ \hline
+    &
+    &
+    {\it 2} &
+    \begin{tabular}[c]{@{}l@{}}
+      El sistema muestra la \\
+      pestaña seleccionada con\\
+      el conjunto de propiedades\\
+      que ésta posee.\\
+    \end{tabular}
+    \\ \hline
+  \end{tabular}
+  \caption{CU-12. Cambiar de grupo de propiedades}
+  \label{table:CU_12}
+      \end{center}
+    \end{table}
 \end{itemize}
 
 
 
 \subsection{\textbf{CU-13: Cerrar un dispositivo}}
 \begin{itemize}
-  \item \textbf{Actores:}
-  \item \textbf{Tipo:}
-  \item \textbf{Precondición:}
-  \item \textbf{Postcondición:}
-  \item \textbf{Propósito:}
-  \item \textbf{Resumen:}
+  \item \textbf{Actores:} Usuario (I)
+  \item \textbf{Tipo:} Secundario, Esencial
+  \item \textbf{Precondición:} Que exista al menos un dispositivo conectado en el servidor.
+  \item \textbf{Postcondición:} Se cerrará el dispositio y no se podrá trabajar con él a menos que se vuelva a realizar la conexión.
+  \item \textbf{Propósito:} Cerrar un dispositivo.
+  \item \textbf{Resumen:} El usuario cerrará un dispositivo que está conectado con el servidor eliminando la posibilidad de realizar más acciones con él.
   \item \textbf{Autor:} Pablo Torrecillas Ortega
   \item \textbf{Versión:} 1.0
+  \begin{table}[!ht]
+      \begin{center}
+  \begin{tabular}{|l|l|l|l|}
+    \hline
+    \multicolumn{4}{|c|}{{\bf Curso normal}}
+    \\ \hline
+    \multicolumn{2}{|c|}{{\bf Actor}} & \multicolumn{2}{c|}{{\bf Sistema}}
+    \\ \hline
+    {\it 1} &
+    \begin{tabular}[c]{@{}l@{}}
+      Usuario: Pulsa sobre el botón\\
+      X de la ventana del dispositivo\\
+      para cerrarlo\\
+    \end{tabular} &
+    &
+    \\ \hline
+    &
+    &
+    {\it 2} &
+    \begin{tabular}[c]{@{}l@{}}
+      El sistema cierra le ventana\\
+      del dispositivo que se ha \\
+      seleccionado.\\
+    \end{tabular}
+    \\ \hline
+  \end{tabular}
+  \caption{CU-13. Cerrar un dispositivo}
+  \label{table:CU_13}
+      \end{center}
+    \end{table}
 \end{itemize}

@@ -63,6 +63,6 @@
 \contentsline {subsection}{\numberline {4.3.10}\textbf {CU-10: Desactivar la recepci\IeC {\'o}n de \textit {blob}}}{55}{subsection.4.3.10}
 \contentsline {subsection}{\numberline {4.3.11}\textbf {CU-11: Guardar un \textit {blob}}}{55}{subsection.4.3.11}
 \contentsline {subsection}{\numberline {4.3.12}\textbf {CU-12: Cambiar de grupo de propiedades}}{56}{subsection.4.3.12}
-\contentsline {subsection}{\numberline {4.3.13}\textbf {CU-13: Cerrar un dispositivo}}{56}{subsection.4.3.13}
+\contentsline {subsection}{\numberline {4.3.13}\textbf {CU-13: Cerrar un dispositivo}}{57}{subsection.4.3.13}
 \contentsline {chapter}{\numberline {5}Dise\IeC {\~n}o e Implementaci\IeC {\'o}n}{59}{chapter.5}
 \contentsline {chapter}{Bibliograf\IeC {\'\i }a}{61}{chapter*.12}
