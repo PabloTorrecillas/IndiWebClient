@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{ASCOM}
 Ascom - standars for astronomy.
@@ -9,6 +9,11 @@ Ascom - standars for astronomy.
 Astroplanner.
 \newblock \url{http://www.astroplanner.net/requirements.html/}.
 \newblock Última revisión: 23 de noviembre de 2015.
+
+\bibitem{CasosUso}
+Caso de uso.
+\newblock \url{https://es.wikipedia.org/wiki/Caso_de_uso}.
+\newblock Última revisión: 1 de noviembre de 2015.
 
 \bibitem{ClientesINDI}
 Clientes que usan indi.

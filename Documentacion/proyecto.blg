@@ -12,45 +12,46 @@ Warning--to sort, need author or key in Astroplanner
 Warning--to sort, need author or key in Socket
 Warning--to sort, need author or key in WebSocket
 Warning--to sort, need author or key in NikonAmazon
-You've used 9 entries,
+Warning--to sort, need author or key in CasosUso
+You've used 10 entries,
             2118 wiz_defined-function locations,
-            536 strings with 4990 characters,
-and the built_in function-call counts, 1532 in all, are:
-= -- 153
-> -- 9
+            541 strings with 5105 characters,
+and the built_in function-call counts, 1702 in all, are:
+= -- 170
+> -- 10
 < -- 0
-+ -- 9
++ -- 10
 - -- 0
-* -- 47
-:= -- 180
-add.period$ -- 27
-call.type$ -- 9
-change.case$ -- 27
+* -- 52
+:= -- 201
+add.period$ -- 30
+call.type$ -- 10
+change.case$ -- 30
 chr.to.int$ -- 0
-cite$ -- 18
-duplicate$ -- 63
-empty$ -- 208
+cite$ -- 20
+duplicate$ -- 70
+empty$ -- 231
 format.name$ -- 0
-if$ -- 379
+if$ -- 421
 int.to.chr$ -- 0
-int.to.str$ -- 9
+int.to.str$ -- 10
 missing$ -- 0
-newline$ -- 48
+newline$ -- 53
 num.names$ -- 0
-pop$ -- 90
+pop$ -- 100
 preamble$ -- 1
-purify$ -- 18
+purify$ -- 20
 quote$ -- 0
-skip$ -- 45
+skip$ -- 49
 stack$ -- 0
-substring$ -- 45
-swap$ -- 9
+substring$ -- 50
+swap$ -- 10
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 36
-warning$ -- 9
+type$ -- 40
+warning$ -- 10
 while$ -- 0
-width$ -- 10
-write$ -- 83
-(There were 9 warnings)
+width$ -- 12
+write$ -- 92
+(There were 10 warnings)
