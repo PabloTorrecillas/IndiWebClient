@@ -139,15 +139,16 @@ function parserDefSwitchVector(node){
 
         if(nodes.length > 0 && node.getAttribute("perm") != 'ro'){
             var boxId = getPropertyId(deviceName, propertyName) + "_box";
+            var selectId = getPropertyId(deviceName, propertyName) + "_select";
 
-            html += '<div class = "elementBoxContainer" id = "'+ boxId +'">';
+            html += '<div class = "elementBoxContainer" id = "'+ boxId +'" data_elementname = "'+ elementName +'">';
 
                 if(node.getAttribute("rule") == 'OneOfMany'){      
-                    html += '<select>';        
+                    html += '<select id = "'+ selectId +'" onchange="writeSwitch(\'' + deviceName + '\', \'' + propertyName + '\');">';        
                         for(var i = 0; i < nodes.length; i++){  
                             var elementName = nodes[i].getAttribute("name");
                             html += 
-                            '<div class = "elementBox" data_elementname = "'+ elementName +'" id="' + getElementId(deviceName,propertyName,elementName) + "_value" + '">' + 
+                            '<div class = "elementBox" id="' + getElementId(deviceName,propertyName,elementName) + "_value" + '">' + 
                                 getInputSwitch(node.getAttribute("rule"), nodes[i], deviceName, propertyName, elementName) + 
                             '</div>';
                         }
@@ -155,7 +156,7 @@ function parserDefSwitchVector(node){
                 }
 
                 if(node.getAttribute("rule") == 'AtMostOne'){
-                    html += '<select>' +
+                    html += '<select id = "'+ selectId +'" onchange="writeSwitch(\'' + deviceName + '\', \'' + propertyName + '\');">' +
                              '<option> </option>';
                 
                     for(var i = 0; i < nodes.length; i++){ 
@@ -336,7 +337,7 @@ function getInputSwitch(rule, node, deviceName, propertyName, elementName){
             var aux = '<option id="'+ getElementId(deviceName,propertyName,elementName) +'_value" value="'+ node.getAttribute("name") +'"';
 
             if(node.innerHTML.trim() == 'On'){
-                aux += ' selected="selected"';
+                aux += 'selected="selected"';
             }
 
             var label=node.getAttribute("label");

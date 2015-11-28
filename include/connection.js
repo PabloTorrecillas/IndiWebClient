@@ -40,7 +40,7 @@ var ws;
             var length = ws.rQlen();
             var cadena = ws.rQshiftStr(length);
           
-            //console.log("---" + cadena + "---");
+            console.log("---" + cadena + "---");
             
             
 
@@ -48,8 +48,8 @@ var ws;
         }
 
         function funcionEscritura(deviceName, propertyName){
-            debug(deviceName);
-            debug(propertyName);
+            //debug(deviceName);
+            //debug(propertyName);
 
             var boxId = getPropertyId(deviceName,propertyName) + "_box";
 
@@ -63,7 +63,7 @@ var ws;
                 var hijo = children[i];
                 var elementName = hijo.getAttribute("data_elementname");
 
-                debug(elementName);
+                //debug(elementName);
 
                 elementNames[i] = elementName;
 
@@ -72,7 +72,7 @@ var ws;
 
                 values[i] = input.value;
 
-                debug(values[i]);
+                //debug(values[i]);
             }
 
             var cadena = '<newTextVector device="' + deviceName + '" name="' + propertyName + '">';
@@ -92,8 +92,8 @@ var ws;
         }
 
         function writeNumber(deviceName, propertyName){
-            debug(deviceName);
-            debug(propertyName);
+           // debug(deviceName);
+            //debug(propertyName);
 
             var boxId = getPropertyId(deviceName,propertyName) + "_box";
 
@@ -107,7 +107,7 @@ var ws;
                 var hijo = children[i];
                 var elementName = hijo.getAttribute("data_elementname");
 
-                debug(elementName);
+                //debug(elementName);
 
                 elementNames[i] = elementName;
 
@@ -116,7 +116,7 @@ var ws;
 
                 values[i] = input.value;
 
-                debug(values[i]);
+                //debug(values[i]);
             }
 
             var cadena = '<newNumberVector device="' + deviceName + '" name="' + propertyName + '">';
@@ -135,37 +135,33 @@ var ws;
             debug(deviceName);
             debug(propertyName);
 
-            var boxId = getPropertyId(deviceName,propertyName) + "_box";
+            var selectId = getPropertyId(deviceName,propertyName) + "_select";
 
-            var box = document.getElementById(boxId);
+            var select = document.getElementById(selectId);
 
-            var children = box.childNodes; 
-            var elementNames = new Array();
-            var values = new Array();
-
-            for(var i = 0; i < children.length; i++){
-                var hijo = children[i];
-                var elementName = hijo.getAttribute("data_elementname");
-
-                debug(elementName);
-
-                elementNames[i] = elementName;
-
-                var inputId = getElementId(deviceName,propertyName,elementName) + "_input";
-                var input = document.getElementById(inputId);
-
-                values[i] = input.value;
-
-                debug(values[i]);
-            }
+            debug(select.value);
 
             var cadena = '<newSwitchVector device="' + deviceName + '" name="' + propertyName + '">';
 
-            for(var i = 0; i < elementNames.length; i++){
-                cadena += '<oneSwitch name="'+ elementNames[i] +'">'+ values[i] +'</oneSwitch>';
+            var children = select.childNodes;
+
+            for(var i = 0; i < children.length; i++){
+                debug(children[i].innerHTML);
+                if(children[i].innerHTML.trim().length > 0){
+                    var value = children[i].getAttribute("value");
+                    var switchValue = 'Off';
+                    if(value == select.value){
+                        switchValue = 'On';
+                    }
+
+                    cadena += '<oneSwitch name="'+ value +'">'+ switchValue +'</oneSwitch>';
+                }
+            	
             }
 
             cadena += '</newSwitchVector>';
+
+            debug(cadena);
             
             ws.send_string(cadena);
             ws.flush();
