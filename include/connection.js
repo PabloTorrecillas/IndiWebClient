@@ -40,7 +40,7 @@ var ws;
             var length = ws.rQlen();
             var cadena = ws.rQshiftStr(length);
           
-            console.log("---" + cadena + "---");
+            //console.log("---" + cadena + "---");
             
             
 
@@ -131,7 +131,7 @@ var ws;
             ws.flush();
         }
 
-        function writeSwitch(deviceName, propertyName){
+        function writeSwitchSelect(deviceName, propertyName){
             debug(deviceName);
             debug(propertyName);
 
@@ -157,6 +157,44 @@ var ws;
                     cadena += '<oneSwitch name="'+ value +'">'+ switchValue +'</oneSwitch>';
                 }
             	
+            }
+
+            cadena += '</newSwitchVector>';
+
+            debug(cadena);
+            
+            ws.send_string(cadena);
+            ws.flush();
+        }
+
+        function writeSwitchCheckboxes(deviceName, propertyName){
+            var boxId = getPropertyId(deviceName,propertyName) + "_box";
+
+            var box = document.getElementById(boxId);
+
+            var cadena = '<newSwitchVector device="' + deviceName + '" name="' + propertyName + '">';
+
+            var children = box.childNodes;
+
+            for(var i = 0; i < children.length; i++){
+                var data_elementname = children[i].getAttribute("data_elementname");
+                debug(data_elementname);
+                if(data_elementname != null){
+                    var inputId = getPropertyId(deviceName,propertyName) + "_"+ data_elementname +"_value";
+                debug(inputId);
+                var input = document.getElementById(inputId);
+                    //var value = children[i].getAttribute("value");
+
+                    var switchValue = 'Off';
+                    if(input.checked){
+                        switchValue = 'On';
+                    }
+
+                    cadena += '<oneSwitch name="'+ data_elementname +'">'+ switchValue +'</oneSwitch>';
+                
+                }
+                
+                
             }
 
             cadena += '</newSwitchVector>';

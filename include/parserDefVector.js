@@ -144,7 +144,7 @@ function parserDefSwitchVector(node){
             html += '<div class = "elementBoxContainer" id = "'+ boxId +'" data_elementname = "'+ elementName +'">';
 
                 if(node.getAttribute("rule") == 'OneOfMany'){      
-                    html += '<select id = "'+ selectId +'" onchange="writeSwitch(\'' + deviceName + '\', \'' + propertyName + '\');">';        
+                    html += '<select id = "'+ selectId +'" onchange="writeSwitchSelect(\'' + deviceName + '\', \'' + propertyName + '\');">';        
                         for(var i = 0; i < nodes.length; i++){  
                             var elementName = nodes[i].getAttribute("name");
                             html += 
@@ -156,7 +156,7 @@ function parserDefSwitchVector(node){
                 }
 
                 if(node.getAttribute("rule") == 'AtMostOne'){
-                    html += '<select id = "'+ selectId +'" onchange="writeSwitch(\'' + deviceName + '\', \'' + propertyName + '\');">' +
+                    html += '<select id = "'+ selectId +'" onchange="writeSwitchSelect(\'' + deviceName + '\', \'' + propertyName + '\');">' +
                              '<option> </option>';
                 
                     for(var i = 0; i < nodes.length; i++){ 
@@ -171,17 +171,14 @@ function parserDefSwitchVector(node){
                 }                
 
                 if(node.getAttribute("rule") == 'AnyOfMany'){
-                    html += '<div class = "elementBoxContainer">';
                         for(var i = 0; i < nodes.length; i++){  
                             var elementName = nodes[i].getAttribute("name");
                             html += 
-                            '<div class = "elementBox">' + 
+                            '<div class = "elementBox" data_elementname = "'+ elementName +'">' + 
                                 getInputSwitch(node.getAttribute("rule"), nodes[i], deviceName, propertyName, elementName) + 
                             '</div>';
                         }
-                        html += '<button id="updateButton" class="btn btn-default">Actualizar</button>';
-
-                    html += '</div>';
+                        html += '<button id="updateButton" class="btn btn-default" onclick="writeSwitchCheckboxes(\'' + deviceName + '\', \'' + propertyName + '\');">Actualizar</button>';
                 }
 
             html += '</div>';
