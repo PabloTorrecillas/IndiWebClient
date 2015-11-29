@@ -1,3 +1,33 @@
 \chapter{Diseño e Implementación}
 \title{Diseño e Implementación}
 \label{cap:DisenoEImplementacion}
+Este proyecto se realiza atendiendo a dos partes, ambas muy importantes y claramente diferenciadas. Por una parte, se ha creado el diseño del prototipo de cliente y por otra parte se ha elaborado el boceto de la interfaz con su posterior diseño de interfaz de usuario.
+
+\section{Diseño del Prototipo del Cliente}
+El diseño del prototipo del cliente es la pieza fundamental del proyecto ya que sobre dicho prototipo giran todas las cosas.\\
+
+La función principal del prototipo es permitir conectarnos con cualquier servidor INDI y una vez que establecemos la conexión, mediante el WebSocket, es fundamental que la comunicación se establezca de forma continua con el fin de recibir los diferentes dispositivos que se encuentran conectados con el servidor en concreto y así poder intercambiar mensajes con los parámetros que se van modificando en ambas partes.
+
+\subsection{Métodos en el Fichero \textit{connection.js}}
+El cometido de estos métodos es establecer la conexión con el servidor.
+También, en ese archivo, se pueden encontrar los métodos para poder realizar el envío de valor de los parámetros modificados, ya sea de tipo \textit{text}, \textit{number}, \textit{switch} o \textit{blob}, al servidor mediante el \textit{WebSocket}, que se crea en el momento de la conexión.
+
+\subsection{Métodos en el Fichero \textit{parserDefVector.js}}
+Este fichero se establece en dos grandes bloques. En primer lugar, se encuentran los métodos mediante los cuales se va creando la interfaz con los datos que se reciben del fichero XML, como pueden ser, entre otros, los nombres de los dispositivos, los nombres de las propiedades, los apelativos de los grupos de las propiedades, los valores que tienen dichas propiedades, etc. En segundo lugar, se hallan las funciones auxiliares para crear dicha interfaz y que sirven de apoyo a los métodos de análisis y parseo de las propiedades.\\
+
+Una vez que llegan esos datos se crean las diferentes ventanas que corresponden a cada dispositivo siempre y cuando estos dispositivos no estén ya creados.
+Tanto para las propiedades de texto como para las de número se realiza el mismo proceso.\\
+
+A continuación, se pone una bombilla del color correspondiente según el estado que envíe el fichero XML que proviene del servidor, y el nombre de la propiedad. Este conjunto se ha denominado \textit{propertyBox}.
+Seguidamente, mediante el parseo del fichero XML, se va recorriendo cada uno de los nodos que lo van formando y para cada uno de ellos se muestra el nombre que viene descrito mediante el campo \textit{label} y su correspondiente valor del nodo. Al conjunto formado por el nombre y el valor se le ha denominado \textit{elementBoxContainer}.\\
+
+Posteriormente, y según el tipo de permiso que tenga esa propiedad, se pone o no el botón de actualizar para que en el futuro se puedan modificar los campos y poder así enviarle el mensaje al servidor.\\
+
+Por último, se añade a las diferentes pestañas la propiedad, según el grupo al que pertenece la propiedad que se está analizando.\\
+
+Para el análisis y posterior parseo de la propiedad switch se sigue el mismo itinerario con el que se ha procedido en los \textit{text} y en los \textit{number}, con la diferencia de que en la parte del \textit{elementBoxContainer}, se hacen diferentes tipos de llamadas para cada una de las diferentes reglas  que pueden contener las propiedades \textit{switch}:
+\begin{itemize}
+  \item \textbf{\textit{One Of Many:}} se crea un desplegable que siempre obliga al usuario a tener una opción seleccionada en ella.
+  \item \textbf{\textit{At Most One:}} se crea un desplegable que permite al usuario si así lo desea o le es factible, solo seleccionar una de todas las opciones que se muestran en él.
+  \item \textbf{\textit{Any Of Many:}} se crea un conjunto de opciones que le permitirán al usuario seleccionar todas las que se deseen.
+\end{itemize}

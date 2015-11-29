@@ -40,8 +40,8 @@ var ws;
         var length = ws.rQlen();
         var cadena = ws.rQshiftStr(length);
       
+        //Descomentar para ver lo que envía el servidor por la consola.
         //console.log("---" + cadena + "---");
-        
         
 
         parserXML("<a>" + cadena + "</a>");

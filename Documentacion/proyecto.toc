@@ -37,14 +37,15 @@
 \contentsline {subsection}{\numberline {3.2.3}Planificaci\IeC {\'o}n}{40}{subsection.3.2.3}
 \contentsline {subsection}{\numberline {3.2.4}Ingenier\IeC {\'\i }a}{41}{subsection.3.2.4}
 \contentsline {subsection}{\numberline {3.2.5}Construcci\IeC {\'o}n}{41}{subsection.3.2.5}
+\contentsline {subsection}{\numberline {3.2.6}Pruebas}{41}{subsection.3.2.6}
 \contentsline {section}{\numberline {3.3}Estimaci\IeC {\'o}n Temporal}{41}{section.3.3}
-\contentsline {section}{\numberline {3.4}Recursos Humanos}{42}{section.3.4}
+\contentsline {section}{\numberline {3.4}Recursos Humanos}{43}{section.3.4}
 \contentsline {section}{\numberline {3.5}Recursos \textit {Software} Reutilizables}{43}{section.3.5}
-\contentsline {section}{\numberline {3.6}Estimaci\IeC {\'o}n de Costes Econ\IeC {\'o}micos}{43}{section.3.6}
-\contentsline {subsection}{\numberline {3.6.1}Licencias \textit {Software}}{43}{subsection.3.6.1}
+\contentsline {section}{\numberline {3.6}Estimaci\IeC {\'o}n de Costes Econ\IeC {\'o}micos}{44}{section.3.6}
+\contentsline {subsection}{\numberline {3.6.1}Licencias \textit {Software}}{44}{subsection.3.6.1}
 \contentsline {subsection}{\numberline {3.6.2}Recursos Humanos}{44}{subsection.3.6.2}
 \contentsline {subsection}{\numberline {3.6.3}Material}{44}{subsection.3.6.3}
-\contentsline {section}{\numberline {3.7}Temporizaci\IeC {\'o}n}{44}{section.3.7}
+\contentsline {section}{\numberline {3.7}Temporizaci\IeC {\'o}n}{45}{section.3.7}
 \contentsline {chapter}{\numberline {4}Analisis}{47}{chapter.4}
 \contentsline {section}{\numberline {4.1}An\IeC {\'a}lisis de Requisitos}{47}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Requisitos Funcionales}{47}{subsection.4.1.1}
@@ -66,4 +67,8 @@
 \contentsline {subsection}{\numberline {4.3.13}\textbf {CU-13: Cerrar un dispositivo}}{57}{subsection.4.3.13}
 \contentsline {section}{\numberline {4.4}Diagrama de Casos de Uso}{57}{section.4.4}
 \contentsline {chapter}{\numberline {5}Dise\IeC {\~n}o e Implementaci\IeC {\'o}n}{59}{chapter.5}
-\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{61}{chapter*.12}
+\contentsline {section}{\numberline {5.1}Dise\IeC {\~n}o del Prototipo del Cliente}{59}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}M\IeC {\'e}todos en el Fichero \textit {connection.js}}{59}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}M\IeC {\'e}todos en el Fichero \textit {parserDefVector.js}}{59}{subsection.5.1.2}
+\contentsline {chapter}{\numberline {6}Pruebas}{61}{chapter.6}
+\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{63}{chapter*.12}

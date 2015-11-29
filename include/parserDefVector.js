@@ -189,11 +189,11 @@ function parserDefSwitchVector(node){
 
     var propertyValue = document.getElementById(getPropertyId(deviceName,propertyName) + "_value");
 
-                 for(var i = 0; i < nodes.length; i++){
-                    if(nodes[i].innerHTML.trim() == 'On'){
-                        propertyValue.innerHTML += ' ' + nodes[i].getAttribute("label");
-                    }
-                 }
+    for(var i = 0; i < nodes.length; i++){
+        if(nodes[i].innerHTML.trim() == 'On'){
+            propertyValue.innerHTML += ' ' + nodes[i].getAttribute("label");
+        }
+    }
 }
 
 function parserDefBLOBVector(node){
