@@ -70,5 +70,7 @@
 \contentsline {section}{\numberline {5.1}Dise\IeC {\~n}o del Prototipo del Cliente}{59}{section.5.1}
 \contentsline {subsection}{\numberline {5.1.1}M\IeC {\'e}todos en el Fichero \textit {connection.js}}{59}{subsection.5.1.1}
 \contentsline {subsection}{\numberline {5.1.2}M\IeC {\'e}todos en el Fichero \textit {parserDefVector.js}}{59}{subsection.5.1.2}
-\contentsline {chapter}{\numberline {6}Pruebas}{61}{chapter.6}
-\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{63}{chapter*.12}
+\contentsline {subsection}{\numberline {5.1.3}M\IeC {\'e}todos en el Fichero \textit {parserSetVector.js}}{61}{subsection.5.1.3}
+\contentsline {subsection}{\numberline {5.1.4}M\IeC {\'e}todos en el Fichero \textit {parser.html}}{61}{subsection.5.1.4}
+\contentsline {chapter}{\numberline {6}Pruebas}{63}{chapter.6}
+\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{65}{chapter*.12}
