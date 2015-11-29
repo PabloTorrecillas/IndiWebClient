@@ -77,4 +77,11 @@
 \BOOKMARK [2][-]{subsection.5.4.1}{Licencia}{section.5.4}% 77
 \BOOKMARK [2][-]{subsection.5.4.2}{Desarrollo de C\363digo}{section.5.4}% 78
 \BOOKMARK [0][-]{chapter.6}{Pruebas}{}% 79
-\BOOKMARK [0][-]{chapter*.12}{Bibliograf\355a}{}% 80
+\BOOKMARK [1][-]{section.6.1}{Pruebas Unitarias}{chapter.6}% 80
+\BOOKMARK [2][-]{subsection.6.1.1}{Conexi\363n con el servidor INDI}{section.6.1}% 81
+\BOOKMARK [2][-]{subsection.6.1.2}{Propiedades con el Servidor INDI}{section.6.1}% 82
+\BOOKMARK [2][-]{subsection.6.1.3}{Grupos de Propiedades}{section.6.1}% 83
+\BOOKMARK [1][-]{section.6.2}{Pruebas de Integraci\363n}{chapter.6}% 84
+\BOOKMARK [2][-]{subsection.6.2.1}{Pruebas de conexi\363n con el servidor}{section.6.2}% 85
+\BOOKMARK [2][-]{subsection.6.2.2}{Pruebas de Manejo de las Propiedades del Dispositivo}{section.6.2}% 86
+\BOOKMARK [0][-]{chapter*.12}{Bibliograf\355a}{}% 87

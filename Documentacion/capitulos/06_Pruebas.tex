@@ -1,3 +1,71 @@
 \chapter{Pruebas}
 \title{Pruebas}
 \label{cap:Pruebas}
+
+En cada itereación de la planificación se han realizado una mínima parte de pruebas ya que al trabajar sobre un prototipo no se podía efectuar una batería de pruebas puesto que los resultados obtenidos podrían no ser los esperados. Es por ello, que las pruebas realizadas han sido pruebas internas y se ha procedido cuidando mucho los detalles en ellas para no entorpecer el funcionamiento del prototipo.\\
+
+Las pruebas internas que se han materializado han sido las siguientes:
+\begin{itemize}
+  \item Pruebas de unitarias.
+  \item Pruebas de integración.
+  \item Pruebas de sistema.
+  \item Pruebas de aceptación.
+\end{itemize}
+
+\section{Pruebas Unitarias}
+Son aquellas pruebas que se han efectuado sobre módulos sencillos, sin estar conectados unos con otros y para verificar el resultado que se obtiene.
+
+\subsection{Conexión con el servidor INDI}
+\textbf{Objetivo de la prueba:} Comprobar que la conexión es correcta con el servidor INDI desde el prototipo de cliente que está usándose en el navegador del ordenador.\\
+
+\textbf{Fases de la prueba:}
+\begin{itemize}
+  \item Conexión a un servidor INDI: Se conecta con el servidor INDI y se comprueba que el funcionamiento de la conexión es satisfactoria. El servidor recibe valores esperados y ejecuta correctamente.
+  \item Conexión y finalización del servidor: Se comprueba cómo reacciona el prototipo de cliente cuando el servidor está caído. Se descubrió que el resultado que se obtenía al intentar cambiar algún tipo de parámetro en un dispositivo, era que no se almacenaban los valores ni respondía el servidor.
+\end{itemize}
+
+\subsection{Propiedades con el Servidor INDI}
+\textbf{Objetivo de la prueba:} Comprobar que las propiedades funcionan correctamente dentro de los dispositivos con datos erróneos.\\
+
+\textbf{Fases de la prueba:}
+\begin{itemize}
+  \item Datos fuera del rango establecido en la propiedad \textit{number}: Se prueba que el servidor no almacena un dato fuera del rango de una determinada propiedad.
+  \item Datos en formato erróneo en la propiedad textit{number}: Se comprueba que el servidor no modifica datos en otro formato que no sea el que se le indica al poner el cursor sobre la casilla de modificación numérica y, por tanto, no los almacena.
+\end{itemize}
+
+\subsection{Grupos de Propiedades}
+\textbf{Objetivo de la prueba:} Poder realizar diferentes pruebas con el conjunto de grupos de propiedades.
+
+\textbf{Fases de la prueba:}
+\begin{itemize}
+  \item Mostrar diferentes grupos para un dispositivo: Se comprueba que se crean tantas pestañas como grupos de propiedades existen para un dispositivo.
+  \item Añadir una propiedad nueva a un grupo de nueva creación: Se introduce una nueva pestaña y dentro de ella se almacena dicha propiedad.
+  \item Añadir una propiedad nueva a un grupo previamente establecido: Se añade esa propiedad al grupo que ya está creado y al mismo tiempo se muestran los elementos que ya existen en él.
+\end{itemize}
+
+\section{Pruebas de Integración}
+Las pruebas de integración realizadas han sido muy sencillas. En estas pruebas todos los módulos están interconectados unos con otros y se efectúan para comprobar que todas las conexiones están bien practicadas y, por consiguiente, se obtendrán unos resultados satisfactorios. Las diferentes pruebas de integración se han realizado con el servidor INDI sobre un simulador de telescopio. Para ello se han elaborado dos tipos de pruebas: Pruebas de conexión con el servidor y pruebas de manejo de las propiedades del dispositivo.
+
+\subsection{Pruebas de conexión con el servidor}
+\textbf{Objetivo de la prueba:} Conseguir que la función principal de esta prueba sea que el prototipo de cliente se conecte con el servidor sin ningún tipo de problema.
+
+\textbf{Fases de la prueba:}
+\begin{itemize}
+  \item Se realiza la conexión con el servidor y a su vez con el simulador del telescopio. Como resultado se obtiene que se muestre el telescopio con todas sus propiedades y con sus grupos de propiedades. Al apagar el servidor, se comprueba cómo no se obtienen resultados por parte de éste y el envío de cambio de valores no se realiza puesto que no hay conexión. No se muestran mensajes si se aborta o falla la conexión.
+\end{itemize}
+
+\subsection{Pruebas de Manejo de las Propiedades del Dispositivo}
+\textbf{Objetivo de la prueba:} Comprobar que todas las propiedades del dispositivo funcionan correctamente cuando se envían parámetros de las diferentes propiedades.
+
+\textbf{Fases de la prueba:}
+Para cada propiedad, se cambian algunos parámetros y se comprueba que el envío al servidor es satisfactorio y éste lo recepciona y modifica los parámetros enviados.
+
+\begin{itemize}
+  \item Propiedad \textit{Text}: Se cambia el texto de la propiedad y se comprueba que se realizó el cambio adecuadamente.
+  \item Propiedad \textit{Number}: Se cambia el número por valores que sean correctos y se comprueba que el cambio ha sido positivo. Por otra parte, también se realizan dos comprobaciones más, una para el valor numérico fuera de rango y otra para el valor numérico con un formato incorrecto. Para ambas pruebas, se puede apreciar cómo no se envían los parámetros al servidor y cómo no se modifican dichos parámetros en el prototipo del cliente ya que no los trata como números correctos.
+  \item Propiedad \textit{Switch}: Se sustituirán los parámetros de los diferentes \textit{switch} que de los que dispone el simulador del telescopio. Se puede apreciar, claramente, que no es posible introducirle valores erróneos ya que si la propiedad es, por ejemplo, de la regla de \textit{al menos uno}, siempre tendremos que seleccionar uno y no será posible dejarlo en blanco. Para las propiedades con la regla \textit{uno de muchos} o \textit{cualquiera de muchos}, tampoco es posible forzar a un error.\\
+  Como resultado se comprueba que la propiedad \textit{switch} funciona correctamente en todos los aspectos.
+  \item Propiedad \textit{Blob}: Se verifica que la recepción de \textit{blob} ha sido satisfactoria. No se muestra nada sobre ella, tan solo que se puede guardar.
+\end{itemize}
+
+Como \textbf{nota importante}, hay que destacar que para la \textbf{propiedad light} no se realizan pruebas de integración ya que es una propiedad del tipo solo lectura y no se puede interactuar con ella. Por supuesto, se ha realizado la prueba de comprobación de que si llega un mensaje XML del servidor INDI con una propiedad \textit{light}, dicha propiedad se muestra correctamente en la ventana del dispositivo del cual proviene.
