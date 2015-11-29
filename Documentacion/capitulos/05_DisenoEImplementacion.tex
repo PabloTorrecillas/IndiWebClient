@@ -3,6 +3,21 @@
 \label{cap:DisenoEImplementacion}
 Este proyecto se realiza atendiendo a dos partes, ambas muy importantes y claramente diferenciadas. Por una parte, se ha creado el diseño del prototipo de cliente y por otra parte se ha elaborado el boceto de la interfaz con su posterior diseño de interfaz de usuario.
 
+\section{Diagrama del Modelo Conceptual}
+El diagrama del modelo conceptual nos ofrece una idea de cómo se encuentra interrelacionadas las diferentes entidades del sistema.
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.8\textwidth]{./imagenes/diagramaConceptual}
+\caption{Modelo Conceptual} \label{fig:diagramaConceptual}
+\end{figure}
+
+Como se puede observar en el diagrama, en un servidor se pueden encontrar uno o muchos dispositivos conectados en él.
+A su vez, un dispositivo puede tener un conjunto de propiedades y un conjunto de grupos. Las propiedades solamente pueden pertenecer a un grupo concreto.\\
+Cada propiedad es solamente de un tipo, que puede ser \textit{text}, \textit{number}, \textit{switch}, \textit{blob} y \textit{light}. A su vez, la propiedad puede tener uno o muchos elementos de dicha propiedad.\\
+
+Por último, hay que destacar que se han creado las entidades \textit{XML Parser} y \textit{I/O}, para el parseo de los mensajes enviados por el servidor en \textit{XML} y para la entrada y salida, respectivamente.
+
+
 \section{Diseño del Prototipo del Cliente}
 El diseño del prototipo del cliente es la pieza fundamental del proyecto ya que sobre dicho prototipo giran todas las cosas.\\
 
