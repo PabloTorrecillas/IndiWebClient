@@ -1,76 +1,85 @@
 \select@language {spanish}
-\contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n}{19}{chapter.1}
-\contentsline {section}{\numberline {1.1}Astronom\IeC {\'\i }a}{19}{section.1.1}
-\contentsline {section}{\numberline {1.2}Observatorio e Instrumental Astron\IeC {\'o}mico}{21}{section.1.2}
-\contentsline {subsection}{\numberline {1.2.1}Telescopio}{22}{subsection.1.2.1}
-\contentsline {subsection}{\numberline {1.2.2}C\IeC {\'a}mara CCD}{23}{subsection.1.2.2}
-\contentsline {subsection}{\numberline {1.2.3}Montura}{24}{subsection.1.2.3}
-\contentsline {subsection}{\numberline {1.2.4}Enfocador}{25}{subsection.1.2.4}
-\contentsline {subsection}{\numberline {1.2.5}Rueda Portafiltros}{25}{subsection.1.2.5}
-\contentsline {subsection}{\numberline {1.2.6}C\IeC {\'u}pula}{26}{subsection.1.2.6}
-\contentsline {subsection}{\numberline {1.2.7}\IeC {\'O}ptica Adaptativa}{27}{subsection.1.2.7}
-\contentsline {subsection}{\numberline {1.2.8}Estaci\IeC {\'o}n Meteorol\IeC {\'o}gica}{27}{subsection.1.2.8}
-\contentsline {subsection}{\numberline {1.2.9}Controlador de Dispositivos}{28}{subsection.1.2.9}
-\contentsline {section}{\numberline {1.3}Plataformas para la creaci\IeC {\'o}n de \textit {software} astron\IeC {\'o}mico}{28}{section.1.3}
-\contentsline {subsection}{\numberline {1.3.1}ASCOM}{28}{subsection.1.3.1}
-\contentsline {subsection}{\numberline {1.3.2}INDI}{29}{subsection.1.3.2}
-\contentsline {subsubsection}{C\IeC {\'o}mo funciona INDI}{29}{section*.8}
-\contentsline {subsubsection}{\textit {Drivers}, Servidores y Clientes de INDI}{29}{section*.9}
-\contentsline {subsubsection}{Descripci\IeC {\'o}n del protocolo}{30}{section*.10}
-\contentsline {subsubsection}{Simuladores}{31}{section*.11}
-\contentsline {section}{\numberline {1.4}Estado del arte. \textit {Software} con INDI y sin \IeC {\'e}l}{31}{section.1.4}
-\contentsline {subsection}{\numberline {1.4.1}Clientes que no hacen uso de INDI}{31}{subsection.1.4.1}
-\contentsline {subsection}{\numberline {1.4.2}Clientes que hacen uso de INDI\cite {ClientesINDI}}{32}{subsection.1.4.2}
-\contentsline {section}{\numberline {1.5}Conexi\IeC {\'o}n: \textit {Socket} y \textit {WebSocket}}{32}{section.1.5}
-\contentsline {subsection}{\numberline {1.5.1}\textit {Socket}}{32}{subsection.1.5.1}
-\contentsline {subsection}{\numberline {1.5.2}\textit {WebSocket}}{33}{subsection.1.5.2}
-\contentsline {chapter}{\numberline {2}Objetivos}{35}{chapter.2}
-\contentsline {section}{\numberline {2.1}Objetivos Principales y Secundarios}{35}{section.2.1}
-\contentsline {section}{\numberline {2.2}Materias y Herramientas para el Desarrollo}{36}{section.2.2}
-\contentsline {section}{\numberline {2.3}Alcance de los Objetivos}{37}{section.2.3}
-\contentsline {section}{\numberline {2.4}Interdependencia de los Objetivos}{37}{section.2.4}
-\contentsline {chapter}{\numberline {3}Planificaci\IeC {\'o}n}{39}{chapter.3}
-\contentsline {section}{\numberline {3.1}Metodolog\IeC {\'\i }a de Desarrollo}{39}{section.3.1}
-\contentsline {section}{\numberline {3.2}Fases}{39}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Planteamiento del Problema}{40}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Especificaciones del Proyecto}{40}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Planificaci\IeC {\'o}n}{40}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}Ingenier\IeC {\'\i }a}{41}{subsection.3.2.4}
-\contentsline {subsection}{\numberline {3.2.5}Construcci\IeC {\'o}n}{41}{subsection.3.2.5}
-\contentsline {subsection}{\numberline {3.2.6}Pruebas}{41}{subsection.3.2.6}
-\contentsline {section}{\numberline {3.3}Estimaci\IeC {\'o}n Temporal}{41}{section.3.3}
-\contentsline {section}{\numberline {3.4}Recursos Humanos}{43}{section.3.4}
-\contentsline {section}{\numberline {3.5}Recursos \textit {Software} Reutilizables}{43}{section.3.5}
-\contentsline {section}{\numberline {3.6}Estimaci\IeC {\'o}n de Costes Econ\IeC {\'o}micos}{44}{section.3.6}
-\contentsline {subsection}{\numberline {3.6.1}Licencias \textit {Software}}{44}{subsection.3.6.1}
-\contentsline {subsection}{\numberline {3.6.2}Recursos Humanos}{44}{subsection.3.6.2}
-\contentsline {subsection}{\numberline {3.6.3}Material}{44}{subsection.3.6.3}
-\contentsline {section}{\numberline {3.7}Temporizaci\IeC {\'o}n}{45}{section.3.7}
-\contentsline {chapter}{\numberline {4}Analisis}{47}{chapter.4}
-\contentsline {section}{\numberline {4.1}An\IeC {\'a}lisis de Requisitos}{47}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Requisitos Funcionales}{47}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Requisitos No Funcionales}{48}{subsection.4.1.2}
-\contentsline {section}{\numberline {4.2}Descripci\IeC {\'o}n de Actores}{48}{section.4.2}
-\contentsline {section}{\numberline {4.3}Descripci\IeC {\'o}n de Casos de Uso}{49}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}\textbf {CU-1: Conectarse a un servidor}}{49}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}\textbf {CU-2: Obtener los diferentes dispositivos}}{49}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}\textbf {CU-3: Finalizar la aplicaci\IeC {\'o}n}}{50}{subsection.4.3.3}
-\contentsline {subsection}{\numberline {4.3.4}\textbf {CU-4: Mostrar un dispositivo}}{50}{subsection.4.3.4}
-\contentsline {subsection}{\numberline {4.3.5}\textbf {CU-5: Editar la propiedad \textit {text}}}{51}{subsection.4.3.5}
-\contentsline {subsection}{\numberline {4.3.6}\textbf {CU-6: Editar la propiedad \textit {number}}}{52}{subsection.4.3.6}
-\contentsline {subsection}{\numberline {4.3.7}\textbf {CU-7: Editar la propiedad \textit {switch}}}{53}{subsection.4.3.7}
-\contentsline {subsection}{\numberline {4.3.8}\textbf {CU-8: Editar la propiedad \textit {blob}}}{53}{subsection.4.3.8}
-\contentsline {subsection}{\numberline {4.3.9}\textbf {CU-9: Activar la recepci\IeC {\'o}n de \textit {blob}}}{54}{subsection.4.3.9}
-\contentsline {subsection}{\numberline {4.3.10}\textbf {CU-10: Desactivar la recepci\IeC {\'o}n de \textit {blob}}}{55}{subsection.4.3.10}
-\contentsline {subsection}{\numberline {4.3.11}\textbf {CU-11: Guardar un \textit {blob}}}{55}{subsection.4.3.11}
-\contentsline {subsection}{\numberline {4.3.12}\textbf {CU-12: Cambiar de grupo de propiedades}}{56}{subsection.4.3.12}
-\contentsline {subsection}{\numberline {4.3.13}\textbf {CU-13: Cerrar un dispositivo}}{57}{subsection.4.3.13}
-\contentsline {section}{\numberline {4.4}Diagrama de Casos de Uso}{57}{section.4.4}
-\contentsline {chapter}{\numberline {5}Dise\IeC {\~n}o e Implementaci\IeC {\'o}n}{59}{chapter.5}
-\contentsline {section}{\numberline {5.1}Dise\IeC {\~n}o del Prototipo del Cliente}{59}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}M\IeC {\'e}todos en el Fichero \textit {connection.js}}{59}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}M\IeC {\'e}todos en el Fichero \textit {parserDefVector.js}}{59}{subsection.5.1.2}
-\contentsline {subsection}{\numberline {5.1.3}M\IeC {\'e}todos en el Fichero \textit {parserSetVector.js}}{61}{subsection.5.1.3}
-\contentsline {subsection}{\numberline {5.1.4}M\IeC {\'e}todos en el Fichero \textit {parser.html}}{61}{subsection.5.1.4}
-\contentsline {chapter}{\numberline {6}Pruebas}{63}{chapter.6}
-\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{65}{chapter*.12}
+\contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n}{21}{chapter.1}
+\contentsline {section}{\numberline {1.1}Astronom\IeC {\'\i }a}{21}{section.1.1}
+\contentsline {section}{\numberline {1.2}Observatorio e Instrumental Astron\IeC {\'o}mico}{23}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Telescopio}{24}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}C\IeC {\'a}mara CCD}{25}{subsection.1.2.2}
+\contentsline {subsection}{\numberline {1.2.3}Montura}{26}{subsection.1.2.3}
+\contentsline {subsection}{\numberline {1.2.4}Enfocador}{27}{subsection.1.2.4}
+\contentsline {subsection}{\numberline {1.2.5}Rueda Portafiltros}{27}{subsection.1.2.5}
+\contentsline {subsection}{\numberline {1.2.6}C\IeC {\'u}pula}{28}{subsection.1.2.6}
+\contentsline {subsection}{\numberline {1.2.7}\IeC {\'O}ptica Adaptativa}{29}{subsection.1.2.7}
+\contentsline {subsection}{\numberline {1.2.8}Estaci\IeC {\'o}n Meteorol\IeC {\'o}gica}{29}{subsection.1.2.8}
+\contentsline {subsection}{\numberline {1.2.9}Controlador de Dispositivos}{30}{subsection.1.2.9}
+\contentsline {section}{\numberline {1.3}Plataformas para la creaci\IeC {\'o}n de \textit {software} astron\IeC {\'o}mico}{30}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}ASCOM}{30}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}INDI}{31}{subsection.1.3.2}
+\contentsline {subsubsection}{C\IeC {\'o}mo funciona INDI}{31}{section*.8}
+\contentsline {subsubsection}{\textit {Drivers}, Servidores y Clientes de INDI}{31}{section*.9}
+\contentsline {subsubsection}{Descripci\IeC {\'o}n del protocolo}{32}{section*.10}
+\contentsline {subsubsection}{Simuladores}{33}{section*.11}
+\contentsline {section}{\numberline {1.4}Estado del arte. \textit {Software} con INDI y sin \IeC {\'e}l}{33}{section.1.4}
+\contentsline {subsection}{\numberline {1.4.1}Clientes que no hacen uso de INDI}{33}{subsection.1.4.1}
+\contentsline {subsection}{\numberline {1.4.2}Clientes que hacen uso de INDI\cite {ClientesINDI}}{34}{subsection.1.4.2}
+\contentsline {section}{\numberline {1.5}Conexi\IeC {\'o}n: \textit {Socket} y \textit {WebSocket}}{34}{section.1.5}
+\contentsline {subsection}{\numberline {1.5.1}\textit {Socket}}{34}{subsection.1.5.1}
+\contentsline {subsection}{\numberline {1.5.2}\textit {WebSocket}}{35}{subsection.1.5.2}
+\contentsline {chapter}{\numberline {2}Objetivos}{37}{chapter.2}
+\contentsline {section}{\numberline {2.1}Objetivos Principales y Secundarios}{37}{section.2.1}
+\contentsline {section}{\numberline {2.2}Materias y Herramientas para el Desarrollo}{38}{section.2.2}
+\contentsline {section}{\numberline {2.3}Alcance de los Objetivos}{39}{section.2.3}
+\contentsline {section}{\numberline {2.4}Interdependencia de los Objetivos}{39}{section.2.4}
+\contentsline {chapter}{\numberline {3}Planificaci\IeC {\'o}n}{41}{chapter.3}
+\contentsline {section}{\numberline {3.1}Metodolog\IeC {\'\i }a de Desarrollo}{41}{section.3.1}
+\contentsline {section}{\numberline {3.2}Fases}{41}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Planteamiento del Problema}{42}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Especificaciones del Proyecto}{42}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Planificaci\IeC {\'o}n}{42}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Ingenier\IeC {\'\i }a}{43}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}Construcci\IeC {\'o}n}{43}{subsection.3.2.5}
+\contentsline {subsection}{\numberline {3.2.6}Pruebas}{43}{subsection.3.2.6}
+\contentsline {section}{\numberline {3.3}Estimaci\IeC {\'o}n Temporal}{43}{section.3.3}
+\contentsline {section}{\numberline {3.4}Recursos Humanos}{45}{section.3.4}
+\contentsline {section}{\numberline {3.5}Recursos \textit {Software} Reutilizables}{45}{section.3.5}
+\contentsline {section}{\numberline {3.6}Estimaci\IeC {\'o}n de Costes Econ\IeC {\'o}micos}{46}{section.3.6}
+\contentsline {subsection}{\numberline {3.6.1}Licencias \textit {Software}}{46}{subsection.3.6.1}
+\contentsline {subsection}{\numberline {3.6.2}Recursos Humanos}{46}{subsection.3.6.2}
+\contentsline {subsection}{\numberline {3.6.3}Material}{46}{subsection.3.6.3}
+\contentsline {section}{\numberline {3.7}Temporizaci\IeC {\'o}n}{47}{section.3.7}
+\contentsline {chapter}{\numberline {4}Analisis}{49}{chapter.4}
+\contentsline {section}{\numberline {4.1}An\IeC {\'a}lisis de Requisitos}{49}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Requisitos Funcionales}{49}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Requisitos No Funcionales}{50}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.2}Descripci\IeC {\'o}n de Actores}{50}{section.4.2}
+\contentsline {section}{\numberline {4.3}Descripci\IeC {\'o}n de Casos de Uso}{51}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}\textbf {CU-1: Conectarse a un servidor}}{51}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}\textbf {CU-2: Obtener los diferentes dispositivos}}{51}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}\textbf {CU-3: Finalizar la aplicaci\IeC {\'o}n}}{52}{subsection.4.3.3}
+\contentsline {subsection}{\numberline {4.3.4}\textbf {CU-4: Mostrar un dispositivo}}{52}{subsection.4.3.4}
+\contentsline {subsection}{\numberline {4.3.5}\textbf {CU-5: Editar la propiedad \textit {text}}}{53}{subsection.4.3.5}
+\contentsline {subsection}{\numberline {4.3.6}\textbf {CU-6: Editar la propiedad \textit {number}}}{54}{subsection.4.3.6}
+\contentsline {subsection}{\numberline {4.3.7}\textbf {CU-7: Editar la propiedad \textit {switch}}}{55}{subsection.4.3.7}
+\contentsline {subsection}{\numberline {4.3.8}\textbf {CU-8: Editar la propiedad \textit {blob}}}{55}{subsection.4.3.8}
+\contentsline {subsection}{\numberline {4.3.9}\textbf {CU-9: Activar la recepci\IeC {\'o}n de \textit {blob}}}{56}{subsection.4.3.9}
+\contentsline {subsection}{\numberline {4.3.10}\textbf {CU-10: Desactivar la recepci\IeC {\'o}n de \textit {blob}}}{57}{subsection.4.3.10}
+\contentsline {subsection}{\numberline {4.3.11}\textbf {CU-11: Guardar un \textit {blob}}}{57}{subsection.4.3.11}
+\contentsline {subsection}{\numberline {4.3.12}\textbf {CU-12: Cambiar de grupo de propiedades}}{58}{subsection.4.3.12}
+\contentsline {subsection}{\numberline {4.3.13}\textbf {CU-13: Cerrar un dispositivo}}{59}{subsection.4.3.13}
+\contentsline {section}{\numberline {4.4}Diagrama de Casos de Uso}{59}{section.4.4}
+\contentsline {chapter}{\numberline {5}Dise\IeC {\~n}o e Implementaci\IeC {\'o}n}{61}{chapter.5}
+\contentsline {section}{\numberline {5.1}Dise\IeC {\~n}o del Prototipo del Cliente}{61}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}M\IeC {\'e}todos en el Fichero \textit {connection.js}}{61}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}M\IeC {\'e}todos en el Fichero \textit {parserDefVector.js}}{61}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.3}M\IeC {\'e}todos en el Fichero \textit {parserSetVector.js}}{63}{subsection.5.1.3}
+\contentsline {subsection}{\numberline {5.1.4}M\IeC {\'e}todos en el Fichero \textit {parser.html}}{63}{subsection.5.1.4}
+\contentsline {section}{\numberline {5.2}Bocetos de la Interfaz}{64}{section.5.2}
+\contentsline {section}{\numberline {5.3}Dise\IeC {\~n}o de la Interfaz}{65}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Interfaz de Conexi\IeC {\'o}n}{66}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Interfaz de Propiedad}{66}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.3}Interfaz de Grupos de Propiedades}{67}{subsection.5.3.3}
+\contentsline {subsection}{\numberline {5.3.4}Interfaz de Dispositivo}{67}{subsection.5.3.4}
+\contentsline {section}{\numberline {5.4}Implementaci\IeC {\'o}n}{68}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Licencia}{68}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}Desarrollo de C\IeC {\'o}digo}{68}{subsection.5.4.2}
+\contentsline {chapter}{\numberline {6}Pruebas}{69}{chapter.6}
+\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{71}{chapter*.12}

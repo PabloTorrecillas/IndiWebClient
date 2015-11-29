@@ -10,10 +10,11 @@ Astroplanner.
 \newblock \url{http://www.astroplanner.net/requirements.html/}.
 \newblock Última revisión: 23 de noviembre de 2015.
 
-\bibitem{CasosUso}
-Caso de uso.
-\newblock \url{https://es.wikipedia.org/wiki/Caso_de_uso}.
-\newblock Última revisión: 1 de noviembre de 2015.
+\bibitem{BeneficiosSublime}
+Beneficios de sublime text.
+\newblock
+  \url{http://hipertextual.com/archivo/2014/04/sublime-text-vs-brackets/}.
+\newblock Última revisión: 7 de noviembre de 2015.
 
 \bibitem{ClientesINDI}
 Clientes que usan indi.
@@ -40,6 +41,16 @@ Nikon d3200 de amazon.
 \newblock
   \url{http://www.amazon.es/Nikon-D3200-pantalla-estabilizador-importado/dp/B00I3M5U5M/ref=sr_1_1?ie=UTF8&qid=1448363877&sr=8-1&keywords=nikond3200}.
 \newblock Última revisión: 24 de noviembre de 2015.
+
+\bibitem{GitHub}
+Página web oficial de github.
+\newblock \url{https://github.com/}.
+\newblock Última revisión: 7 de noviembre de 2015.
+
+\bibitem{Sublime}
+Página web oficial de sublime text.
+\newblock \url{http://www.sublimetext.com/}.
+\newblock Última revisión: 7 de noviembre de 2015.
 
 \bibitem{Socket}
 Socket de internet.
