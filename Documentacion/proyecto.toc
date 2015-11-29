@@ -90,4 +90,4 @@
 \contentsline {section}{\numberline {6.2}Pruebas de Integraci\IeC {\'o}n}{72}{section.6.2}
 \contentsline {subsection}{\numberline {6.2.1}Pruebas de conexi\IeC {\'o}n con el servidor}{73}{subsection.6.2.1}
 \contentsline {subsection}{\numberline {6.2.2}Pruebas de Manejo de las Propiedades del Dispositivo}{73}{subsection.6.2.2}
-\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{75}{chapter*.12}
+\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{76}{chapter*.12}

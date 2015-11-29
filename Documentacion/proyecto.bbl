@@ -10,6 +10,11 @@ Astroplanner.
 \newblock \url{http://www.astroplanner.net/requirements.html/}.
 \newblock Última revisión: 23 de noviembre de 2015.
 
+\bibitem{Astronomia2}
+Ayuda a la definición de astronomía.
+\newblock \url{http://www.astromia.com/glosario/astronomia.htm}.
+\newblock Última revisión: 25 de septiembre de 2015.
+
 \bibitem{BeneficiosSublime}
 Beneficios de sublime text.
 \newblock
@@ -20,6 +25,32 @@ Beneficios de sublime text.
 Clientes que usan indi.
 \newblock \url{http://www.indilib.org/about/clients.html/}.
 \newblock Última revisión: 24 de noviembre de 2015.
+
+\bibitem{Astronomia1}
+Definición de astronomía.
+\newblock \url{https://es.wikipedia.org/wiki/Astronom%C3%ADa}.
+\newblock Última revisión: 25 de septiembre de 2015.
+
+\bibitem{CasosUso}
+Diagramas de casos de uso.
+\newblock \url{https://es.wikipedia.org/wiki/Caso_de_uso/}.
+\newblock Última revisión: 7 de noviembre de 2015.
+
+\bibitem{CCD}
+Dispositivo de carga acoplada.
+\newblock \url{https://es.wikipedia.org/wiki/Dispositivo_de_carga_acoplada}.
+\newblock Última revisión: 30 de septiembre de 2015.
+
+\bibitem{Enfocador}
+Enfocador de un telescopio.
+\newblock
+  \url{http://eldiariodeuntelescopio.blogspot.com.es/2012/05/el-enfocador-focuser.html}.
+\newblock Última revisión: 16 de octubre de 2015.
+
+\bibitem{EstacionMeteorologica}
+Estación meteorológica.
+\newblock \url{https://es.wikipedia.org/wiki/Estaci%C3%B3n_meteorol%C3%B3gica}.
+\newblock Última revisión: 30 de septiembre de 2015.
 
 \bibitem{ImagesPlus}
 Images plus.
@@ -36,6 +67,11 @@ Maxim dl.
 \newblock \url{http://www.cyanogen.com/maximmain.php/}.
 \newblock Última revisión: 23 de noviembre de 2015.
 
+\bibitem{MonturaTelescopio}
+Montura de un telescopio.
+\newblock \url{http://www.astrosurf.com/astronosur/monturas.htm}.
+\newblock Última revisión: 13 de octubre de 2015.
+
 \bibitem{NikonAmazon}
 Nikon d3200 de amazon.
 \newblock
@@ -45,21 +81,37 @@ Nikon d3200 de amazon.
 \bibitem{GitHub}
 Página web oficial de github.
 \newblock \url{https://github.com/}.
-\newblock Última revisión: 7 de noviembre de 2015.
+\newblock Última revisión: 30 de octubre de 2015.
 
 \bibitem{Sublime}
 Página web oficial de sublime text.
 \newblock \url{http://www.sublimetext.com/}.
 \newblock Última revisión: 7 de noviembre de 2015.
 
+\bibitem{RuedaPortafiltros}
+Rueda portafiltros.
+\newblock
+  \url{https://www.valkanik.com/filtros/rueda-portafiltros-manual-5-posiciones-317-mm}.
+\newblock Última revisión: 22 de octubre de 2015.
+
 \bibitem{Socket}
 Socket de internet.
 \newblock \url{https://es.wikipedia.org/wiki/Socket_de_Internet}.
 \newblock Última revisión: 16 de octubre de 2015.
 
+\bibitem{Telescopio}
+Telescopio astronómico.
+\newblock \url{https://es.wikipedia.org/wiki/Telescopio/}.
+\newblock Última revisión: 30 de septiembre de 2015.
+
 \bibitem{WebSocket}
 Websocket de internet.
 \newblock \url{https://es.wikipedia.org/wiki/WebSocket}.
 \newblock Última revisión: 17 de octubre de 2015.
+
+\bibitem{OpticaAdaptativa}
+Óptica adaptativa.
+\newblock \url{http://www.iac.es/gabinete/iacnoticias/2-99/gtc/gtc3.htm}.
+\newblock Última revisión: 2 de octubre de 2015.
 
 \end{thebibliography}
