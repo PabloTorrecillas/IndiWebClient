@@ -95,4 +95,6 @@
 \contentsline {chapter}{\numberline {7}Manual de Usuario}{77}{chapter.7}
 \contentsline {section}{\numberline {7.1}Previo}{77}{section.7.1}
 \contentsline {section}{\numberline {7.2}Lanzando el Prototipo de Cliente}{77}{section.7.2}
-\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{80}{chapter*.12}
+\contentsline {section}{\numberline {7.3}Encender un Dispositivo}{78}{section.7.3}
+\contentsline {section}{\numberline {7.4}Interactuar con un Dispositivo}{79}{section.7.4}
+\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{82}{chapter*.12}

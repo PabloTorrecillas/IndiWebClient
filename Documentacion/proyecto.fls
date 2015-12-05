@@ -260,6 +260,15 @@ INPUT capitulos/07_ManualDeUsuario.tex
 INPUT ./imagenes/capturaINDIServer.png
 INPUT ./imagenes/capturaINDIServer.png
 INPUT ./imagenes/capturaINDIServer.png
+INPUT ./imagenes/capturaConexion.png
+INPUT ./imagenes/capturaConexion.png
+INPUT ./imagenes/capturaConexion.png
+INPUT ./imagenes/capturaEncendiendo.png
+INPUT ./imagenes/capturaEncendiendo.png
+INPUT ./imagenes/capturaEncendiendo.png
+INPUT ./imagenes/capturaDispositivo.png
+INPUT ./imagenes/capturaDispositivo.png
+INPUT ./imagenes/capturaDispositivo.png
 INPUT proyecto.bbl
 INPUT proyecto.bbl
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
