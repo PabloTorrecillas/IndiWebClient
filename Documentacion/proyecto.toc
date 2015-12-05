@@ -92,4 +92,7 @@
 \contentsline {subsection}{\numberline {6.2.2}Pruebas de Manejo de las Propiedades del Dispositivo}{73}{subsection.6.2.2}
 \contentsline {section}{\numberline {6.3}Pruebas de Sistema}{74}{section.6.3}
 \contentsline {section}{\numberline {6.4}Pruebas de Aceptaci\IeC {\'o}n}{74}{section.6.4}
-\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{78}{chapter*.12}
+\contentsline {chapter}{\numberline {7}Manual de Usuario}{77}{chapter.7}
+\contentsline {section}{\numberline {7.1}Previo}{77}{section.7.1}
+\contentsline {section}{\numberline {7.2}Lanzando el Prototipo de Cliente}{77}{section.7.2}
+\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{80}{chapter*.12}

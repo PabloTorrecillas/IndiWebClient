@@ -26,45 +26,48 @@ Warning--to sort, need author or key in CasosUso
 Warning--to sort, need author or key in Sublime
 Warning--to sort, need author or key in BeneficiosSublime
 Warning--to sort, need author or key in GitHub
-You've used 22 entries,
+Warning--to sort, need author or key in InstalarINDI
+Warning--to sort, need author or key in Linux
+Warning--to sort, need author or key in ListaDispositivos
+You've used 25 entries,
             2118 wiz_defined-function locations,
-            597 strings with 6672 characters,
-and the built_in function-call counts, 3718 in all, are:
-= -- 374
-> -- 22
+            609 strings with 6930 characters,
+and the built_in function-call counts, 4222 in all, are:
+= -- 425
+> -- 25
 < -- 0
-+ -- 22
++ -- 25
 - -- 0
-* -- 112
-:= -- 429
-add.period$ -- 66
-call.type$ -- 22
-change.case$ -- 66
+* -- 127
+:= -- 486
+add.period$ -- 75
+call.type$ -- 25
+change.case$ -- 75
 chr.to.int$ -- 0
-cite$ -- 44
-duplicate$ -- 154
-empty$ -- 507
+cite$ -- 50
+duplicate$ -- 175
+empty$ -- 576
 format.name$ -- 0
-if$ -- 925
+if$ -- 1051
 int.to.chr$ -- 0
-int.to.str$ -- 22
+int.to.str$ -- 25
 missing$ -- 0
-newline$ -- 113
+newline$ -- 128
 num.names$ -- 0
-pop$ -- 220
+pop$ -- 250
 preamble$ -- 1
-purify$ -- 44
+purify$ -- 50
 quote$ -- 0
-skip$ -- 109
+skip$ -- 124
 stack$ -- 0
-substring$ -- 110
-swap$ -- 22
+substring$ -- 125
+swap$ -- 25
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 88
-warning$ -- 22
+type$ -- 100
+warning$ -- 25
 while$ -- 0
-width$ -- 24
-write$ -- 200
-(There were 23 warnings)
+width$ -- 27
+write$ -- 227
+(There were 26 warnings)

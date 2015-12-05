@@ -255,6 +255,11 @@ INPUT ./imagenes/interfazActual.png
 INPUT ./imagenes/interfazActual.png
 INPUT capitulos/06_Pruebas.tex
 INPUT capitulos/06_Pruebas.tex
+INPUT capitulos/07_ManualDeUsuario.tex
+INPUT capitulos/07_ManualDeUsuario.tex
+INPUT ./imagenes/capturaINDIServer.png
+INPUT ./imagenes/capturaINDIServer.png
+INPUT ./imagenes/capturaINDIServer.png
 INPUT proyecto.bbl
 INPUT proyecto.bbl
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm

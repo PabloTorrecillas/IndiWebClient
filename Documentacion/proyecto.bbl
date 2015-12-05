@@ -62,6 +62,11 @@ Indi.
 \newblock \url{http://www.indilib.org/}.
 \newblock Última revisión: 28 de noviembre de 2015.
 
+\bibitem{InstalarINDI}
+Instalación de indi.
+\newblock \url{http://indilib.org/download.html}.
+\newblock Última revisión: 26 de noviembre de 2015.
+
 \bibitem{MaximDL}
 Maxim dl.
 \newblock \url{http://www.cyanogen.com/maximmain.php/}.
@@ -77,6 +82,16 @@ Nikon d3200 de amazon.
 \newblock
   \url{http://www.amazon.es/Nikon-D3200-pantalla-estabilizador-importado/dp/B00I3M5U5M/ref=sr_1_1?ie=UTF8&qid=1448363877&sr=8-1&keywords=nikond3200}.
 \newblock Última revisión: 24 de noviembre de 2015.
+
+\bibitem{Linux}
+Página oficial de linux-es.
+\newblock \url{http://www.linux-es.org/}.
+\newblock Última revisión: 26 de noviembre de 2015.
+
+\bibitem{ListaDispositivos}
+Página oficial de linux-es.
+\newblock \url{http://www.indilib.org/api/}.
+\newblock Última revisión: 28 de noviembre de 2015.
 
 \bibitem{GitHub}
 Página web oficial de github.
