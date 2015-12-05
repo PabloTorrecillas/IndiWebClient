@@ -29,4 +29,12 @@
 \contentsline {figure}{\numberline {7.1}{\ignorespaces Lanzamiento del Simulador de Telescopio}}{78}{figure.7.1}
 \contentsline {figure}{\numberline {7.2}{\ignorespaces Conexi\IeC {\'o}n con el Servidor INDI}}{78}{figure.7.2}
 \contentsline {figure}{\numberline {7.3}{\ignorespaces Encendiendo un Dispositivo}}{79}{figure.7.3}
-\contentsline {figure}{\numberline {7.4}{\ignorespaces Dispositivo CCD Encendido}}{80}{figure.7.4}
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Dispositivo CCD Encendido}}{82}{figure.7.4}
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Grupos de Propiedades del Telescopio}}{82}{figure.7.5}
+\contentsline {figure}{\numberline {7.6}{\ignorespaces Propiedad \textit {Text} del Telescopio}}{83}{figure.7.6}
+\contentsline {figure}{\numberline {7.7}{\ignorespaces Propiedad \textit {Number} del Telescopio}}{83}{figure.7.7}
+\contentsline {figure}{\numberline {7.8}{\ignorespaces Propiedad \textit {Switch - One Of Many} del Telescopio}}{83}{figure.7.8}
+\contentsline {figure}{\numberline {7.9}{\ignorespaces Propiedad \textit {Switch - At Most One} del Telescopio}}{83}{figure.7.9}
+\contentsline {figure}{\numberline {7.10}{\ignorespaces Propiedad \textit {Switch - Any Of Many} del Telescopio}}{83}{figure.7.10}
+\contentsline {figure}{\numberline {7.11}{\ignorespaces Activaci\IeC {\'o}n de Recepci\IeC {\'o}n de \textit {Blob} del Telescopio}}{84}{figure.7.11}
+\addvspace {10\p@ }

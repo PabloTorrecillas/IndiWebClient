@@ -97,4 +97,12 @@
 \contentsline {section}{\numberline {7.2}Lanzando el Prototipo de Cliente}{77}{section.7.2}
 \contentsline {section}{\numberline {7.3}Encender un Dispositivo}{78}{section.7.3}
 \contentsline {section}{\numberline {7.4}Interactuar con un Dispositivo}{79}{section.7.4}
-\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{82}{chapter*.12}
+\contentsline {subsection}{\numberline {7.4.1}Estado de una Propiedad}{79}{subsection.7.4.1}
+\contentsline {subsection}{\numberline {7.4.2}Cambio de Grupo de Propiedades}{80}{subsection.7.4.2}
+\contentsline {subsection}{\numberline {7.4.3}Cambio de una Propiedad \textit {Text}}{80}{subsection.7.4.3}
+\contentsline {subsection}{\numberline {7.4.4}Cambio de una Propiedad \textit {Number}}{80}{subsection.7.4.4}
+\contentsline {subsection}{\numberline {7.4.5}Cambio de una Propiedad \textit {Switch}}{80}{subsection.7.4.5}
+\contentsline {subsection}{\numberline {7.4.6}Activar/Desactivar la Recepci\IeC {\'o}n de \textit {Blob}}{80}{subsection.7.4.6}
+\contentsline {subsection}{\numberline {7.4.7}Cerrar un Dispositivo}{81}{subsection.7.4.7}
+\contentsline {chapter}{\numberline {8}Conclusiones}{85}{chapter.8}
+\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{88}{chapter*.12}

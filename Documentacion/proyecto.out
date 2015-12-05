@@ -92,4 +92,12 @@
 \BOOKMARK [1][-]{section.7.2}{Lanzando el Prototipo de Cliente}{chapter.7}% 92
 \BOOKMARK [1][-]{section.7.3}{Encender un Dispositivo}{chapter.7}% 93
 \BOOKMARK [1][-]{section.7.4}{Interactuar con un Dispositivo}{chapter.7}% 94
-\BOOKMARK [0][-]{chapter*.12}{Bibliograf\355a}{}% 95
+\BOOKMARK [2][-]{subsection.7.4.1}{Estado de una Propiedad}{section.7.4}% 95
+\BOOKMARK [2][-]{subsection.7.4.2}{Cambio de Grupo de Propiedades}{section.7.4}% 96
+\BOOKMARK [2][-]{subsection.7.4.3}{Cambio de una Propiedad Text}{section.7.4}% 97
+\BOOKMARK [2][-]{subsection.7.4.4}{Cambio de una Propiedad Number}{section.7.4}% 98
+\BOOKMARK [2][-]{subsection.7.4.5}{Cambio de una Propiedad Switch}{section.7.4}% 99
+\BOOKMARK [2][-]{subsection.7.4.6}{Activar/Desactivar la Recepci\363n de Blob}{section.7.4}% 100
+\BOOKMARK [2][-]{subsection.7.4.7}{Cerrar un Dispositivo}{section.7.4}% 101
+\BOOKMARK [0][-]{chapter.8}{Conclusiones}{}% 102
+\BOOKMARK [0][-]{chapter*.12}{Bibliograf\355a}{}% 103
