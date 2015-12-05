@@ -21,6 +21,7 @@ Warning--to sort, need author or key in ImagesPlus
 Warning--to sort, need author or key in Astroplanner
 Warning--to sort, need author or key in Socket
 Warning--to sort, need author or key in WebSocket
+Warning--to sort, need author or key in DiagramaGantt
 Warning--to sort, need author or key in NikonAmazon
 Warning--to sort, need author or key in CasosUso
 Warning--to sort, need author or key in Sublime
@@ -29,45 +30,45 @@ Warning--to sort, need author or key in GitHub
 Warning--to sort, need author or key in InstalarINDI
 Warning--to sort, need author or key in Linux
 Warning--to sort, need author or key in ListaDispositivos
-You've used 25 entries,
+You've used 26 entries,
             2118 wiz_defined-function locations,
-            609 strings with 6930 characters,
-and the built_in function-call counts, 4222 in all, are:
-= -- 425
-> -- 25
+            613 strings with 7041 characters,
+and the built_in function-call counts, 4390 in all, are:
+= -- 442
+> -- 26
 < -- 0
-+ -- 25
++ -- 26
 - -- 0
-* -- 127
-:= -- 486
-add.period$ -- 75
-call.type$ -- 25
-change.case$ -- 75
+* -- 132
+:= -- 505
+add.period$ -- 78
+call.type$ -- 26
+change.case$ -- 78
 chr.to.int$ -- 0
-cite$ -- 50
-duplicate$ -- 175
-empty$ -- 576
+cite$ -- 52
+duplicate$ -- 182
+empty$ -- 599
 format.name$ -- 0
-if$ -- 1051
+if$ -- 1093
 int.to.chr$ -- 0
-int.to.str$ -- 25
+int.to.str$ -- 26
 missing$ -- 0
-newline$ -- 128
+newline$ -- 133
 num.names$ -- 0
-pop$ -- 250
+pop$ -- 260
 preamble$ -- 1
-purify$ -- 50
+purify$ -- 52
 quote$ -- 0
-skip$ -- 124
+skip$ -- 129
 stack$ -- 0
-substring$ -- 125
-swap$ -- 25
+substring$ -- 130
+swap$ -- 26
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 100
-warning$ -- 25
+type$ -- 104
+warning$ -- 26
 while$ -- 0
-width$ -- 27
-write$ -- 227
-(There were 26 warnings)
+width$ -- 28
+write$ -- 236
+(There were 27 warnings)
