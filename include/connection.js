@@ -121,7 +121,6 @@ var ws;
         var cadena = '<newSwitchVector device="' + deviceName + '" name="' + propertyName + '">';
 
         for(var i = 0; i < children.length; i++){
-            debug(children[i].innerHTML);
             if(children[i].innerHTML.trim().length > 0){
                 var value = children[i].getAttribute("value");
                 var switchValue = 'Off';
