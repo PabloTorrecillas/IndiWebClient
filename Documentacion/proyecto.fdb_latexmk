@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex proyecto"] 1449393697 "proyecto.aux" "proyecto.bbl" "proyecto" 1449394189
+["bibtex proyecto"] 1449393697 "proyecto.aux" "proyecto.bbl" "proyecto" 1449479488
   "/usr/share/texlive/texmf-dist/bibtex/bst/base/plain.bst" 1292289607 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
   "bibliografia.bib" 1449336461 5297 734cbad439391b8d771eb98b18920f9d ""
-  "proyecto.aux" 1449394189 26583 e54f747d488cdae50fbaa7586fcbecaa ""
+  "proyecto.aux" 1449479488 26583 e54f747d488cdae50fbaa7586fcbecaa ""
   "proyecto.bcf" 0 -1 0 ""
   (generated)
   "proyecto.blg"
   "proyecto.bbl"
-["pdflatex"] 1449394188 "proyecto.tex" "proyecto.pdf" "proyecto" 1449394189
+["pdflatex"] 1449479487 "proyecto.tex" "proyecto.pdf" "proyecto" 1449479488
   "/etc/texmf/web2c/texmf.cnf" 1447690340 1101 af7716885e081ab43982cab7b4672c1a ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
@@ -151,19 +151,19 @@
   "imagenes/yellow_light.png" 1443768809 2129 99fda81d33f68de3ec02069c88c44767 ""
   "portada/portada.tex" 1447713644 1218 180a456df965d0034ade323894df17fe ""
   "portada/portada_2.tex" 1447691259 1219 4ec87d1451c01633a88f48bb6811c286 ""
-  "prefacios/prefacio.tex" 1449394185 6376 a8399f730efab9e73163ac88f075bc40 ""
-  "proyecto.aux" 1449394189 26583 e54f747d488cdae50fbaa7586fcbecaa ""
+  "prefacios/prefacio.tex" 1449479483 9746 2edab230823d6bd5d9afd23a0b0444e3 ""
+  "proyecto.aux" 1449479488 26583 e54f747d488cdae50fbaa7586fcbecaa ""
   "proyecto.bbl" 1449393697 4393 728db7e1e96dec573c5656f1a164d029 "bibtex proyecto"
-  "proyecto.lof" 1449394189 4163 81fad9c9e81492a6a8af07bcc7254c49 ""
-  "proyecto.lot" 1449394189 1859 aec832e2d71ae700abb9d9e4b9750cca ""
-  "proyecto.out" 1449394189 7710 55bde0fdc2965960c8d579490c748446 ""
+  "proyecto.lof" 1449479488 4163 81fad9c9e81492a6a8af07bcc7254c49 ""
+  "proyecto.lot" 1449479488 1859 aec832e2d71ae700abb9d9e4b9750cca ""
+  "proyecto.out" 1449479488 7710 55bde0fdc2965960c8d579490c748446 ""
   "proyecto.tex" 1449321442 5470 9313aa9f8786259451d76deb2f8b585b ""
-  "proyecto.toc" 1449394189 10270 325e0297cedbbabe978e189313b0698e ""
+  "proyecto.toc" 1449479488 10270 325e0297cedbbabe978e189313b0698e ""
   (generated)
-  "proyecto.lot"
   "proyecto.pdf"
-  "proyecto.lof"
-  "proyecto.log"
   "proyecto.aux"
-  "proyecto.toc"
   "proyecto.out"
+  "proyecto.log"
+  "proyecto.lot"
+  "proyecto.toc"
+  "proyecto.lof"
