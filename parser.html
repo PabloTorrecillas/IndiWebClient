@@ -134,6 +134,13 @@
 
         /*Funciones Auxiliares para los diferentes parsers*/
 
+
+        /**
+		* Depurado de un mensaje por pantalla
+		*
+		* @param {var}  message  Variable a depurar.
+		*
+		*/
         function debug(message){
             if(globalDebug){
                 console.log(message);
@@ -144,29 +151,63 @@
             }
         }
 
+        /**
+		* Obtener nombre de la ventana con los espacios sustituidos por guión bajo
+		*
+		* @param {var}  deviceName  Nombre del dispositivo que forma el nombre de la ventana a cambiar.
+		* @return {var} deviceName  Nombre de la ventana con espacios reemplazados.
+		*/
         function getWindowId(deviceName){
             return deviceName.replace(/[\W_]/g,"_");
         }
 
+        /**
+		* Obtener nombre de la propiedad de la concatenación del nombre del dispositivo y nombre de la propiedad
+		*
+		* @param {var}  deviceName  Nombre del dispositivo para concatenar.
+		* @param {var}  propertyName  Nombre de la propiedad para concatenar.
+		* @return {var} concat  Unión de ambos parámetros con los espacios reemplazados por guión bajo.
+		*/
         function getPropertyId(deviceName, propertyName){
             var concat = deviceName + "_" + propertyName;
 
             return concat.replace(/[\W_]/g,"_");
         }
 
+        /**
+		* Obtener nombre del elemento de la concatenación del nombre del dispositivo, nombre de la propiedad y el nombre del elemento
+		*
+		* @param {var}  deviceName  Nombre del dispositivo para concatenar.
+		* @param {var}  propertyName  Nombre de la propiedad para concatenar.
+		* @param {var}  elementName  Nombre de la propiedad para concatenar.
+		* @return {var} concat  Unión de todos los parámetros con los espacios reemplazados por guión bajo.
+		*/
         function getElementId(deviceName, propertyName, elementName){
             var concat = deviceName + "_" + propertyName + "_" + elementName;
 
             return concat.replace(/[\W_]/g,"_");
         }
 
-        function getBombillita(state, id){
+        /**
+		* Obtener el color de la bombilla en función del estado de la propiedad
+		*
+		* @param {var}  state  Estado de la propiedad.
+		* @param {var}  id  Identificador de la propiedad concreta.
+		* @return  Código HTML con la ruta de la imagen según su estado y el id para agregarlo a la construcción del dispositivo.
+		*/
+        function getLight(state, id){
 
-            return '<img src="'+ getURLBombillita(state) +'" id="'+ id +'"/>';
+            return '<img src="'+ getURLLight(state) +'" id="'+ id +'"/>';
 
         }
 
-        function getURLBombillita(state){
+        /**
+		* Obtener URL de la bombilla en función del estado de la propiedad
+		*
+		* @param {var}  state  Estado de la propiedad.
+		* @return  Ruta de la imagen según el estado.
+		*/
+        function getURLLight(state){
             switch(state){
                 case 'Idle':
                 return "images/grey_light.png";

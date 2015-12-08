@@ -17,7 +17,7 @@ function parserDefTextVector(node){
     html += '<div class="deviceInfo">';
         html += '<div class="propertyBox">'+
         '<div>' + 
-        getBombillita(node.getAttribute("state"), getPropertyId(deviceName,propertyName) + "_bombilla") + node.getAttribute("name") + '</div>';
+        getLight(node.getAttribute("state"), getPropertyId(deviceName,propertyName) + "_bombilla") + node.getAttribute("name") + '</div>';
          html += '</div>';
 
         var nodes = node.getElementsByTagName('defText');
@@ -72,7 +72,7 @@ function parserDefNumberVector(node){
     html += '<div class="deviceInfo">';
         html += '<div class="propertyBox">'+
         '<div>' + 
-        getBombillita(node.getAttribute("state"), getPropertyId(deviceName,propertyName) + "_bombilla") + node.getAttribute("name") + '</div>';
+        getLight(node.getAttribute("state"), getPropertyId(deviceName,propertyName) + "_bombilla") + node.getAttribute("name") + '</div>';
          html += '</div>';
 
         var nodes = node.getElementsByTagName('defNumber');
@@ -126,7 +126,7 @@ function parserDefSwitchVector(node){
     html += '<div class="deviceInfo">';
         html += '<div class="propertyBox">'+
         '<div>' + 
-        getBombillita(node.getAttribute("state"), getPropertyId(deviceName,propertyName) + "_bombilla") + node.getAttribute("name") + '</div>';
+        getLight(node.getAttribute("state"), getPropertyId(deviceName,propertyName) + "_bombilla") + node.getAttribute("name") + '</div>';
          html += '</div>';
 
         var nodes = node.getElementsByTagName('defSwitch');
@@ -215,7 +215,7 @@ function parserDefBLOBVector(node){
     html += '<div class="deviceInfo">';
         html += '<div class="propertyBox">'+
         '<div>' + 
-        getBombillita(node.getAttribute("state"), getPropertyId(deviceName,propertyName) + "_bombilla") + node.getAttribute("name") + '</div>';
+        getLight(node.getAttribute("state"), getPropertyId(deviceName,propertyName) + "_bombilla") + node.getAttribute("name") + '</div>';
          html += '</div>';
 
         var nodes = node.getElementsByTagName('defBLOB');
@@ -263,7 +263,7 @@ function parserDefLightVector(node){
     html += '<div class="deviceInfo">';
         html += '<div class="propertyBox">'+
         '<div>' + 
-        getBombillita(node.getAttribute("state"), getPropertyId(deviceName,propertyName) + "_bombilla") + node.getAttribute("name") + '</div>';
+        getLight(node.getAttribute("state"), getPropertyId(deviceName,propertyName) + "_bombilla") + node.getAttribute("name") + '</div>';
         html += '</div>';
 
         var nodes = node.getElementsByTagName('defLight');
@@ -274,7 +274,7 @@ function parserDefLightVector(node){
                     var elementName = nodes[i].getAttribute("name"); 
                     html += 
                     '<div class = "elementBox">'+ nodes[i].getAttribute("label")   + ': ' + 
-                            getBombillita(nodes[i].innerHTML, getElementId(deviceName,propertyName,elementName) + "_bombilla") + 
+                            getLight(nodes[i].innerHTML, getElementId(deviceName,propertyName,elementName) + "_bombilla") + 
                     '</div>';
                 }
 

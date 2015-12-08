@@ -6,7 +6,7 @@ function parserSetTextVector(node){
 
 
   var bombilla = document.getElementById(getPropertyId(deviceName,propertyName) + "_bombilla");
-  bombilla.setAttribute("src",getURLBombillita(node.getAttribute("state")));
+  bombilla.setAttribute("src",getURLLight(node.getAttribute("state")));
 
   for(var i = 0; i < nodes.length; i++){
     var elementName = nodes[i].getAttribute("name");
@@ -25,7 +25,7 @@ function parserSetNumberVector(node){
   var nodes = node.getElementsByTagName('oneNumber');
 
   var bombilla = document.getElementById(getPropertyId(deviceName,propertyName) + "_bombilla");
-  bombilla.setAttribute("src",getURLBombillita(node.getAttribute("state")));
+  bombilla.setAttribute("src",getURLLight(node.getAttribute("state")));
 
   for(var i = 0; i < nodes.length; i++){
     var elementName = nodes[i].getAttribute("name");
@@ -44,7 +44,7 @@ function parserSetSwitchVector(node){
   var nodes = node.getElementsByTagName('oneSwitch');
 
   var bombilla = document.getElementById(getPropertyId(deviceName,propertyName) + "_bombilla");
-  bombilla.setAttribute("src",getURLBombillita(node.getAttribute("state")));
+  bombilla.setAttribute("src",getURLLight(node.getAttribute("state")));
 
   var propertyValue = document.getElementById(getPropertyId(deviceName,propertyName) + "_value");
 
@@ -81,7 +81,7 @@ function parserSetBLOBVector(node){
   var nodes = node.getElementsByTagName('oneBLOB');
 
   var bombilla = document.getElementById(getPropertyId(deviceName,propertyName) + "_bombilla");
-  bombilla.setAttribute("src",getURLBombillita(node.getAttribute("state")));
+  bombilla.setAttribute("src",getURLLight(node.getAttribute("state")));
 
   for(var i = 0; i < nodes.length; i++){
     var elementName = nodes[i].getAttribute("name");
@@ -101,13 +101,13 @@ function parserSetLightVector(node){
   var nodes = node.getElementsByTagName('oneLight');
 
   var bombilla = document.getElementById(getPropertyId(deviceName,propertyName) + "_bombilla");
-  bombilla.setAttribute("src",getURLBombillita(node.getAttribute("state")));
+  bombilla.setAttribute("src",getURLLight(node.getAttribute("state")));
 
   for(var i = 0; i < nodes.length; i++){
    var elementName = nodes[i].getAttribute("name");
 
    var existingElement = document.getElementById(getElementId(deviceName,propertyName,elementName) + "_bombilla");
 
-   existingElement.setAttribute("src",getURLBombillita(nodes[i].innerHTML));
+   existingElement.setAttribute("src",getURLLight(nodes[i].innerHTML));
   }
 }
