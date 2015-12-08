@@ -1,5 +1,8 @@
 var ws;  
-            
+    /**
+    * Desconectar el WebSocket
+    *
+    */   
     function disconnect() {
       if (ws != null) {
         console.log("Desconectando");
@@ -7,7 +10,11 @@ var ws;
         ws = null;
       }
     }
-            
+    
+    /**
+    * Conectar el WebSocket
+    *
+    */    
     function connect() {
         disconnect();
        
@@ -35,7 +42,11 @@ var ws;
         console.log("Conectando...");
         ws.open("ws://localhost:4000");
     }
-            
+        
+    /**
+    * Obtener el mensaje del servidor para parsear.
+    *
+    */    
     function funcionLectura() {
         var length = ws.rQlen();
         var cadena = ws.rQshiftStr(length);
@@ -47,7 +58,13 @@ var ws;
         parserXML("<a>" + cadena + "</a>");
     }
 
-    function funcionEscritura(deviceName, propertyName){
+    /**
+    * Envio de mensajes de tipo Text al servidor.
+    *
+    * @param {var}  deviceName  Nombre del dispositivo desde el que se hace el envío.
+    * @param {var}  propertyName  Nombre de la propiedad desde la que se hace el envío.
+    */
+    function writeText(deviceName, propertyName){
         var boxId = getPropertyId(deviceName,propertyName) + "_box";
 
         var box = document.getElementById(boxId);
@@ -80,6 +97,12 @@ var ws;
         ws.flush();
     }
 
+    /**
+    * Envio de mensajes de tipo Number al servidor.
+    *
+    * @param {var}  deviceName  Nombre del dispositivo desde el que se hace el envío.
+    * @param {var}  propertyName  Nombre de la propiedad desde la que se hace el envío.
+    */
     function writeNumber(deviceName, propertyName){
         var boxId = getPropertyId(deviceName,propertyName) + "_box";
        
@@ -112,6 +135,12 @@ var ws;
         ws.flush();
     }
 
+    /**
+    * Envio de mensajes de tipo Switch y a su vez de tipo Select al servidor. (Desplegables)
+    *
+    * @param {var}  deviceName  Nombre del dispositivo desde el que se hace el envío.
+    * @param {var}  propertyName  Nombre de la propiedad desde la que se hace el envío.
+    */
     function writeSwitchSelect(deviceName, propertyName){
         var selectId = getPropertyId(deviceName,propertyName) + "_select";
 
@@ -137,6 +166,12 @@ var ws;
         ws.flush();
     }
 
+    /**
+    * Envio de mensajes de tipo Switch y a su vez de tipo Check al servidor. (Checkbox)
+    *
+    * @param {var}  deviceName  Nombre del dispositivo desde el que se hace el envío.
+    * @param {var}  propertyName  Nombre de la propiedad desde la que se hace el envío.
+    */
     function writeSwitchCheckboxes(deviceName, propertyName){
         var boxId = getPropertyId(deviceName,propertyName) + "_box";
 
