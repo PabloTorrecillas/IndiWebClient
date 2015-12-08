@@ -12,8 +12,9 @@
 }
 
 .propertyBox{
-    background-color: #fff000;
-    border-color: #000fff;
+    /*background-color: #fff000;*/
+    border: solid;
+    border-color: #fff000;
     /*width: 175px;*/
     margin: auto;
     text-align: center;
