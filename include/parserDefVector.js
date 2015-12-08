@@ -1,3 +1,9 @@
+/**
+* Parseo de la propiedad Text que proviene de un mensaje del servidor.
+*
+* @param {var}  node  Variable Text para parsear.
+*
+*/
 function parserDefTextVector(node){
     var deviceName = node.getAttribute("device").trim();
     var propertyName = node.getAttribute("name");
@@ -53,6 +59,12 @@ function parserDefTextVector(node){
     addDeviceToTab(deviceName, groupName, html);      
 }
 
+/**
+* Parseo de la propiedad Number que proviene de un mensaje del servidor.
+*
+* @param {var}  node  Variable Number para parsear.
+*
+*/
 function parserDefNumberVector(node){
     var deviceName = node.getAttribute("device");
     var propertyName = node.getAttribute("name"); 
@@ -107,6 +119,12 @@ function parserDefNumberVector(node){
     
 }
 
+/**
+* Parseo de la propiedad Switch que proviene de un mensaje del servidor.
+*
+* @param {var}  node  Variable Switch para parsear.
+*
+*/
 function parserDefSwitchVector(node){
     var deviceName = node.getAttribute("device");
     var propertyName = node.getAttribute("name"); 
@@ -196,6 +214,12 @@ function parserDefSwitchVector(node){
     }
 }
 
+/**
+* Parseo de la propiedad BLOB que proviene de un mensaje del servidor.
+*
+* @param {var}  node  Variable BLOB para parsear.
+*
+*/
 function parserDefBLOBVector(node){
     var deviceName = node.getAttribute("device");
     var propertyName = node.getAttribute("name"); 
@@ -244,6 +268,12 @@ function parserDefBLOBVector(node){
     addDeviceToTab(deviceName, groupName, html);
 }
 
+/**
+* Parseo de la propiedad Light que proviene de un mensaje del servidor.
+*
+* @param {var}  node  Variable Light para parsear.
+*
+*/
 function parserDefLightVector(node){
     var deviceName = node.getAttribute("device");
     var propertyName = node.getAttribute("name"); 
@@ -285,6 +315,12 @@ function parserDefLightVector(node){
     addDeviceToTab(deviceName, groupName, html);    
 }
 
+/**
+* Creación de una nueva ventana para un dispositivo del servidor en caso de que no exista su ventana.
+*
+* @param {var}  deviceName  Nombre del dispositivo para el que se crea la ventana.
+* @return {var}  antiguaVentana  Nueva ventana para el dispositivo que se ha pasado por parametro.
+*/
 function getVentana(deviceName){
     var windowId = getWindowId(deviceName);
     var antiguaVentana = document.getElementById(windowId);
@@ -305,6 +341,13 @@ function getVentana(deviceName){
     return antiguaVentana;
 }
 
+/**
+* Creación de un cuadro de texto para las propiedades de tipo Text que se permitan modificar.
+*
+* @param {var}  id  Identificador para el cuadro de texto.
+* @param {var}  perm  Tipo de permiso de la propiedad Text.
+* @return Cuadro de texto si perm != 'ro' o cadena vacía en caso contrario.
+*/
 function getInputText(id, perm){
     if(perm != 'ro'){
         return '<input id ="'+ id +'"type="text" placeholder="Modificar" class = "updateBox">';
@@ -314,6 +357,14 @@ function getInputText(id, perm){
     }
 }
 
+/**
+* Creación de un cuadro numérico para las propiedades de tipo Number que se permitan modificar.
+*
+* @param {var}  id  Identificador para el cuadro numérico.
+* @param {var}  perm  Tipo de permiso de la propiedad Number.
+* @param {var}  node  Conjunto de todas los numbers correspondientes a una propiedad concreta.
+* @return Cuadro numérico si perm != 'ro' o cadena vacía en caso contrario.
+*/
 function getInputNumber(id, perm, node){
     if(perm != 'ro'){
             return '<input id = "'+ id +'" type="number" id="numerics" min=' + node.getAttribute("min") + ' max = ' + node.getAttribute("max") + ' title="Format: [format: ' + node.getAttribute("format") + ", " + node.getAttribute("min") + ", " + node.getAttribute("max") + ", "  + node.getAttribute("step") +' ]">';               
@@ -323,13 +374,23 @@ function getInputNumber(id, perm, node){
     }
 }
 
+/**
+* Creación de un desplegable o checkbox para las propiedad de tipo Switch
+*
+* @param {var}  rule  Tipo de regla para crear un cuadro de texto u otro.
+* @param {var}  node  Conjunto de todos los switchs correspondientes a una propiedad concreta.
+* @param {var}  deviceName  Nombre del dispositivo sobre el que se va a crear el desplegable o checkbox
+* @param {var}  propertyName  Nombre de la propiedad sobre la que se va a crear el desplegable o checkbox.
+* @param {var}  elementName  Nombre del elemento sobre el que se va a crear el desplegable o checkbox.
+* @return {var} aux Desplegable o checkbox según corresponda a un tipo de regla u otro.
+*/
 function getInputSwitch(rule, node, deviceName, propertyName, elementName){
     switch(rule){
-        /*Combo con las opciones que vayan saliendo.*/
+        /*Combo con las opciones que salgan.*/
         case 'OneOfMany':
-           // return '<option value="'+ node.getAttribute("name") +'">' + node.getAttribute("label") + '</option>';
+            //No hace falta crearlo ya que hace lo mismo que el siguiente case solo que sin dejar un hueco del desplegable en blanco.
         
-        /*Combo pero que la primera opción sea en blanco para que así se pueda dejar vacía.*/
+        /*Combo con la primera opción sea en blanco.*/
         case 'AtMostOne':
             var aux = '<option id="'+ getElementId(deviceName,propertyName,elementName) +'_value" value="'+ node.getAttribute("name") +'"';
 
@@ -354,7 +415,7 @@ function getInputSwitch(rule, node, deviceName, propertyName, elementName){
 
             return aux; 
         
-        /*Poner todos los checkbox y seleccionar todos los que se quieran de todos ellos.*/
+        /*Checkbox y seleccionar todos los que se quieran de todos ellos.*/
         case 'AnyOfMany':
             var aux = '<label><input id="'+ getElementId(deviceName,propertyName,elementName) +'_value" type="checkbox" value ='+ node.getAttribute("name"); 
 
@@ -381,11 +442,25 @@ function getInputSwitch(rule, node, deviceName, propertyName, elementName){
     }            
 }
 
+/**
+* Obtener el identificador de una pestaña.
+*
+* @param {var}  deviceName  Nombre del dispositivo para el que se obtiene el identificador de la pestaña.
+* @param {var}  groupName  Nombre del grupo y a su vez de la pestaña de la propiedad.
+* @return {var} concat  Unión de ambos parámetros con los espacios reemplazados por guión bajo que dan el identificador de la pestaña.
+*/
 function getTabId(deviceName, groupName){
     var concat = deviceName + "_" + groupName;
     return concat.replace(/[\W_]/g,"_");
 }
 
+/**
+* Crear una nueva pestaña
+*
+* @param {var}  deviceName  Nombre del dispositivo para el que se obtiene la pestaña.
+* @param {var}  groupName  Nombre del grupo y a su vez de la pestaña de la propiedad.
+* @return {var} antiguoTab  Nueva pestaña creada debidamente inicializada. 
+*/
 function getTab(deviceName, groupName){
     var tabId = getTabId(deviceName, groupName);
     var windowId = getWindowId(deviceName);
@@ -411,6 +486,12 @@ function getTab(deviceName, groupName){
     return antiguoTab;
 }
 
+/**
+* Añadir una nueva pestaña al conjunto de pestañas
+*
+* @param {var}  deviceName  Nombre del dispositivo para el que se añade la nueva pestaña.
+* @param {var}  groupName  Nombre del grupo y a su vez de la pestaña que se va a añadir.
+*/
 function addDeviceToTab(deviceName, groupName, html) {
     var antiguoTab = getTab(deviceName, groupName);
     var windowId = getWindowId(deviceName);
