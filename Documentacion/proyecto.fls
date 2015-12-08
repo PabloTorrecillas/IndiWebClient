@@ -159,9 +159,9 @@ INPUT prefacios/prefacio.tex
 INPUT prefacios/prefacio.tex
 INPUT portada/portada_2.tex
 INPUT portada/portada_2.tex
-INPUT imagenes/logo.png
-INPUT ./imagenes/logo.png
-INPUT ./imagenes/logo.png
+INPUT imagenes/IWC.jpg
+INPUT ./imagenes/IWC.jpg
+INPUT ./imagenes/IWC.jpg
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbxti10.tfm
 INPUT proyecto.lof
