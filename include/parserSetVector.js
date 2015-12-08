@@ -1,3 +1,8 @@
+/**
+* Modificación de una propiedad Text.
+*
+* @param {var}  node  Propiedad Text completa que se está modificando.
+*/
 function parserSetTextVector(node){
   var deviceName = node.getAttribute("device");
   var propertyName = node.getAttribute("name");
@@ -18,6 +23,11 @@ function parserSetTextVector(node){
   }
 } 
 
+/**
+* Modificación de una propiedad Number.
+*
+* @param {var}  node  Propiedad Number completa que se está modificando.
+*/
 function parserSetNumberVector(node){
   var deviceName = node.getAttribute("device");
   var propertyName = node.getAttribute("name");
@@ -36,7 +46,11 @@ function parserSetNumberVector(node){
   }
 } 
 
-
+/**
+* Modificación de una propiedad Switch.
+*
+* @param {var}  node  Propiedad Switch completa que se está modificando.
+*/
 function parserSetSwitchVector(node){
   var deviceName = node.getAttribute("device");
   var propertyName = node.getAttribute("name");
@@ -49,7 +63,7 @@ function parserSetSwitchVector(node){
   var propertyValue = document.getElementById(getPropertyId(deviceName,propertyName) + "_value");
 
   //Pongo a vacío el propertyValue para ir añadiendo los que están activos.
-  //Hago esto por si son AnyOfMany para poder ir metiendo todos ya que si no lo hago me saca el ultimo solo.
+  //Hago esto por si son AnyOfMany para poder ir metiendo todos ya que si no lo hago obtiene el ultimo solo.
   propertyValue.innerHTML = '';
 
   for(var i = 0; i < nodes.length; i++){
@@ -61,7 +75,7 @@ function parserSetSwitchVector(node){
       if(element.nodeName == 'OPTION'){
           propertyValue.innerHTML = element.innerHTML;
       }
-      //Si no es un option
+      //Si no es un OPTION
       else{
         //Cojo el parentNode para así poder acceder a la etiqueta span.
         var labelNode = element.parentNode;
@@ -74,6 +88,11 @@ function parserSetSwitchVector(node){
   }
 }
 
+/**
+* Modificación de una propiedad BLOB
+*
+* @param {var}  node  Propiedad BLOB completa que se está modificando
+*/
 function parserSetBLOBVector(node){
   var deviceName = node.getAttribute("device");
   var propertyName = node.getAttribute("name");
@@ -94,6 +113,11 @@ function parserSetBLOBVector(node){
   }
 }
 
+/**
+* Modificación de una propiedad Light
+*
+* @param {var}  node  Propiedad Light completa que se está modificando
+*/
 function parserSetLightVector(node){
   var deviceName = node.getAttribute("device");
   var propertyName = node.getAttribute("name");
