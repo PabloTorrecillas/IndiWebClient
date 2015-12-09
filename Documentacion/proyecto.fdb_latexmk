@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex proyecto"] 1449679805 "proyecto.aux" "proyecto.bbl" "proyecto" 1449680454
+["bibtex proyecto"] 1449680597 "proyecto.aux" "proyecto.bbl" "proyecto" 1449680599
   "/usr/share/texlive/texmf-dist/bibtex/bst/base/plain.bst" 1292289607 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
   "bibliografia.bib" 1449336461 5297 734cbad439391b8d771eb98b18920f9d ""
-  "proyecto.aux" 1449680454 26388 748b8a8577afae948e0b1ae0323e66b0 ""
+  "proyecto.aux" 1449680598 26388 d852ebc728032e5af06a213e09245efc ""
   "proyecto.bcf" 0 -1 0 ""
   (generated)
   "proyecto.bbl"
   "proyecto.blg"
-["pdflatex"] 1449680453 "proyecto.tex" "proyecto.pdf" "proyecto" 1449680454
+["pdflatex"] 1449680597 "proyecto.tex" "proyecto.pdf" "proyecto" 1449680599
   "/etc/texmf/web2c/texmf.cnf" 1447690340 1101 af7716885e081ab43982cab7b4672c1a ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
@@ -105,7 +105,7 @@
   "capitulos/04_Analisis.tex" 1449679800 20961 cfa6f80224bb1d131dd1916627f39534 ""
   "capitulos/05_DisenoEImplementacion.tex" 1449679945 14686 fdd8a77924017fed8581fff087267ce8 ""
   "capitulos/06_Pruebas.tex" 1449680047 8672 976f97725d75b90bcd1b50da18cb1bbf ""
-  "capitulos/07_ManualDeUsuario.tex" 1449680450 9569 98ec252769187c531c9aa89cf46d8b20 ""
+  "capitulos/07_ManualDeUsuario.tex" 1449680593 9580 48bbcb57bf55bd70a24eda97514d76ae ""
   "capitulos/08_Conclusiones.tex" 1449393803 3139 c3f567a61c05aa6d6e684f210738313c ""
   "imagenes/DiagramaCasosUsoFinal.jpeg" 1448532310 70300 a5a56c5bc65015de87a7ea8d9a5f8ee0 ""
   "imagenes/IWC.jpg" 1449575048 128797 ea8b10282c7f16d80961863a62457636 ""
@@ -152,18 +152,18 @@
   "portada/portada.tex" 1447713644 1218 180a456df965d0034ade323894df17fe ""
   "portada/portada_2.tex" 1449575113 1235 cd5800fcbc3b1fe5b6e4daba4468f078 ""
   "prefacios/prefacio.tex" 1449673940 9828 1c75346c9b620b7ee9de600cbc26fd13 ""
-  "proyecto.aux" 1449680454 26388 748b8a8577afae948e0b1ae0323e66b0 ""
-  "proyecto.bbl" 1449679805 4393 728db7e1e96dec573c5656f1a164d029 "bibtex proyecto"
-  "proyecto.lof" 1449680454 4188 a5e2ec6b1f3fe0d382482098862d3cd9 ""
-  "proyecto.lot" 1449680454 1781 310fd697c995895a54569e6df2758a91 ""
-  "proyecto.out" 1449680454 7654 d5438b8d9c6cc45145f2babf290245fc ""
+  "proyecto.aux" 1449680598 26388 d852ebc728032e5af06a213e09245efc ""
+  "proyecto.bbl" 1449680597 4393 728db7e1e96dec573c5656f1a164d029 "bibtex proyecto"
+  "proyecto.lof" 1449680598 4188 a5e2ec6b1f3fe0d382482098862d3cd9 ""
+  "proyecto.lot" 1449680598 1781 310fd697c995895a54569e6df2758a91 ""
+  "proyecto.out" 1449680598 7654 d5438b8d9c6cc45145f2babf290245fc ""
   "proyecto.tex" 1449321442 5470 9313aa9f8786259451d76deb2f8b585b ""
-  "proyecto.toc" 1449680454 10194 0be7247a2530441f70b044f029f2cd5a ""
+  "proyecto.toc" 1449680598 10194 10b0128d463780632d49f45809eb866a ""
   (generated)
   "proyecto.out"
-  "proyecto.pdf"
-  "proyecto.toc"
   "proyecto.aux"
   "proyecto.log"
+  "proyecto.pdf"
   "proyecto.lot"
+  "proyecto.toc"
   "proyecto.lof"
