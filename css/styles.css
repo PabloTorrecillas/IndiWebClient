@@ -13,7 +13,7 @@
 	border-top-style: solid;
 	border-color: #dcdcdc;
 	margin-top: 5px;
-	
+	padding-top: 10px;
 }
 
 .propertyBox{
@@ -24,6 +24,7 @@
     margin: auto;
     text-align: center;
     font-size: 68%;
+    float: left;
 }
 
 #updateButton{
@@ -39,6 +40,7 @@
 .elementBox{
 	border: 1px solid black;
 	text-align: center;
+	margin-right: 2px;
 }
 
 .elementName{
