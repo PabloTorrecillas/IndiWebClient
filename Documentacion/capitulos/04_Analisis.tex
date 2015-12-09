@@ -1,5 +1,5 @@
-\chapter{Analisis}
-\title{Analisis}
+\chapter{Análisis}
+\title{Análisis}
 \label{cap:Analisis}
 
 En este capitulo se realizará un análisis del proyecto para poder hacer así el futuro diseño del mismo.
@@ -54,7 +54,7 @@ A continuación se detalla el único usuario que tendrá el sistema:\\ \\
 Los diferentes casos de uso nos permiten conocer como los actores se desenvuelven en el sistema, es decir, las diferentes funcionalidades que tienen disponibles en el sistema.\\
 
 
-\subsection{\textbf{CU-1: Conectarse a un servidor}}
+\subsection{\textbf{CU-1: Conectarse a un servidor y obtener los diferentes dispositivos}}
 \begin{itemize}
   \item \textbf{Actores:} Usuario (I)
   \item \textbf{Tipo:} Primario, Esencial
@@ -86,10 +86,12 @@ Los diferentes casos de uso nos permiten conocer como los actores se desenvuelve
 	  \begin{tabular}[c]{@{}l@{}}
 	    El sistema almacena la IP\\
 	    y el puerto.\\
+      Seguidamente, muestra los\\
+      Dispositivos conectados.
 	  \end{tabular}
 	  \\ \hline
 	\end{tabular}
-	\caption{CU-1. Conectarse a un servidor}
+	\caption{CU-1. Conectarse a un servidor y obtener los diferentes dispositivos}
 	\label{table:CU_1}
       \end{center}
     \end{table}
@@ -97,50 +99,7 @@ Los diferentes casos de uso nos permiten conocer como los actores se desenvuelve
 
 
 
-\subsection{\textbf{CU-2: Obtener los diferentes dispositivos}}
-\begin{itemize}
-  \item \textbf{Actores:} Usuario(I)
-  \item \textbf{Tipo:} Primario, Esencial
-  \item \textbf{Precondición:} Debe existir una conexión establecida previamente.
-  \item \textbf{Postcondición:} Se mostrarán, en caso de que existan, los dispositivos conectados.
-  \item \textbf{Propósito:} Obtener los dispositivos del servidor.
-  \item \textbf{Resumen:} El usuario obtiene los diferentes dispositivos que están conectados al servidor en ese momento.
-  \item \textbf{Autor:} Pablo Torrecillas Ortega
-  \item \textbf{Versión:} 1.0
-  \begin{table}[!ht]
-      \begin{center}
-  \begin{tabular}{|l|l|l|l|}
-    \hline
-    \multicolumn{4}{|c|}{{\bf Curso normal}}
-    \\ \hline
-    \multicolumn{2}{|c|}{{\bf Actor}} & \multicolumn{2}{c|}{{\bf Sistema}}
-    \\ \hline
-    {\it 1} &
-    \begin{tabular}[c]{@{}l@{}}
-      Usuario: Introduce la IP \\
-      y el puerto y pulsa sobre\\
-      el botón conectar.\\
-    \end{tabular} &
-    &
-    \\ \hline
-    &
-    &
-    {\it 2} &
-    \begin{tabular}[c]{@{}l@{}}
-      El sistema almacena la IP\\
-      y el puerto. Seguidamante,\\
-      muestra los dispositivos conectados\\
-    \end{tabular}
-    \\ \hline
-  \end{tabular}
-  \caption{CU-2. Obtener los diferentes dispositivos}
-  \label{table:CU_2}
-      \end{center}
-    \end{table}
-  \end{itemize}
-
-
-\subsection{\textbf{CU-3: Finalizar la aplicación}}
+\subsection{\textbf{CU-2: Finalizar la aplicación}}
 \begin{itemize}
   \item \textbf{Actores:} Usuario (I)
   \item \textbf{Tipo:} Secundario, Esencial
@@ -175,8 +134,8 @@ Los diferentes casos de uso nos permiten conocer como los actores se desenvuelve
     \end{tabular}
     \\ \hline
   \end{tabular}
-  \caption{CU-3. Finalizar la aplicación}
-  \label{table:CU_3}
+  \caption{CU-2. Finalizar la aplicación}
+  \label{table:CU_2}
       \end{center}
     \end{table}
 \end{itemize}
@@ -184,7 +143,7 @@ Los diferentes casos de uso nos permiten conocer como los actores se desenvuelve
 
 
 
-\subsection{\textbf{CU-4: Mostrar un dispositivo}}
+\subsection{\textbf{CU-3: Mostrar un dispositivo}}
 \begin{itemize}
   \item \textbf{Actores:} Usuario (I)
   \item \textbf{Tipo:} Primario, Esencial
@@ -221,14 +180,14 @@ Los diferentes casos de uso nos permiten conocer como los actores se desenvuelve
     \end{tabular}
     \\ \hline
   \end{tabular}
-  \caption{CU-4. Mostrar un dispositivo}
-  \label{table:CU_4}
+  \caption{CU-3. Mostrar un dispositivo}
+  \label{table:CU_3}
       \end{center}
     \end{table}
 \end{itemize}
 
 
-\subsection{\textbf{CU-5: Editar la propiedad \textit{text}}}
+\subsection{\textbf{CU-4: Editar la propiedad \textit{text}}}
 \begin{itemize}
   \item \textbf{Actores:} Usuario (I)
   \item \textbf{Tipo:} Primario, Esencial
@@ -272,15 +231,15 @@ Los diferentes casos de uso nos permiten conocer como los actores se desenvuelve
 	  \end{tabular}
 	  \\ \hline
 	\end{tabular}
-	\caption{CU-5. Editar la propiedad \textit{text}}
-	\label{table:CU_5}
+	\caption{CU-4. Editar la propiedad \textit{text}}
+	\label{table:CU_4}
       \end{center}
     \end{table}
 \end{itemize}
 
 
 
-\subsection{\textbf{CU-6: Editar la propiedad \textit{number}}}
+\subsection{\textbf{CU-5: Editar la propiedad \textit{number}}}
 \begin{itemize}
   \item \textbf{Actores:} Usuario (I)
   \item \textbf{Tipo:} Primario, Esencial
@@ -325,15 +284,15 @@ Los diferentes casos de uso nos permiten conocer como los actores se desenvuelve
     \end{tabular}
     \\ \hline
   \end{tabular}
-  \caption{CU-6. Editar la propiedad \textit{number}}
-  \label{table:CU_6}
+  \caption{CU-5. Editar la propiedad \textit{number}}
+  \label{table:CU_5}
       \end{center}
     \end{table}
 \end{itemize}
 
 
 
-\subsection{\textbf{CU-7: Editar la propiedad \textit{switch}}}
+\subsection{\textbf{CU-6: Editar la propiedad \textit{switch}}}
 \begin{itemize}
   \item \textbf{Actores:} Usuario (I)
   \item \textbf{Tipo:} Primario, Esencial
@@ -370,15 +329,15 @@ Los diferentes casos de uso nos permiten conocer como los actores se desenvuelve
     \end{tabular}
     \\ \hline
   \end{tabular}
-  \caption{CU-7. Editar la propiedad \textit{switch}}
-  \label{table:CU_7}
+  \caption{CU-6. Editar la propiedad \textit{switch}}
+  \label{table:CU_6}
       \end{center}
     \end{table}
 \end{itemize}
 
 
 
-\subsection{\textbf{CU-8: Editar la propiedad \textit{blob}}}
+\subsection{\textbf{CU-7: Editar la propiedad \textit{blob}}}
 \begin{itemize}
   \item \textbf{Actores:} Usuario (I)
   \item \textbf{Tipo:} Primario, Esencial
@@ -409,19 +368,20 @@ Los diferentes casos de uso nos permiten conocer como los actores se desenvuelve
     \begin{tabular}[c]{@{}l@{}}
       El sistema muestra la\\
       propiedad modificada y \\
-      los valores al servidor.\\
+      enviar los valores al\\
+      servidor.\\
     \end{tabular}
     \\ \hline
   \end{tabular}
-  \caption{CU-8. Editar la propiedad \textit{blob}}
-  \label{table:CU_8}
+  \caption{CU-7. Editar la propiedad \textit{blob}}
+  \label{table:CU_7}
       \end{center}
     \end{table}
 \end{itemize}
 
 
 
-\subsection{\textbf{CU-9: Activar la recepción de \textit{blob}}}
+\subsection{\textbf{CU-8: Activar la recepción de \textit{blob}}}
 \begin{itemize}
   \item \textbf{Actores:} Usuario (I)
   \item \textbf{Tipo:} Secundario, Esencial
@@ -452,21 +412,21 @@ Los diferentes casos de uso nos permiten conocer como los actores se desenvuelve
     {\it 2} &
     \begin{tabular}[c]{@{}l@{}}
       El sistema deja seleccionado\\
-      el botón y activa la \\
-      recepción de blob para el \\
-      dispositivo.\\
+      el botón y envia al servidor \\
+      el mensaje oportuno para activar \\
+      la recepción de BLOB.\\
     \end{tabular}
     \\ \hline
   \end{tabular}
-  \caption{CU-9. Activar la recepción de \textit{blob}}
-  \label{table:CU_9}
+  \caption{CU-8. Activar la recepción de \textit{blob}}
+  \label{table:CU_8}
       \end{center}
     \end{table}
 \end{itemize}
 
 
 
-\subsection{\textbf{CU-10: Desactivar la recepción de \textit{blob}}}
+\subsection{\textbf{CU-9: Desactivar la recepción de \textit{blob}}}
 \begin{itemize}
   \item \textbf{Actores:} Usuario (I)
   \item \textbf{Tipo:} Secundario, Esencial
@@ -495,10 +455,10 @@ Los diferentes casos de uso nos permiten conocer como los actores se desenvuelve
     &
     {\it 2} &
     \begin{tabular}[c]{@{}l@{}}
-      El sistema quita la selección\\
-      del botón y desactiva la \\
-      recepción de blob para el \\
-      dispositivo.\\
+      El sistema desmarca\\
+      el botón y envia al servidor \\
+      el mensaje oportuno para\\
+      desactivar la recepción de BLOB.\\
     \end{tabular}
     \\ \hline
   \end{tabular}

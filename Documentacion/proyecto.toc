@@ -46,25 +46,24 @@
 \contentsline {subsection}{\numberline {3.6.2}Recursos Humanos}{46}{subsection.3.6.2}
 \contentsline {subsection}{\numberline {3.6.3}Material}{46}{subsection.3.6.3}
 \contentsline {section}{\numberline {3.7}Temporizaci\IeC {\'o}n}{47}{section.3.7}
-\contentsline {chapter}{\numberline {4}Analisis}{49}{chapter.4}
+\contentsline {chapter}{\numberline {4}An\IeC {\'a}lisis}{49}{chapter.4}
 \contentsline {section}{\numberline {4.1}An\IeC {\'a}lisis de Requisitos}{49}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Requisitos Funcionales}{49}{subsection.4.1.1}
 \contentsline {subsection}{\numberline {4.1.2}Requisitos No Funcionales}{50}{subsection.4.1.2}
 \contentsline {section}{\numberline {4.2}Descripci\IeC {\'o}n de Actores}{50}{section.4.2}
 \contentsline {section}{\numberline {4.3}Descripci\IeC {\'o}n de Casos de Uso}{51}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}\textbf {CU-1: Conectarse a un servidor}}{51}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}\textbf {CU-2: Obtener los diferentes dispositivos}}{51}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}\textbf {CU-3: Finalizar la aplicaci\IeC {\'o}n}}{52}{subsection.4.3.3}
-\contentsline {subsection}{\numberline {4.3.4}\textbf {CU-4: Mostrar un dispositivo}}{52}{subsection.4.3.4}
-\contentsline {subsection}{\numberline {4.3.5}\textbf {CU-5: Editar la propiedad \textit {text}}}{53}{subsection.4.3.5}
-\contentsline {subsection}{\numberline {4.3.6}\textbf {CU-6: Editar la propiedad \textit {number}}}{54}{subsection.4.3.6}
-\contentsline {subsection}{\numberline {4.3.7}\textbf {CU-7: Editar la propiedad \textit {switch}}}{55}{subsection.4.3.7}
-\contentsline {subsection}{\numberline {4.3.8}\textbf {CU-8: Editar la propiedad \textit {blob}}}{55}{subsection.4.3.8}
-\contentsline {subsection}{\numberline {4.3.9}\textbf {CU-9: Activar la recepci\IeC {\'o}n de \textit {blob}}}{56}{subsection.4.3.9}
-\contentsline {subsection}{\numberline {4.3.10}\textbf {CU-10: Desactivar la recepci\IeC {\'o}n de \textit {blob}}}{57}{subsection.4.3.10}
-\contentsline {subsection}{\numberline {4.3.11}\textbf {CU-11: Guardar un \textit {blob}}}{57}{subsection.4.3.11}
-\contentsline {subsection}{\numberline {4.3.12}\textbf {CU-12: Cambiar de grupo de propiedades}}{58}{subsection.4.3.12}
-\contentsline {subsection}{\numberline {4.3.13}\textbf {CU-13: Cerrar un dispositivo}}{59}{subsection.4.3.13}
+\contentsline {subsection}{\numberline {4.3.1}\textbf {CU-1: Conectarse a un servidor y obtener los diferentes dispositivos}}{51}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}\textbf {CU-2: Finalizar la aplicaci\IeC {\'o}n}}{51}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}\textbf {CU-3: Mostrar un dispositivo}}{52}{subsection.4.3.3}
+\contentsline {subsection}{\numberline {4.3.4}\textbf {CU-4: Editar la propiedad \textit {text}}}{52}{subsection.4.3.4}
+\contentsline {subsection}{\numberline {4.3.5}\textbf {CU-5: Editar la propiedad \textit {number}}}{53}{subsection.4.3.5}
+\contentsline {subsection}{\numberline {4.3.6}\textbf {CU-6: Editar la propiedad \textit {switch}}}{54}{subsection.4.3.6}
+\contentsline {subsection}{\numberline {4.3.7}\textbf {CU-7: Editar la propiedad \textit {blob}}}{55}{subsection.4.3.7}
+\contentsline {subsection}{\numberline {4.3.8}\textbf {CU-8: Activar la recepci\IeC {\'o}n de \textit {blob}}}{55}{subsection.4.3.8}
+\contentsline {subsection}{\numberline {4.3.9}\textbf {CU-9: Desactivar la recepci\IeC {\'o}n de \textit {blob}}}{56}{subsection.4.3.9}
+\contentsline {subsection}{\numberline {4.3.10}\textbf {CU-11: Guardar un \textit {blob}}}{57}{subsection.4.3.10}
+\contentsline {subsection}{\numberline {4.3.11}\textbf {CU-12: Cambiar de grupo de propiedades}}{57}{subsection.4.3.11}
+\contentsline {subsection}{\numberline {4.3.12}\textbf {CU-13: Cerrar un dispositivo}}{58}{subsection.4.3.12}
 \contentsline {section}{\numberline {4.4}Diagrama de Casos de Uso}{59}{section.4.4}
 \contentsline {chapter}{\numberline {5}Dise\IeC {\~n}o e Implementaci\IeC {\'o}n}{61}{chapter.5}
 \contentsline {section}{\numberline {5.1}Diagrama del Modelo Conceptual}{61}{section.5.1}
