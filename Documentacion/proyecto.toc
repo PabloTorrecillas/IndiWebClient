@@ -61,9 +61,9 @@
 \contentsline {subsection}{\numberline {4.3.7}\textbf {CU-7: Editar la propiedad \textit {blob}}}{55}{subsection.4.3.7}
 \contentsline {subsection}{\numberline {4.3.8}\textbf {CU-8: Activar la recepci\IeC {\'o}n de \textit {blob}}}{55}{subsection.4.3.8}
 \contentsline {subsection}{\numberline {4.3.9}\textbf {CU-9: Desactivar la recepci\IeC {\'o}n de \textit {blob}}}{56}{subsection.4.3.9}
-\contentsline {subsection}{\numberline {4.3.10}\textbf {CU-11: Guardar un \textit {blob}}}{57}{subsection.4.3.10}
-\contentsline {subsection}{\numberline {4.3.11}\textbf {CU-12: Cambiar de grupo de propiedades}}{57}{subsection.4.3.11}
-\contentsline {subsection}{\numberline {4.3.12}\textbf {CU-13: Cerrar un dispositivo}}{58}{subsection.4.3.12}
+\contentsline {subsection}{\numberline {4.3.10}\textbf {CU-10: Guardar un \textit {blob}}}{57}{subsection.4.3.10}
+\contentsline {subsection}{\numberline {4.3.11}\textbf {CU-11: Cambiar de grupo de propiedades}}{57}{subsection.4.3.11}
+\contentsline {subsection}{\numberline {4.3.12}\textbf {CU-12: Cerrar un dispositivo}}{58}{subsection.4.3.12}
 \contentsline {section}{\numberline {4.4}Diagrama de Casos de Uso}{59}{section.4.4}
 \contentsline {chapter}{\numberline {5}Dise\IeC {\~n}o e Implementaci\IeC {\'o}n}{61}{chapter.5}
 \contentsline {section}{\numberline {5.1}Diagrama del Modelo Conceptual}{61}{section.5.1}
