@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.11.16)  9 DEC 2015 17:54
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.11.16)  9 DEC 2015 18:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -4425,8 +4425,8 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 7.
 
-Overfull \hbox (14.76312pt too wide) in paragraph at lines 11--12
-\OT1/cmr/m/n/10.95 desea lan-zar por ejem-plo un te-les-co-pio: \OT1/cmr/m/it/10.95 in-di-ser-ver in-di[]simulator[]telescope 
+Overfull \hbox (22.64792pt too wide) in paragraph at lines 14--15
+\OT1/cmr/m/n/10.95 ejem-plo: \OT1/cmtt/m/n/10.95 indiserver indi[]simulator[]ccd \OT1/cmr/m/n/10.95 o \OT1/cmtt/m/n/10.95 indiserver indi[]simulator[]gps\OT1/cmr/m/n/10.95 . 
  []
 
 
@@ -4485,7 +4485,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 29--30
 
  []
 
-<./imagenes/capturaConexion.png, id=1070, 260.975pt x 127.47626pt>
+<./imagenes/capturaConexion.png, id=1071, 260.975pt x 127.47626pt>
 File: ./imagenes/capturaConexion.png Graphic file (type png)
  <use ./imagenes/capturaConexion.png>
 Package pdftex.def Info: ./imagenes/capturaConexion.png used on input line 34.
@@ -4507,7 +4507,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 39--40
 
  []
 
-<./imagenes/capturaEncendiendo.png, id=1071, 508.90125pt x 218.8175pt>
+<./imagenes/capturaEncendiendo.png, id=1072, 508.90125pt x 218.8175pt>
 File: ./imagenes/capturaEncendiendo.png Graphic file (type png)
  <use ./imagenes/capturaEncendiendo.png>
 Package pdftex.def Info: ./imagenes/capturaEncendiendo.png used on input line 44.
@@ -4556,7 +4556,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 49--50
 
  []
 
-<./imagenes/capturaDispositivo.png, id=1077, 593.21625pt x 664.4825pt>
+<./imagenes/capturaDispositivo.png, id=1078, 593.21625pt x 664.4825pt>
 File: ./imagenes/capturaDispositivo.png Graphic file (type png)
  <use ./imagenes/capturaDispositivo.png>
 Package pdftex.def Info: ./imagenes/capturaDispositivo.png used on input line 54.
@@ -4573,22 +4573,22 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 58.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 58.
- <./imagenes/grey_light.png, id=1078, 32.12pt x 32.12pt>
+ <./imagenes/grey_light.png, id=1079, 32.12pt x 32.12pt>
 File: ./imagenes/grey_light.png Graphic file (type png)
  <use ./imagenes/grey_light.png>
 Package pdftex.def Info: ./imagenes/grey_light.png used on input line 61.
 (pdftex.def)             Requested size: 14.22636pt x 14.22644pt.
- <./imagenes/yellow_light.png, id=1079, 32.12pt x 32.12pt>
+ <./imagenes/yellow_light.png, id=1080, 32.12pt x 32.12pt>
 File: ./imagenes/yellow_light.png Graphic file (type png)
  <use ./imagenes/yellow_light.png>
 Package pdftex.def Info: ./imagenes/yellow_light.png used on input line 62.
 (pdftex.def)             Requested size: 14.22636pt x 14.22644pt.
- <./imagenes/red_light.png, id=1080, 32.12pt x 32.12pt>
+ <./imagenes/red_light.png, id=1081, 32.12pt x 32.12pt>
 File: ./imagenes/red_light.png Graphic file (type png)
  <use ./imagenes/red_light.png>
 Package pdftex.def Info: ./imagenes/red_light.png used on input line 63.
 (pdftex.def)             Requested size: 14.22636pt x 14.22644pt.
- <./imagenes/green_light.png, id=1081, 32.12pt x 32.12pt>
+ <./imagenes/green_light.png, id=1082, 32.12pt x 32.12pt>
 File: ./imagenes/green_light.png Graphic file (type png)
  <use ./imagenes/green_light.png>
 Package pdftex.def Info: ./imagenes/green_light.png used on input line 64.
@@ -4605,7 +4605,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 67.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 67.
- <./imagenes/capturaGrupos.png, id=1083, 514.92375pt x 170.6375pt>
+ <./imagenes/capturaGrupos.png, id=1084, 514.92375pt x 170.6375pt>
 File: ./imagenes/capturaGrupos.png Graphic file (type png)
  <use ./imagenes/capturaGrupos.png>
 Package pdftex.def Info: ./imagenes/capturaGrupos.png used on input line 71.
@@ -4649,7 +4649,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 75.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 75.
- <./imagenes/capturaText.png, id=1093, 417.56pt x 83.31125pt>
+ <./imagenes/capturaText.png, id=1094, 417.56pt x 83.31125pt>
 File: ./imagenes/capturaText.png Graphic file (type png)
  <use ./imagenes/capturaText.png>
 Package pdftex.def Info: ./imagenes/capturaText.png used on input line 80.
@@ -4666,7 +4666,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 84.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 84.
- <./imagenes/capturaNumber.png, id=1095, 403.5075pt x 153.57375pt>
+ <./imagenes/capturaNumber.png, id=1096, 403.5075pt x 153.57375pt>
 File: ./imagenes/capturaNumber.png Graphic file (type png)
  <use ./imagenes/capturaNumber.png>
 Package pdftex.def Info: ./imagenes/capturaNumber.png used on input line 88.
@@ -4683,78 +4683,78 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 92.
- <./imagenes/oneOfMany.png, id=1097, 370.38374pt x 43.16125pt>
+ <./imagenes/oneOfMany.png, id=1098, 370.38374pt x 43.16125pt>
 File: ./imagenes/oneOfMany.png Graphic file (type png)
 
 <use ./imagenes/oneOfMany.png>
 Package pdftex.def Info: ./imagenes/oneOfMany.png used on input line 98.
 (pdftex.def)             Requested size: 288.0011pt x 33.56157pt.
- <./imagenes/atMostOne.png, id=1099, 335.2525pt x 42.1575pt>
+ <./imagenes/atMostOne.png, id=1100, 335.2525pt x 42.1575pt>
 File: ./imagenes/atMostOne.png Graphic file (type png)
  <use ./imagenes/atMostOne.png>
 Package pdftex.def Info: ./imagenes/atMostOne.png used on input line 104.
 (pdftex.def)             Requested size: 288.0011pt x 36.21548pt.
- <./imagenes/anyOfMany.png, id=1101, 421.575pt x 207.77625pt>
+ <./imagenes/anyOfMany.png, id=1102, 421.575pt x 207.77625pt>
 File: ./imagenes/anyOfMany.png Graphic file (type png)
  <use ./imagenes/anyOfMany.png>
-Package pdftex.def Info: ./imagenes/anyOfMany.png used on input line 111.
+Package pdftex.def Info: ./imagenes/anyOfMany.png used on input line 110.
 (pdftex.def)             Requested size: 323.9978pt x 159.687pt.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 117.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 117.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 117.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 117.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 117.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 118.
- <./imagenes/activacionBlob.png, id=1103, 516.93124pt x 76.285pt>
+(babel)             in language  on input line 117.
+ <./imagenes/activacionBlob.png, id=1104, 516.93124pt x 76.285pt>
 File: ./imagenes/activacionBlob.png Graphic file (type png)
  <use ./imagenes/activacionBlob.png>
-Package pdftex.def Info: ./imagenes/activacionBlob.png used on input line 122.
+Package pdftex.def Info: ./imagenes/activacionBlob.png used on input line 121.
 (pdftex.def)             Requested size: 323.9978pt x 47.81535pt.
-LaTeX Info: Redefining \. on input line 125.
-LaTeX Info: Redefining \% on input line 125.
+LaTeX Info: Redefining \. on input line 124.
+LaTeX Info: Redefining \% on input line 124.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 125.
+(babel)             in language  on input line 124.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 125.
+(babel)             in language  on input line 124.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 125.
+(babel)             in language  on input line 124.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 125.
+(babel)             in language  on input line 124.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 125.
+(babel)             in language  on input line 124.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 125.
+(babel)             in language  on input line 124.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 125.
+(babel)             in language  on input line 124.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 125.
+(babel)             in language  on input line 124.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 125.
+(babel)             in language  on input line 124.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 125.
+(babel)             in language  on input line 124.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 125.
+(babel)             in language  on input line 124.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 125.
+(babel)             in language  on input line 124.
  [80]
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 126.
+(babel)             in language  on input line 125.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 126.
+(babel)             in language  on input line 125.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 126.
+(babel)             in language  on input line 125.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 126.
+(babel)             in language  on input line 125.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 126.
+(babel)             in language  on input line 125.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 126.
+(babel)             in language  on input line 125.
 ) (./capitulos/08_Conclusiones.tex
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
@@ -5118,7 +5118,7 @@ Here is how much of TeX's memory you used:
  957 hyphenation exceptions out of 8191
  34i,18n,43p,805b,723s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/eurosym/feybr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/eurosym/feymr10.pfb>
-Output written on proyecto.pdf (93 pages, 1999827 bytes).
+Output written on proyecto.pdf (93 pages, 1997975 bytes).
 PDF statistics:
  1291 PDF objects out of 1440 (max. 8388607)
  1125 compressed objects within 12 object streams
