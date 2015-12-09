@@ -1,7 +1,7 @@
 \select@language {spanish}
 \contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n}{21}{chapter.1}
 \contentsline {section}{\numberline {1.1}Astronom\IeC {\'\i }a}{21}{section.1.1}
-\contentsline {section}{\numberline {1.2}Observatorio e Instrumental Astron\IeC {\'o}mico}{23}{section.1.2}
+\contentsline {section}{\numberline {1.2}Observatorios e Instrumental Astron\IeC {\'o}mico}{23}{section.1.2}
 \contentsline {subsection}{\numberline {1.2.1}Telescopio}{24}{subsection.1.2.1}
 \contentsline {subsection}{\numberline {1.2.2}C\IeC {\'a}mara CCD}{25}{subsection.1.2.2}
 \contentsline {subsection}{\numberline {1.2.3}Montura}{26}{subsection.1.2.3}
