@@ -50,7 +50,7 @@ function parserDefTextVector(node){
        var buttonId = getPropertyId(deviceName,propertyName) + "_updateButton";
 
         if(node.getAttribute("perm") != 'ro'){
-            html +=  '<button id="' +  buttonId +'" class="btn btn-default" onclick="funcionEscritura(\'' + deviceName + '\', \'' + propertyName + '\');">Actualizar</button>';
+            html +=  '<button id="' +  buttonId +'" class="btn btn-default" onclick="writeText(\'' + deviceName + '\', \'' + propertyName + '\');">Actualizar</button>';
 
         }
 
@@ -98,7 +98,7 @@ function parserDefNumberVector(node){
                     html += 
                     '<div class = "elementBox" data_elementname = "'+ elementName +'">' + nodes[i].getAttribute("label") + ":" + 
                         '<div id="' + getElementId(deviceName,propertyName,elementName) + "_value" + '">' + 
-                        nodes[i].innerHTML + 
+                        parseFloat(nodes[i].innerHTML).toFixed(3) + 
                     '</div>' +
                         getInputNumber(getElementId(deviceName,propertyName,elementName) + "_input", node.getAttribute("perm"), nodes[i]) + 
                     '</div>';  

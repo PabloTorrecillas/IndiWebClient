@@ -42,7 +42,7 @@ function parserSetNumberVector(node){
 
     var existingElement = document.getElementById(getElementId(deviceName,propertyName,elementName) + "_value");
 
-    existingElement.innerHTML = nodes[i].innerHTML;
+    existingElement.innerHTML = parseFloat(nodes[i].innerHTML).toFixed(3);
   }
 } 
 
