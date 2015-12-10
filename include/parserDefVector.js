@@ -51,7 +51,6 @@ function parserDefTextVector(node){
 
         if(node.getAttribute("perm") != 'ro'){
             html +=  '<button id="' +  buttonId +'" class="btn btn-default" onclick="writeText(\'' + deviceName + '\', \'' + propertyName + '\');">Actualizar</button>';
-
         }
 
     html += '</div>';
@@ -350,7 +349,7 @@ function getVentana(deviceName){
 */
 function getInputText(id, perm){
     if(perm != 'ro'){
-        return '<input id ="'+ id +'"type="text" placeholder="Modificar" class = "updateBox">';
+        return '<input id ="'+ id +'" type="text" placeholder="Modificar" class = "updateBox">';
     }
     else{
         return "";
@@ -451,6 +450,7 @@ function getInputSwitch(rule, node, deviceName, propertyName, elementName){
 */
 function getTabId(deviceName, groupName){
     var concat = deviceName + "_" + groupName;
+
     return concat.replace(/[\W_]/g,"_");
 }
 
@@ -483,6 +483,7 @@ function getTab(deviceName, groupName){
 
         windowTabs.tabs( "refresh" );
     }
+    
     return antiguoTab;
 }
 

@@ -83,7 +83,7 @@
 		* @param {var}  xml  Mensaje del servidor para parsear.
 		*
 		*/
-        function parserXML(xml) {
+        function parserXML(xml){
             var parser = new DOMParser();
             var indiXml = parser.parseFromString(xml,'text/xml');
             var indiSectionArray = indiXml.getElementsByTagName('a');

@@ -9,7 +9,6 @@
 	width: 100%;
 	display: flex;
 	padding-bottom: 10px;
-	
 	border-top-style: solid;
 	border-color: #dcdcdc;
 	margin-top: 5px;
@@ -17,10 +16,6 @@
 }
 
 .propertyBox{
-    /*background-color: #fff000;*/
-   /*border: solid;
-    border-color: #fff000;*/
-    /*width: 175px;*/
     margin: auto;
     text-align: center;
     font-size: 68%;
@@ -28,13 +23,8 @@
 }
 
 #updateButton{
-	/*width: 25%;*/
 	font-size: 11px;
 	padding: 6px 6px;
-}
-
-.updateBox{
-	/*width: 45%;*/
 }
 
 .elementBox{
@@ -47,13 +37,8 @@
 	margin-right: 2em;
 }
 
-.elementBoxContainer{
-	/*width: 175px;*/
-}
-
 #numerics{
 	margin-right: 3em;
-	/*width: 100px;*/
 }
 .tabGroup {
   max-height: 100%;
