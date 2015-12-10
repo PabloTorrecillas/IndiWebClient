@@ -100,8 +100,8 @@
 \contentsline {subsection}{\numberline {7.4.2}Cambio de Grupo de Propiedades}{80}{subsection.7.4.2}
 \contentsline {subsection}{\numberline {7.4.3}Cambio de una Propiedad \textit {Text}}{80}{subsection.7.4.3}
 \contentsline {subsection}{\numberline {7.4.4}Cambio de una Propiedad \textit {Number}}{81}{subsection.7.4.4}
-\contentsline {subsection}{\numberline {7.4.5}Cambio de una Propiedad \textit {Switch}}{81}{subsection.7.4.5}
-\contentsline {subsection}{\numberline {7.4.6}Activar/Desactivar la Recepci\IeC {\'o}n de \textit {Blob}}{82}{subsection.7.4.6}
+\contentsline {subsection}{\numberline {7.4.5}Cambio de una Propiedad \textit {Switch}}{82}{subsection.7.4.5}
+\contentsline {subsection}{\numberline {7.4.6}Activar/Desactivar la Recepci\IeC {\'o}n de \textit {Blob}}{83}{subsection.7.4.6}
 \contentsline {subsection}{\numberline {7.4.7}Cerrar un Dispositivo}{83}{subsection.7.4.7}
 \contentsline {chapter}{\numberline {8}Conclusiones}{85}{chapter.8}
 \contentsline {chapter}{Bibliograf\IeC {\'\i }a}{88}{chapter*.12}
